@@ -908,7 +908,7 @@ const createPoojaItem = (itemId: string, quantity: number): PoojaItem => {
 
 const POOJA_IMAGES = {
   // Existing Images
-  satyanarayan: 'https://images.pexels.com/photos/10833777/pexels-photo-10833777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  satyanarayan: 'assets/Satyanarayan_pooja.png',
   grihaPravesh: 'https://images.pexels.com/photos/1647978/pexels-photo-1647978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
   diwali: 'https://images.pexels.com/photos/5878471/pexels-photo-5878471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
   ganesh: 'https://images.pexels.com/photos/12644933/pexels-photo-12644933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
