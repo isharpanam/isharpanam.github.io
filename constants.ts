@@ -909,34 +909,34 @@ const createPoojaItem = (itemId: string, quantity: number): PoojaItem => {
 const POOJA_IMAGES = {
   // Existing Images
   satyanarayan: '/images/Satyanarayan_pooja.png',
-  grihaPravesh: 'https://images.pexels.com/photos/1647978/pexels-photo-1647978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  diwali: 'https://images.pexels.com/photos/5878471/pexels-photo-5878471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  ganesh: 'https://images.pexels.com/photos/12644933/pexels-photo-12644933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  navratri: 'https://images.pexels.com/photos/15707798/pexels-photo-15707798/free-photo-of-a-woman-in-a-red-sari-holding-a-plate-with-a-lit-candle.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  havan: 'https://images.pexels.com/photos/7747321/pexels-photo-7747321.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  grihaPravesh: '/images/griha-pravesh-muhurat.jpg',
+  diwali: '/images/diwali.png',
+  ganesh: '/images/Ganesh pooja.png',
+  navratri: '/images/navratri.png',
+  havan: '/images/Navchandi home.png',
   // New Images
-  bolChauth: 'https://images.pexels.com/photos/162237/cow-animal-farm-meadow-162237.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  dashamaa: 'https://images.pexels.com/photos/10100494/pexels-photo-10100494.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  dhanlakshmi: 'https://images.pexels.com/photos/9780137/pexels-photo-9780137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  evratJivrat: 'https://images.pexels.com/photos/10100494/pexels-photo-10100494.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  fulKajli: 'https://images.pexels.com/photos/96616/pexels-photo-96616.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  ganeshGeneric: 'https://images.pexels.com/photos/10827299/pexels-photo-10827299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  gauriVrat: 'https://images.pexels.com/photos/14848332/pexels-photo-14848332.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  jayaParvati: 'https://images.pexels.com/photos/14848332/pexels-photo-14848332.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  kalsarp: 'https://images.pexels.com/photos/987157/pexels-photo-987157.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  kevdaTrij: 'https://images.pexels.com/photos/58632/flower-plant-kewra-fragrant-pandan-58632.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  krishna: 'https://images.pexels.com/photos/2048865/pexels-photo-2048865.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  nakshatra: 'https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  navchandi: 'https://images.pexels.com/photos/7747333/pexels-photo-7747333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  pindDaan: 'https://images.pexels.com/photos/8432274/pexels-photo-8432274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  saibaba: 'https://images.pexels.com/photos/14886657/pexels-photo-14886657.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  shiv: 'https://images.pexels.com/photos/4141679/pexels-photo-4141679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  bhagvat: 'https://images.pexels.com/photos/10959063/pexels-photo-10959063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  vadSavitri: 'https://images.pexels.com/photos/225769/pexels-photo-225769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  vishesh: 'https://images.pexels.com/photos/10959050/pexels-photo-10959050.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  bolChauth: '/images/Bol chauth gaumata pooja.png',
+  dashamaa: '/images/Dashamaa vrat .png',
+  dhanlakshmi: '/images/Dhanlakshmi pooja.png',
+  evratJivrat: '/images/Evrat-Jivrat vrat.png',
+  fulKajli: '/images/Ful-kajli vrat.png',
+  ganeshGeneric: '/images/Ganesh pooja.png',
+  gauriVrat: '/images/Gauri vrat.png',
+  jayaParvati: '/images/Jaya-Parvati vrat.png',
+  kalsarp: '/images/Kalsarp vidhhan.png',
+  kevdaTrij: '/images/Kevda trij vrat.png',
+  krishna: '/images/Krishna pooja.png',
+  nakshatra: '/images/Nakshtra vidhhan.png',
+  navchandi: '/images/Navchandi home.png',
+  pindDaan: '/images/Pind karm pooja.png',
+  saibaba: '/images/Saibaba vrat.png',
+  shiv: '/images/Shiv Pooja.png',
+  bhagvat: '/images/Shrimad Bhagvat pooja.png',
+  vadSavitri: '/images/Vad-savitri vrat.png',
+  vishesh: '/images/Vishesh pooja.png',
   // Marriage Pooja Images
-  boysMarriage: 'https://images.pexels.com/photos/2959192/pexels-photo-2959192.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  girlsMarriage: 'https://images.pexels.com/photos/1721558/pexels-photo-1721558.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  boysMarriage: '/images/boy_mag.jpg',
+  girlsMarriage: '/images/boy_mag.jpg',
 };
 
 export const POOJA_TYPES: PoojaType[] = [
@@ -1140,12 +1140,12 @@ export const POOJA_TYPES: PoojaType[] = [
 
 // Vrat Images
 const VRAT_IMAGES = {
-  bij: 'https://images.pexels.com/photos/10770830/pexels-photo-10770830.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  trij: 'https://images.pexels.com/photos/14848332/pexels-photo-14848332.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  chaturthi: 'https://images.pexels.com/photos/12644933/pexels-photo-12644933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  panchami: 'https://images.pexels.com/photos/7747321/pexels-photo-7747321.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  saptami: 'https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  ashtami: 'https://images.pexels.com/photos/7747333/pexels-photo-7747333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  bij: '/images/download (6).png',
+  trij: '/images/download (7).png',
+  chaturthi: '/images/download (8).png',
+  panchami: '/images/download (21).png',
+  saptami: '/images/download (33).png',
+  ashtami: '/images/Kevda trij vrat.png',
   dashami: 'https://images.pexels.com/photos/10959063/pexels-photo-10959063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
   ekadashi: 'https://images.pexels.com/photos/4141679/pexels-photo-4141679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
   chaudash: 'https://images.pexels.com/photos/8432274/pexels-photo-8432274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
@@ -2562,4 +2562,4 @@ export const POOJA_SAMAGRI_DATA: Record<string, PoojaItem[]> = {
 };
 
 export const WHATSAPP_BUSINESS_NUMBER = '9265053201'; // Replace with your actual business number
-export const UPI_ID = 'uttampatel@okhdfcbank'; // Replace with your actual UPI ID
+export const UPI_ID = 'utampipaliya@oksbi'; // Replace with your actual UPI ID

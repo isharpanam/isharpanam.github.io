@@ -70,8 +70,8 @@ const Header: React.FC = () => {
             <Link to="/" className="flex items-center gap-2 group">
               <Leaf className="text-brand-accent h-6 w-6 md:h-8 md:w-8 animate-pulseSlow group-hover:text-white transition-colors" />
               <h1 className="text-xl md:text-2xl lg:text-4xl font-heading tracking-wider text-brand-accent group-hover:text-white transition-colors">
-                <span className="hidden sm:inline">Pooja Samagri Hub</span>
-                <span className="sm:hidden">PSH</span>
+                <span className="hidden sm:inline">Isharpanam</span>
+                <span className="sm:hidden">ISH</span>
               </h1>
             </Link>
             
@@ -215,7 +215,7 @@ const Header: React.FC = () => {
             {/* Menu Footer */}
             <div className="p-6 border-t border-brand-accent/20">
               <div className="text-center text-sm text-gray-300">
-                <p>© 2024 Pooja Samagri Hub</p>
+                <p>© 2024 Isharpanam</p>
                 <p className="text-brand-accent mt-1">Divine Rituals Made Easy</p>
               </div>
             </div>

@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Loader2, Flower } from 'lucide-react';
 
 interface LoaderProps {
   message?: string;
@@ -8,17 +9,28 @@ interface LoaderProps {
 const Loader: React.FC<LoaderProps> = ({ message = "Loading..." }) => {
   return (
     <div className="flex flex-col items-center justify-center p-12 text-center">
-      <svg
-        width="80"
-        height="80"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-        className="text-brand-primary animate-spin"
-        fill="currentColor"
-      >
-        <path d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" opacity=".25"/>
-        <path d="M10.72,19.9a8,8,0,0,1-6.5-9.79A7.77,7.77,0,0,1,10.4,4.16a8,8,0,0,1,9.49,6.52A1.54,1.54,0,0,0,21.38,12h.13a1.37,1.37,0,0,0,1.38-1.54,11,11,0,1,0-12.7,12.39A1.54,1.54,0,0,0,12,21.34h0A1.47,1.47,0,0,0,10.72,19.9Z" />
-      </svg>
+      {/* Main spinning loader */}
+      <div className="relative">
+        <Loader2 
+          size={64} 
+          className="text-brand-primary animate-spin"
+        />
+        {/* Decorative flower in center for spiritual theme */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <Flower 
+            size={24} 
+            className="text-brand-secondary animate-pulse"
+          />
+        </div>
+      </div>
+      
+      {/* Loading dots animation */}
+      <div className="flex space-x-2 mt-6">
+        <div className="w-2 h-2 bg-brand-primary rounded-full animate-bounce"></div>
+        <div className="w-2 h-2 bg-brand-primary rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
+        <div className="w-2 h-2 bg-brand-primary rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+      </div>
+      
       <p className="mt-4 text-xl font-body text-brand-secondary tracking-wide">{message}</p>
     </div>
   );

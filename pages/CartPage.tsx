@@ -34,7 +34,7 @@ const CartPage: React.FC = () => {
   }, [state.items]);
 
   const handleSendToWhatsApp = () => {
-    let message = `🛒 *Cart Order - Pooja Samagri Hub* 🛒\n\n`;
+    let message = `🛒 *Cart Order - Isharpanam* 🛒\n\n`;
     
     Object.entries(groupedItems).forEach(([poojaId, items]) => {
       const poojaName = items[0].poojaName;
@@ -55,7 +55,7 @@ const CartPage: React.FC = () => {
     }
     
     message += `Please confirm this order and provide delivery details.\n\n`;
-    message += `🌟 Thank you for choosing Pooja Samagri Hub! 🌟`;
+    message += `🌟 Thank you for choosing Isharpanam! 🌟`;
 
     const whatsappUrl = `https://wa.me/${WHATSAPP_BUSINESS_NUMBER}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
