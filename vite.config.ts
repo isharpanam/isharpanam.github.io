@@ -3,7 +3,7 @@ import { defineConfig, loadEnv } from 'vite';
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
-
+  base: "/isharpanam";
   return {
     define: {
       'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
@@ -16,7 +16,7 @@ export default defineConfig(({ mode }) => {
     },
     server: {
       allowedHosts: [
-        'd44399173326.ngrok-free.app'
+        'isharpanam.github.io'
       ]
     }
   };
