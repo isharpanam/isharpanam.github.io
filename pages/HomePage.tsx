@@ -9,9 +9,11 @@ const HomePage: React.FC = () => {
   return (
     <div className="text-center">
       <div className="opacity-0 animate-fadeInUp" style={{ animationDelay: '100ms' }}>
-        <h2 className="text-5xl md:text-6xl font-heading text-brand-secondary mb-4">Select a Pooja</h2>
+        <h2 className="text-5xl md:text-6xl font-heading text-brand-secondary mb-4">Complete Pooja Kits & Sacred Essentials</h2>
         <p className="text-lg font-body text-gray-700 max-w-3xl mx-auto mb-12">
-          Welcome to Isharpanam! Your sacred rituals, simplified. Choose a pooja to view a complete, customizable list of required items (samagri). We've prepared everything you need for a divine experience.
+          <b>Collected from Nature, Blessed by the Divine</b>
+          <p></p>
+          Your trusted source for authentic pooja kits and ritual essentials. We offer complete, traditional samagri sets for all your sacred ceremonies. Each kit contains carefully selected, blessed items to ensure your spiritual practices are performed with devotion and authenticity.
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
