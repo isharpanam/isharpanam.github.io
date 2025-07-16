@@ -10,7 +10,8 @@ export const UNITS = {
   PACKET: 'packet',
   SET: 'set',
   BUNDLE: 'bundle',
-  METER: 'meter'
+  METER: 'meter',
+  QS: 'qs' // Quantity sufficient
 };
 
 // Master Pooja Items Dictionary
@@ -889,6 +890,659 @@ export const POOJA_ITEMS_MASTER: Record<string, Omit<PoojaItem, 'quantity'>> = {
     name: 'Coins for Offering - સિક્કા (Sikka)',
     description: 'Coins for monetary offerings',
     price: 1,
+    unit: UNITS.PIECE
+  },
+
+  // Additional items from CSV
+  'coconut-watered': {
+    id: 'coconut-watered',
+    name: 'Coconut Watered - પાણીવાળું નાળિયેર (Pani valu Naliyer)',
+    description: 'Fresh coconut with water for offerings',
+    price: 30,
+    unit: UNITS.PIECE
+  },
+  'coconut-without-water': {
+    id: 'coconut-without-water',
+    name: 'Coconut without Water - કોરું નાળિયેર (Koru Naliyer)',
+    description: 'Dry coconut without water',
+    price: 30,
+    unit: UNITS.PIECE
+  },
+  'drax': {
+    id: 'drax',
+    name: 'Drax',
+    description: 'Grapes for offerings',
+    price: 0, // Price not specified in CSV
+    unit: UNITS.GRAM
+  },
+  'kali-drax': {
+    id: 'kali-drax',
+    name: 'Kali Drax - કાળી દ્રાક્ષ (Kali Drax)',
+    description: 'Black grapes for offerings',
+    price: 0.6,
+    unit: UNITS.GRAM
+  },
+  'darbh-leaves': {
+    id: 'darbh-leaves',
+    name: 'Darbh Leaves - દર્ભ (Darbh)',
+    description: 'Sacred darbh grass for rituals',
+    price: 10,
+    unit: UNITS.GRAM
+  },
+  'honey-madh': {
+    id: 'honey-madh',
+    name: 'Honey - મધ (Madh)',
+    description: 'Pure honey for panchamrit',
+    price: 25,
+    unit: UNITS.PIECE
+  },
+  'jav': {
+    id: 'jav',
+    name: 'Jav - જવ (Jav)',
+    description: 'Barley grains for offerings',
+    price: 150,
+    unit: UNITS.KILOGRAM
+  },
+  'kamod': {
+    id: 'kamod',
+    name: 'Kamod - કામોદ (Kamod)',
+    description: 'Kamod rice for rituals',
+    price: 200,
+    unit: UNITS.KILOGRAM
+  },
+  'black-til': {
+    id: 'black-til',
+    name: 'Black Til - કાળા તલ (Kala Tal)',
+    description: 'Black sesame seeds for specific rituals',
+    price: 200,
+    unit: UNITS.KILOGRAM
+  },
+  'jav-flour': {
+    id: 'jav-flour',
+    name: 'Jav Flour - જવનો લોટ (Jav no Lot)',
+    description: 'Barley flour for offerings',
+    price: 400,
+    unit: UNITS.KILOGRAM
+  },
+  'udad-flour': {
+    id: 'udad-flour',
+    name: 'Udad Flour - અડદનો લોટ (Adad no Lot)',
+    description: 'Black gram flour for rituals',
+    price: 200,
+    unit: UNITS.KILOGRAM
+  },
+  'kala-til-powder': {
+    id: 'kala-til-powder',
+    name: 'Kala Til Powder - કાળા તલનો પાવડર (Kala Tal no Powder)',
+    description: 'Black sesame powder for rituals',
+    price: 400,
+    unit: UNITS.KILOGRAM
+  },
+  'black-clay-matki': {
+    id: 'black-clay-matki',
+    name: 'Black Clay Matki - કાળી માટીની માટલી (Kali Mati ni Matli)',
+    description: 'Black clay pot for rituals',
+    price: 200,
+    unit: UNITS.PIECE
+  },
+  'vas-ni-sundli': {
+    id: 'vas-ni-sundli',
+    name: 'Vas ni Sundli - વાંસની સુડલી (Vas ni Sudli)',
+    description: 'Bamboo needle for rituals',
+    price: 100,
+    unit: UNITS.PIECE
+  },
+  'wood-for-yagna': {
+    id: 'wood-for-yagna',
+    name: 'Wood for Yagna - યજ્ઞ માટે લાકડું (Yagna mate Lakdu)',
+    description: 'Sacred wood for fire rituals',
+    price: 200,
+    unit: UNITS.KILOGRAM
+  },
+  'janoi': {
+    id: 'janoi',
+    name: 'Janoi - જનોઈ (Janoi)',
+    description: 'Sacred thread for rituals',
+    price: 20,
+    unit: UNITS.PIECE
+  },
+  'pako-siddho': {
+    id: 'pako-siddho',
+    name: 'Pako Siddho - પાકો સિદ્ધો (Pako Siddho)',
+    description: 'A type of offering or ritual item',
+    price: 500,
+    unit: UNITS.PIECE
+  },
+  'towel': {
+    id: 'towel',
+    name: 'Towel - ટુવાલ (Tuval)',
+    description: 'Towel for rituals',
+    price: 100,
+    unit: UNITS.PIECE
+  },
+  'napkin': {
+    id: 'napkin',
+    name: 'Napkin - નેપકિન (Napkin)',
+    description: 'Napkin for rituals',
+    price: 50,
+    unit: UNITS.PIECE
+  },
+  'male-shirt-pant': {
+    id: 'male-shirt-pant',
+    name: 'Male Shirt and Pant - પુરુષ માટે શર્ટ અને પેન્ટનું કાપડ (Purush mate Shirt ane Pant nu Kapad)',
+    description: 'Cloth for male shirt and pant',
+    price: 1000,
+    unit: UNITS.PIECE
+  },
+  'water-pani': {
+    id: 'water-pani',
+    name: 'Water - પાણી (Pani)',
+    description: 'Water for rituals',
+    price: 20,
+    unit: UNITS.LITER
+  },
+  'silver-turtle': {
+    id: 'silver-turtle',
+    name: 'Silver Turtle - ચાંદીનો કાચબો (Chandi no Kachbo)',
+    description: 'Silver turtle for rituals',
+    price: 200,
+    unit: UNITS.PIECE
+  },
+  'silver-snake': {
+    id: 'silver-snake',
+    name: 'Silver Snake - ચાંદીનો સાપ (Chandi no Saap)',
+    description: 'Silver snake for rituals',
+    price: 200,
+    unit: UNITS.PIECE
+  },
+  'tambani-tabudi': {
+    id: 'tambani-tabudi',
+    name: 'Tambani Tabudi - તાંબાની તબુડી (Tambani Tabudi)',
+    description: 'Copper vessel for rituals',
+    price: 200,
+    unit: UNITS.PIECE
+  },
+  'char-chok-ni-mati': {
+    id: 'char-chok-ni-mati',
+    name: 'Char Chok ni Mati - ચાર ચોકની માટી (Char Chok ni Mati)',
+    description: 'Clay from four directions for rituals',
+    price: 100,
+    unit: UNITS.KILOGRAM
+  },
+  'silver-coin': {
+    id: 'silver-coin',
+    name: 'Silver Coin - ચાંદી (Chandi)',
+    description: 'Silver coin for offerings',
+    price: 500,
+    unit: UNITS.PIECE
+  },
+  'aasan': {
+    id: 'aasan',
+    name: 'Aasan - આસન (Aasan)',
+    description: 'Seat/mat for worship',
+    price: 250,
+    unit: UNITS.PIECE
+  },
+  'chamachi': {
+    id: 'chamachi',
+    name: 'Chamachi - ચમચી (Chamachi)',
+    description: 'Spoon for rituals',
+    price: 50,
+    unit: UNITS.PIECE
+  },
+  'kalash-tramba': {
+    id: 'kalash-tramba',
+    name: 'Kalash Tramba - કળશ તાંબા (Kalash Tamba)',
+    description: 'Copper kalash for rituals',
+    price: 500,
+    unit: UNITS.PIECE
+  },
+  'chundi': {
+    id: 'chundi',
+    name: 'Chundi - ચૂંદડી (Chundi)',
+    description: 'A type of vessel for rituals',
+    price: 100,
+    unit: UNITS.PIECE
+  },
+  'rumal': {
+    id: 'rumal',
+    name: 'Rumal - રૂમાલ (Rumal)',
+    description: 'Handkerchief for rituals',
+    price: 20,
+    unit: UNITS.PIECE
+  },
+  'face-powder': {
+    id: 'face-powder',
+    name: 'Face Powder - ફેસ પાવડર (Face Powder)',
+    description: 'Face powder for rituals',
+    price: 50,
+    unit: UNITS.PIECE
+  },
+  'nail-polish': {
+    id: 'nail-polish',
+    name: 'Nail Polish - નિલ પોલિશ (Nail Polish)',
+    description: 'Nail polish for rituals',
+    price: 50,
+    unit: UNITS.PIECE
+  },
+  'kapoor-camphor': {
+    id: 'kapoor-camphor',
+    name: 'Kapoor - કપૂર (Kapoor)',
+    description: 'Camphor for aarti',
+    price: 50,
+    unit: UNITS.PIECE
+  },
+  'kamalkakdi': {
+    id: 'kamalkakdi',
+    name: 'Kamalkakdi - કમલ કાકડી (Kamal Kakdi)',
+    description: 'Lotus stem for offerings',
+    price: 200,
+    unit: UNITS.KILOGRAM
+  },
+  'ral-no-dhup': {
+    id: 'ral-no-dhup',
+    name: 'Ral no Dhup - રાલનો ધૂપ (Ral no Dhup)',
+    description: 'Resin incense for rituals',
+    price: 50,
+    unit: UNITS.QS
+  },
+  'dry-coconut-powder': {
+    id: 'dry-coconut-powder',
+    name: 'Dry Coconut Powder - કોપરાનો પાવડર (Kopra no Powder)',
+    description: 'Dried coconut powder for offerings',
+    price: 50,
+    unit: UNITS.QS
+  },
+  'sugandhi-valo': {
+    id: 'sugandhi-valo',
+    name: 'Sugandhi Valo - સુગંધી વાળો (Sugandhi Valo)',
+    description: 'Fragrant item for rituals',
+    price: 50,
+    unit: UNITS.QS
+  },
+  'tamal-patra': {
+    id: 'tamal-patra',
+    name: 'Tamal Patra - તમાલપત્ર (Tamal Patra)',
+    description: 'Tamal leaves for rituals',
+    price: 50,
+    unit: UNITS.QS
+  },
+  'dabhdo-grass': {
+    id: 'dabhdo-grass',
+    name: 'Dabhdo Grass - દર્ભ ઘાસ (Darbh Ghas)',
+    description: 'Sacred darbh grass for rituals',
+    price: 50,
+    unit: UNITS.QS
+  },
+  'cow-urine': {
+    id: 'cow-urine',
+    name: 'Cow Urine - ગૌમૂત્ર (Gomutra)',
+    description: 'Cow urine for purification',
+    price: 20,
+    unit: UNITS.QS
+  },
+  'chana': {
+    id: 'chana',
+    name: 'Chana - ચણા (Chana)',
+    description: 'Chickpeas for offerings',
+    price: 200,
+    unit: UNITS.KILOGRAM
+  },
+  'savliyu': {
+    id: 'savliyu',
+    name: 'Savliyu - સાવળિયું (Savaliyu)',
+    description: 'A type of vessel for rituals',
+    price: 250,
+    unit: UNITS.PIECE
+  },
+  'trambano-trass': {
+    id: 'trambano-trass',
+    name: 'Trambano Trass - તાંબાનો ત્રાંસ (Tamba no Tras)',
+    description: 'Copper tray for rituals',
+    price: 1000,
+    unit: UNITS.PIECE
+  },
+  'kanthi-mala': {
+    id: 'kanthi-mala',
+    name: 'Kanthi/Mala - કંઠી/માળા (Kanthi/Mala)',
+    description: 'Sacred necklace for worship',
+    price: 50,
+    unit: UNITS.PIECE
+  },
+  'gaumukhi': {
+    id: 'gaumukhi',
+    name: 'Gaumukhi - ગૌમુખી (Gaumukhi)',
+    description: 'Cow-shaped vessel for rituals',
+    price: 25,
+    unit: UNITS.PIECE
+  },
+  'dhramraja-silver-foil': {
+    id: 'dhramraja-silver-foil',
+    name: 'Dhramraja Silver Image Foil - ધર્મરાજની ચાંદીની છબી (Dharmaraj ni Chandi ni Chhabi)',
+    description: 'Silver foil image of Dharmraj',
+    price: 100,
+    unit: UNITS.PIECE
+  },
+  'cow-silver-foil': {
+    id: 'cow-silver-foil',
+    name: 'Cow Silver Image Foil - ગાયની ચાંદીની છબી (Gay ni Chandi ni Chhabi)',
+    description: 'Silver foil image of cow',
+    price: 100,
+    unit: UNITS.PIECE
+  },
+  'swastik-silver': {
+    id: 'swastik-silver',
+    name: 'Swastik Silver - ચાંદીનો સ્વસ્તિક (Chandi no Swastik)',
+    description: 'Silver swastik for rituals',
+    price: 100,
+    unit: UNITS.PIECE
+  },
+  'nisarani-silver': {
+    id: 'nisarani-silver',
+    name: 'Nisarani Silver - ચાંદીની નિસરણી (Chandi ni Nisarani)',
+    description: 'Silver nisarani for rituals',
+    price: 100,
+    unit: UNITS.PIECE
+  },
+  'ship-silver': {
+    id: 'ship-silver',
+    name: 'Ship Silver - ચાંદીનો જહાજ (Chandi no Nav)',
+    description: 'Silver ship for rituals',
+    price: 100,
+    unit: UNITS.PIECE
+  },
+  'janoi-silver': {
+    id: 'janoi-silver',
+    name: 'Janoi Silver - ચાંદીની જનોઈ (Chandi ni Janoi)',
+    description: 'Silver sacred thread',
+    price: 100,
+    unit: UNITS.PIECE
+  },
+  'udad': {
+    id: 'udad',
+    name: 'Udad - અડદ (Adad)',
+    description: 'Black gram for offerings',
+    price: 200,
+    unit: UNITS.KILOGRAM
+  },
+  'chanadal': {
+    id: 'chanadal',
+    name: 'Chanadal - ચણાની દાળ (Chana ni Dal)',
+    description: 'Split chickpeas for offerings',
+    price: 150,
+    unit: UNITS.KILOGRAM
+  },
+  'juvar': {
+    id: 'juvar',
+    name: 'Juvar - જુવાર (Juvar)',
+    description: 'Sorghum for offerings',
+    price: 120,
+    unit: UNITS.KILOGRAM
+  },
+  'chandan-powder': {
+    id: 'chandan-powder',
+    name: 'Chandan Powder - ચંદન પાવડર (Chandan Powder)',
+    description: 'Sandalwood powder for tilak',
+    price: 150,
+    unit: UNITS.PIECE
+  },
+  'pittal-utensils-other': {
+    id: 'pittal-utensils-other',
+    name: 'Pittal Utensils Other - પિત્તળના વાસણો (Pittala na Vasano)',
+    description: 'Brass utensils for rituals',
+    price: 1000,
+    unit: UNITS.PIECE
+  },
+  'pittal-utensils-dish': {
+    id: 'pittal-utensils-dish',
+    name: 'Pittal Utensils Dish - પિત્તળના વાસણો ડીશ (Dish)',
+    description: 'Brass dish for rituals',
+    price: 1000,
+    unit: UNITS.PIECE
+  },
+  'pittal-utensils-lota': {
+    id: 'pittal-utensils-lota',
+    name: 'Pittal Utensils Lota - પિત્તળના વાસણો લોટો (Loto)',
+    description: 'Brass water pot for rituals',
+    price: 700,
+    unit: UNITS.PIECE
+  },
+  'pittal-utensils-glass': {
+    id: 'pittal-utensils-glass',
+    name: 'Pittal Utensils Glass - પિત્તળના વાસણો ગ્લાસ (Glass)',
+    description: 'Brass glass for rituals',
+    price: 500,
+    unit: UNITS.PIECE
+  },
+  'pittal-utensils-dabbo': {
+    id: 'pittal-utensils-dabbo',
+    name: 'Pittal Utensils Dabbo - પિત્તળના વાસણો ડબ્બો (Dabbo)',
+    description: 'Brass container for rituals',
+    price: 1000,
+    unit: UNITS.PIECE
+  },
+  'tramba-kumbh': {
+    id: 'tramba-kumbh',
+    name: 'Tramba Kumbh - તાંબાનો કુંભ (Tamba no Kumbh)',
+    description: 'Copper pot for rituals',
+    price: 1000,
+    unit: UNITS.PIECE
+  },
+  'clay-kumbh': {
+    id: 'clay-kumbh',
+    name: 'Clay Kumbh - માટીનો કુંભ (Mati no Kumbh)',
+    description: 'Clay pot for rituals',
+    price: 250,
+    unit: UNITS.PIECE
+  },
+  'dhoti': {
+    id: 'dhoti',
+    name: 'Dhoti - ધોતી (Dhoti)',
+    description: 'Traditional men\'s garment',
+    price: 400,
+    unit: UNITS.PIECE
+  },
+  'jabbha-nu-kapad': {
+    id: 'jabbha-nu-kapad',
+    name: 'Jabbha nu Kapad - ઝભ્ભાનું કાપડ (Jabbha nu Kapad)',
+    description: 'Cloth for traditional robe',
+    price: 500,
+    unit: UNITS.PIECE
+  },
+  'sari': {
+    id: 'sari',
+    name: 'Sari - સાડી (Sari)',
+    description: 'Traditional women\'s garment',
+    price: 1000,
+    unit: UNITS.PIECE
+  },
+  'chanio': {
+    id: 'chanio',
+    name: 'Chanio - ચાણિયો (Chanio)',
+    description: 'Traditional blouse',
+    price: 250,
+    unit: UNITS.PIECE
+  },
+  'blouse-piece': {
+    id: 'blouse-piece',
+    name: 'Blouse Piece - બ્લાઉઝ પીસ (Blouse Piece)',
+    description: 'Cloth for blouse',
+    price: 250,
+    unit: UNITS.PIECE
+  },
+  'godadu': {
+    id: 'godadu',
+    name: 'Godadu - ગોદડું (Godadu)',
+    description: 'Blanket for rituals',
+    price: 2500,
+    unit: UNITS.PIECE
+  },
+  'oshiku': {
+    id: 'oshiku',
+    name: 'Oshiku - ઓશીકું (Oshiku)',
+    description: 'Pillow for rituals',
+    price: 500,
+    unit: UNITS.PIECE
+  },
+  'ochhad': {
+    id: 'ochhad',
+    name: 'Ochhad - ઓઢાડ (Ochhad)',
+    description: 'Bedsheet for rituals',
+    price: 250,
+    unit: UNITS.PIECE
+  },
+  'chatri': {
+    id: 'chatri',
+    name: 'Chatri - છત્રી (Chatri)',
+    description: 'Umbrella for rituals',
+    price: 200,
+    unit: UNITS.PIECE
+  },
+  'chappal': {
+    id: 'chappal',
+    name: 'Chappal - ચપ્પલ (Chappal)',
+    description: 'Footwear for rituals',
+    price: 250,
+    unit: UNITS.PIECE
+  },
+  'vas-ni-chhabdi': {
+    id: 'vas-ni-chhabdi',
+    name: 'Vas ni Chhabdi - વાંસની છાબડી (Vas ni Chhabdi)',
+    description: 'Bamboo basket for rituals',
+    price: 100,
+    unit: UNITS.PIECE
+  },
+  'chandla-packet': {
+    id: 'chandla-packet',
+    name: 'Chandla Packet - ચાંદલાનું પેકેટ (Chandla nu Packet)',
+    description: 'Chandla packet for rituals',
+    price: 20,
+    unit: UNITS.PIECE
+  },
+  'bangdi': {
+    id: 'bangdi',
+    name: 'Bangdi - બંગડી (Bangdi)',
+    description: 'Bangles for rituals',
+    price: 50,
+    unit: UNITS.PIECE
+  },
+  'ariso': {
+    id: 'ariso',
+    name: 'Ariso - અરીસો (Ariso)',
+    description: 'Mirror for rituals',
+    price: 50,
+    unit: UNITS.PIECE
+  },
+  'comb': {
+    id: 'comb',
+    name: 'Comb - કાંસકો (Kansko)',
+    description: 'Comb for rituals',
+    price: 20,
+    unit: UNITS.PIECE
+  },
+  'oil-bottle': {
+    id: 'oil-bottle',
+    name: 'Oil Bottle - તેલની બોટલ (Tel ni Bottle)',
+    description: 'Oil bottle for rituals',
+    price: 40,
+    unit: UNITS.PIECE
+  },
+  'kajal': {
+    id: 'kajal',
+    name: 'Kajal - કાજળ (Kajal)',
+    description: 'Kajal/Kohl for rituals',
+    price: 20,
+    unit: UNITS.PIECE
+  },
+  'sent': {
+    id: 'sent',
+    name: 'Sent - સેન્ટ (Sent)',
+    description: 'Perfume/Scent for rituals',
+    price: 50,
+    unit: UNITS.PIECE
+  },
+  'kang': {
+    id: 'kang',
+    name: 'Kang - કાંગ (Kang)',
+    description: 'Kang grains for offerings',
+    price: 200,
+    unit: UNITS.KILOGRAM
+  },
+  'til': {
+    id: 'til',
+    name: 'Til - તલ (Tal)',
+    description: 'Sesame seeds for offerings',
+    price: 400,
+    unit: UNITS.KILOGRAM
+  },
+  'jaar': {
+    id: 'jaar',
+    name: 'Jaar - જાર (Jar)',
+    description: 'Jaar grain for offerings',
+    price: 150,
+    unit: UNITS.KILOGRAM
+  },
+  'moti': {
+    id: 'moti',
+    name: 'Moti - મોતી (Moti)',
+    description: 'Pearls for rituals',
+    price: 500,
+    unit: UNITS.KILOGRAM
+  },
+  'sutar-thread-ni-dadi': {
+    id: 'sutar-thread-ni-dadi',
+    name: 'Sutar Thread ni Dadi - સૂતરની દડી (Sutar ni Dadi)',
+    description: 'Cotton thread ball for rituals',
+    price: 10,
+    unit: UNITS.PIECE
+  },
+  'cow-mud': {
+    id: 'cow-mud',
+    name: 'Cow Mud - ગાયનું છાણ (Gay nu Chhan)',
+    description: 'Cow dung for purification',
+    price: 20,
+    unit: UNITS.PIECE
+  },
+  'sthapan-clothing-other': {
+    id: 'sthapan-clothing-other',
+    name: 'Sthapan Clothing Other - સ્થાપન વસ્ત્રો (Sthapan Vastron)',
+    description: 'Clothing for ritualistic placement',
+    price: 50,
+    unit: UNITS.PIECE
+  },
+  'sthapan-clothing-red': {
+    id: 'sthapan-clothing-red',
+    name: 'Sthapan Clothing Red - સ્થાપન વસ્ત્રો લાલ (Sthapan Vastron Laal)',
+    description: 'Red clothing for ritualistic placement',
+    price: 50,
+    unit: UNITS.PIECE
+  },
+  'sthapan-clothing-black': {
+    id: 'sthapan-clothing-black',
+    name: 'Sthapan Clothing Black - સ્થાપન વસ્ત્રો કાળો (Sthapan Vastron Kalo)',
+    description: 'Black clothing for ritualistic placement',
+    price: 50,
+    unit: UNITS.PIECE
+  },
+  'sthapan-clothing-green': {
+    id: 'sthapan-clothing-green',
+    name: 'Sthapan Clothing Green - સ્થાપન વસ્ત્રો લીલો (Sthapan Vastron Lilo)',
+    description: 'Green clothing for ritualistic placement',
+    price: 50,
+    unit: UNITS.PIECE
+  },
+  'sthapan-clothing-yellow': {
+    id: 'sthapan-clothing-yellow',
+    name: 'Sthapan Clothing Yellow - સ્થાપન વસ્ત્રો પીળો (Sthapan Vastron Pilo)',
+    description: 'Yellow clothing for ritualistic placement',
+    price: 50,
+    unit: UNITS.PIECE
+  },
+  'sthapan-clothing-white': {
+    id: 'sthapan-clothing-white',
+    name: 'Sthapan Clothing White - સ્થાપન વસ્ત્રો સફેદ (Sthapan Vastron Safed)',
+    description: 'White clothing for ritualistic placement',
+    price: 50,
     unit: UNITS.PIECE
   },
   
