@@ -46,7 +46,7 @@ const CartPage: React.FC = () => {
     });
     
     message += `*Order Summary:*\n`;
-    message += `📦 Total Items: ${state.totalItems}\n`;
+    message += `📦 Total Items: ${state.totalItems.toFixed(1)}\n`;
     message += `🎯 Total Pooja Types: ${Object.keys(groupedItems).length}\n`;
     message += `💰 *Grand Total: ₹${state.totalAmount.toFixed(2)}*\n\n`;
     
@@ -86,23 +86,47 @@ const CartPage: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto">
       {/* Header */}
-      <div className="flex items-center justify-between mb-8 opacity-0 animate-fadeInUp">
-        <div>
-          <h1 className="text-5xl font-heading text-brand-secondary flex items-center gap-3">
-            <ShoppingCart className="h-12 w-12 text-brand-primary" />
-            Your Sacred Cart
-          </h1>
-          <p className="text-lg font-body text-gray-600 mt-2">
-            {state.totalItems} items from {Object.keys(groupedItems).length} pooja types
+      <div className="mb-6 md:mb-8 opacity-0 animate-fadeInUp">
+        {/* Mobile Header */}
+        <div className="block md:hidden">
+          <div className="flex items-center justify-between mb-4">
+            <Link
+              to="/"
+              className="flex items-center gap-2 text-brand-primary hover:text-brand-secondary transition-colors font-body text-sm"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              Back
+            </Link>
+            <h1 className="text-2xl font-heading text-brand-secondary flex items-center gap-2">
+              <ShoppingCart className="h-6 w-6 text-brand-primary" />
+              Cart
+            </h1>
+            <div className="w-12"></div> {/* Spacer for centering */}
+          </div>
+          <p className="text-sm font-body text-gray-600 text-center">
+            {state.totalItems.toFixed(1)} items from {Object.keys(groupedItems).length} pooja types
           </p>
         </div>
-        <Link
-          to="/"
-          className="flex items-center gap-2 text-brand-primary hover:text-brand-secondary transition-colors font-body"
-        >
-          <ArrowLeft className="h-5 w-5" />
-          Continue Shopping
-        </Link>
+
+        {/* Desktop Header */}
+        <div className="hidden md:flex items-center justify-between">
+          <div>
+            <h1 className="text-5xl font-heading text-brand-secondary flex items-center gap-3">
+              <ShoppingCart className="h-12 w-12 text-brand-primary" />
+              Your Sacred Cart
+            </h1>
+            <p className="text-lg font-body text-gray-600 mt-2">
+              {state.totalItems.toFixed(1)} items from {Object.keys(groupedItems).length} pooja types
+            </p>
+          </div>
+          <Link
+            to="/"
+            className="flex items-center gap-2 text-brand-primary hover:text-brand-secondary transition-colors font-body"
+          >
+            <ArrowLeft className="h-5 w-5" />
+            Continue Shopping
+          </Link>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -115,21 +139,43 @@ const CartPage: React.FC = () => {
               style={{ animationDelay: `${groupIndex * 100}ms` }}
             >
               {/* Pooja Header */}
-              <div className="flex items-center justify-between mb-4 pb-4 border-b border-gray-200">
-                <div className="flex items-center gap-4">
-                  <img 
-                    src={items[0].poojaImage} 
-                    alt={items[0].poojaName}
-                    className="w-16 h-16 rounded-lg object-cover"
-                  />
-                  <div>
-                    <h3 className="text-2xl font-heading text-brand-secondary">{items[0].poojaName}</h3>
-                    <p className="text-sm text-gray-500">{items.length} items in this pooja</p>
+              <div className="mb-4 pb-4 border-b border-gray-200">
+                {/* Mobile Pooja Header */}
+                <div className="block md:hidden">
+                  <div className="flex items-center gap-3 mb-2">
+                    <img 
+                      src={items[0].poojaImage} 
+                      alt={items[0].poojaName}
+                      className="w-12 h-12 rounded-lg object-cover flex-shrink-0"
+                    />
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-lg font-heading text-brand-secondary truncate">{items[0].poojaName}</h3>
+                      <p className="text-xs text-gray-500">{items.length} items in this pooja</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center gap-1">
+                    <Star className="h-3 w-3 text-yellow-400 fill-current" />
+                    <span className="text-xs text-gray-600">Authentic</span>
                   </div>
                 </div>
-                <div className="flex items-center gap-1">
-                  <Star className="h-4 w-4 text-yellow-400 fill-current" />
-                  <span className="text-sm text-gray-600">Authentic</span>
+
+                {/* Desktop Pooja Header */}
+                <div className="hidden md:flex items-center justify-between">
+                  <div className="flex items-center gap-4">
+                    <img 
+                      src={items[0].poojaImage} 
+                      alt={items[0].poojaName}
+                      className="w-16 h-16 rounded-lg object-cover"
+                    />
+                    <div>
+                      <h3 className="text-2xl font-heading text-brand-secondary">{items[0].poojaName}</h3>
+                      <p className="text-sm text-gray-500">{items.length} items in this pooja</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <Star className="h-4 w-4 text-yellow-400 fill-current" />
+                    <span className="text-sm text-gray-600">Authentic</span>
+                  </div>
                 </div>
               </div>
 
@@ -138,42 +184,84 @@ const CartPage: React.FC = () => {
                 {items.map((item, itemIndex) => (
                   <div 
                     key={`${item.id}-${item.poojaId}`}
-                    className="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+                    className="p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
                     style={{ animationDelay: `${(groupIndex * 100) + (itemIndex * 50)}ms` }}
                   >
-                    <div className="flex-grow">
-                      <h4 className="font-bold text-lg text-gray-800">{item.name}</h4>
-                      <p className="text-sm text-gray-600 italic">{item.description}</p>
-                      <p className="text-sm text-brand-primary font-semibold mt-1">
-                        ₹{item.price.toFixed(2)} per {item.unit}
-                      </p>
-                    </div>
-                    
-                    <div className="flex items-center gap-4">
-                      <QuantitySelector
-                        quantity={item.quantity}
-                        onIncrease={() => updateQuantity(item.id, item.poojaId, item.quantity + 1)}
-                        onDecrease={() => updateQuantity(item.id, item.poojaId, item.quantity - 1)}
-                      />
-                      
-                      <div className="text-right min-w-[80px]">
-                        <p className="font-bold text-lg text-gray-800">
-                          ₹{(item.price * item.quantity).toFixed(2)}
-                        </p>
-                        {item.quantity > 1 && (
-                          <p className="text-xs text-gray-500">
-                            {item.quantity} × ₹{item.price.toFixed(2)}
+                    {/* Mobile Layout */}
+                    <div className="block md:hidden">
+                      <div className="flex justify-between items-start mb-3">
+                        <div className="flex-1 pr-3">
+                          <h4 className="font-bold text-base text-gray-800 leading-tight">{item.name}</h4>
+                          <p className="text-xs text-gray-600 italic mt-1 line-clamp-2">{item.description}</p>
+                          <p className="text-sm text-brand-primary font-semibold mt-1">
+                            ₹{item.price.toFixed(2)} per {item.unit}
                           </p>
-                        )}
+                        </div>
+                        <button
+                          onClick={() => removeFromCart(item.id, item.poojaId)}
+                          className="flex-shrink-0 p-3 text-red-500 hover:bg-red-100 rounded-full transition-colors touch-manipulation"
+                          aria-label="Remove item"
+                        >
+                          <Trash2 className="h-5 w-5" />
+                        </button>
                       </div>
                       
-                      <button
-                        onClick={() => removeFromCart(item.id, item.poojaId)}
-                        className="p-2 text-red-500 hover:bg-red-100 rounded-full transition-colors"
-                        aria-label="Remove item"
-                      >
-                        <Trash2 className="h-5 w-5" />
-                      </button>
+                      <div className="flex justify-between items-center">
+                        <QuantitySelector
+                          quantity={item.quantity}
+                          onIncrease={() => updateQuantity(item.id, item.poojaId, item.quantity + 1)}
+                          onDecrease={() => updateQuantity(item.id, item.poojaId, item.quantity - 1)}
+                        />
+                        
+                        <div className="text-right">
+                          <p className="font-bold text-lg text-gray-800">
+                            ₹{(item.price * item.quantity).toFixed(2)}
+                          </p>
+                          {item.quantity > 1 && (
+                            <p className="text-xs text-gray-500">
+                              {item.quantity} × ₹{item.price.toFixed(2)}
+                            </p>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Desktop Layout */}
+                    <div className="hidden md:flex items-center justify-between">
+                      <div className="flex-grow">
+                        <h4 className="font-bold text-lg text-gray-800">{item.name}</h4>
+                        <p className="text-sm text-gray-600 italic">{item.description}</p>
+                        <p className="text-sm text-brand-primary font-semibold mt-1">
+                          ₹{item.price.toFixed(2)} per {item.unit}
+                        </p>
+                      </div>
+                      
+                      <div className="flex items-center gap-4">
+                        <QuantitySelector
+                          quantity={item.quantity}
+                          onIncrease={() => updateQuantity(item.id, item.poojaId, item.quantity + 1)}
+                          onDecrease={() => updateQuantity(item.id, item.poojaId, item.quantity - 1)}
+                        />
+                        
+                        <div className="text-right min-w-[80px]">
+                          <p className="font-bold text-lg text-gray-800">
+                            ₹{(item.price * item.quantity).toFixed(2)}
+                          </p>
+                          {item.quantity > 1 && (
+                            <p className="text-xs text-gray-500">
+                              {item.quantity} × ₹{item.price.toFixed(2)}
+                            </p>
+                          )}
+                        </div>
+                        
+                        <button
+                          onClick={() => removeFromCart(item.id, item.poojaId)}
+                          className="p-2 text-red-500 hover:bg-red-100 rounded-full transition-colors"
+                          aria-label="Remove item"
+                        >
+                          <Trash2 className="h-5 w-5" />
+                        </button>
+                      </div>
                     </div>
                   </div>
                 ))}
@@ -184,16 +272,16 @@ const CartPage: React.FC = () => {
 
         {/* Order Summary Sidebar */}
         <div className="lg:col-span-1 opacity-0 animate-fadeInUp" style={{ animationDelay: '200ms' }}>
-          <div className="sticky top-24 bg-white p-6 rounded-xl shadow-lg border-2 border-brand-accent/20">
-            <h3 className="text-3xl font-heading text-brand-secondary flex items-center gap-2 mb-6">
-              <Package className="h-8 w-8 text-brand-primary" />
+          <div className="lg:sticky lg:top-24 bg-white p-4 md:p-6 rounded-xl shadow-lg border-2 border-brand-accent/20">
+            <h3 className="text-2xl md:text-3xl font-heading text-brand-secondary flex items-center gap-2 mb-4 md:mb-6">
+              <Package className="h-6 w-6 md:h-8 md:w-8 text-brand-primary" />
               Order Summary
             </h3>
 
             {/* Summary Stats */}
             <div className="grid grid-cols-2 gap-4 mb-6">
               <div className="text-center p-3 bg-brand-bg rounded-lg">
-                <p className="text-2xl font-bold text-brand-primary">{state.totalItems}</p>
+                <p className="text-2xl font-bold text-brand-primary">{state.totalItems.toFixed(1)}</p>
                 <p className="text-sm text-gray-600">Total Items</p>
               </div>
               <div className="text-center p-3 bg-brand-bg rounded-lg">
@@ -231,7 +319,7 @@ const CartPage: React.FC = () => {
             </div>
 
             {/* Total */}
-            <div className="text-3xl font-bold text-center my-6 text-brand-dark p-4 rounded-lg border-2 border-brand-accent bg-gradient-to-r from-brand-bg to-yellow-50">
+            <div className="text-xl md:text-3xl font-bold text-center my-4 md:my-6 text-brand-dark p-3 md:p-4 rounded-lg border-2 border-brand-accent bg-gradient-to-r from-brand-bg to-yellow-50">
               Grand Total: ₹{state.totalAmount.toFixed(2)}
             </div>
 
@@ -239,17 +327,17 @@ const CartPage: React.FC = () => {
             <div className="space-y-3">
               <button
                 onClick={handleSendToWhatsApp}
-                className="w-full flex items-center justify-center gap-2 bg-green-500 text-white font-bold py-4 px-4 rounded-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="w-full flex items-center justify-center gap-2 bg-green-500 text-white font-bold py-3 md:py-4 px-4 rounded-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-105 shadow-lg touch-manipulation text-sm md:text-base"
               >
-                <Send className="h-6 w-6" />
+                <Send className="h-5 w-5 md:h-6 md:w-6" />
                 Send Order on WhatsApp
               </button>
 
               <button
                 onClick={clearCart}
-                className="w-full flex items-center justify-center gap-2 bg-red-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-red-600 transition-all duration-300"
+                className="w-full flex items-center justify-center gap-2 bg-red-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-red-600 transition-all duration-300 touch-manipulation text-sm md:text-base"
               >
-                <Trash2 className="h-5 w-5" />
+                <Trash2 className="h-4 w-4 md:h-5 md:w-5" />
                 Clear Cart
               </button>
             </div>

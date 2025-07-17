@@ -127,7 +127,7 @@ const PoojaPage: React.FC = () => {
     });
     
     message += `\n*Order Summary:*\n`;
-    message += `📦 Total Items: ${itemCount}\n`;
+    message += `📦 Total Items: ${itemCount.toFixed(1)}\n`;
     message += `💰 *Total Amount: ₹${totalCost.toFixed(2)}*\n\n`;
     
     if (customRequest) {
@@ -184,7 +184,7 @@ const PoojaPage: React.FC = () => {
             <div className="flex items-center gap-2">
               <ShoppingCart className="h-5 w-5 text-green-600" />
               <span className="text-green-800 font-semibold">
-                {cartState.totalItems} items in your cart (₹{cartState.totalAmount.toFixed(2)})
+                {cartState.totalItems.toFixed(1)} items in your cart (₹{cartState.totalAmount.toFixed(2)})
               </span>
             </div>
             <Link 
