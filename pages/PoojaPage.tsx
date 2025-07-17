@@ -323,7 +323,7 @@ const PoojaPage: React.FC = () => {
                 {/* Order Stats */}
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="text-center p-3 bg-brand-bg rounded-lg">
-                    <p className="text-2xl font-bold text-brand-primary">{itemCount}</p>
+                    <p className="text-2xl font-bold text-brand-primary">{itemCount.toFixed(1)}</p>
                     <p className="text-sm text-gray-600">Items</p>
                   </div>
                   <div className="text-center p-3 bg-brand-bg rounded-lg">

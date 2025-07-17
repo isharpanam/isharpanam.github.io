@@ -1610,7 +1610,7 @@ export const POOJA_TYPES: PoojaType[] = [
     image: POOJA_IMAGES.ganesh,
   },
   {
-    id: 'shiv-pooja-rudrabhishek',
+    id: 'shiv-pooja',
     name: 'Shiv Pooja / Rudrabhishek',
     description: 'Sacred ritual to worship Lord Shiva with Rudrabhishek for spiritual growth and blessings.',
     image: POOJA_IMAGES.shiv,
@@ -2750,7 +2750,7 @@ export const POOJA_SAMAGRI_DATA: Record<string, PoojaItem[]> = {
     createPoojaItem('dabhdo-grass', 1.0),
   ],
 
-  'shiv-pooja-rudrabhishek': [
+  'shiv-pooja': [
     createPoojaItem('coconut-watered', 1.0),
     createPoojaItem('kanku', 50.0),
     createPoojaItem('gulal', 50.0),
@@ -3288,7 +3288,7 @@ export const POOJA_SAMAGRI_DATA: Record<string, PoojaItem[]> = {
     createPoojaItem('savliyu', 4.0),
   ],
 
-  'boy-mrg': [
+  'boy-marriage': [
     createPoojaItem('coconut-watered', 5.0),
     createPoojaItem('kanku', 50.0),
     createPoojaItem('gulal', 50.0),
@@ -3352,7 +3352,7 @@ export const POOJA_SAMAGRI_DATA: Record<string, PoojaItem[]> = {
     createPoojaItem('dabhdo-grass', 1.0),
   ],
 
-  'girl-mrg': [
+  'girl-marriage': [
     createPoojaItem('coconut-watered', 10.0),
     createPoojaItem('kanku', 50.0),
     createPoojaItem('gulal', 50.0),
