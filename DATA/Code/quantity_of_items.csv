@@ -1,6 +1,6 @@
-﻿,,Ganapati pooja,Shiv pooja / Rudrabhishek,Satyanarayan pooja,Randal na lota,NavChandi yagna,New home Kumbh sthapan,Vastu pooja,Gayatri Yagna,Boy mrg,Girl mrg,Dharamraja vrat,Shraddh pooja,Pret bali pooja,New shop pooja,New land pooja,New Vehicle pooja,Grah shanti pooja,Garud puran
+﻿Item name,Item name(GUJARATI),Ganapati pooja,Shiv pooja / Rudrabhishek,Satyanarayan pooja,Randal na lota,NavChandi yagna,New home Kumbh sthapan,Vastu pooja,Gayatri Yagna,Boy mrg,Girl mrg,Dharamraja vrat,Shraddh pooja,Pret bali pooja,New shop pooja,New land pooja,New Vehicle pooja,Grah shanti pooja,Garud puran
 Coconut watered, પાણીવાળું નાળિયેર (Pani valu Naliyer),2,1,2,5,10,1,6,3,5,10,3,5,5,2,2,1,5,2
-Coconut without water, કોરું નાળિયેર (Koru Naliyer),,,,,1,,1,1,,,,,,,,,1,
+Coconut without water, કોરું નાળિયેર (Koru Naliyer),0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,1,
 Kanku, કંકુ (Kanku) ,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50
 Gulal, ગુલાલ (Gulal) ,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50
 Abel, અબીલ (Abil) ,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50
@@ -33,7 +33,7 @@ Chali, છાલી (Chhali) ,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0
 Manik Stambh, માણેક સ્તંભ (Manek Stambh) ,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0
 Pipal na pan, પીપળના પાન (Pipal na Pan) ,0,0,0,0,0,0,0,0,20,20,0,0,0,0,0,0,0,0
 Pakka fal, પાકા ફળ (Pakka Fal) ,1,1,1,1,2,1,2,1,1,1,1,1,0.5,0.5,0.5,0.5,1,1
-Mag, મગ (Mag) ,,,,,,,,,,,,,,,,,,
+Mag, મગ (Mag) ,0,0,0,0.5,1,0.5,1,0.5,0.5,1,1,0.5,0,1,1,0,1,0
 Sutli thread for toran, સૂતળી (Sutli) ,1,0,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,0
 Small clay Divda / Kodiya,Divda / Kodiya,2,2,2,4,10,1,10,5,5,5,5,2,2,1,1,1,5,1
 Utensil aluminium thali, એલ્યુમિનિયમ થાળી (Aluminium Thali) ,2,2,2,2,5,1,5,2,4,4,2,2,2,1,1,0,4,2
@@ -118,12 +118,12 @@ Face powder, ફેસ પાવડર (Face Powder),0,0,0,1,1,0,1,1,0,0,0,0,0,0
 Nail police, નિલ પોલિશ (Nail Polish) ,0,0,0,1,1,0,1,1,0,0,0,0,0,0,0,0,1,0
 Kapoor, કપૂર (Kapoor ) ,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 Kamalkakdi, કમલ કાકડી (Kamal Kakdi) ,0,0,0,0,0.25,0,0.25,0.1,0,0,0,0.1,0.1,0,0,0,0.25,0
-Ral no dhup, રાલનો ધૂપ (Ral no Dhup) ,0,0,0,0,0,0,0,0,0,0,0,0,qs,0,0,0,0,0
-Dry coconut powder, કોપરાનો પાવડર (Kopra no Powder) ,0,0,0,0,qs,0,0,qs,0,0,0,qs,qs,0,0,0,qs,0
-Sugandhi valo, સુગંધી વાળો (Sugandhi Valo) ,0,0,0,0,qs,0,0,qs,0,0,0,0,0,0,0,0,qs,0
-Tamal patra, તમાલપત્ર (Tamal Patra) ,0,0,0,0,qs,0,0,qs,0,0,0,0,0,0,0,0,qs,1
+Ral no dhup, રાલનો ધૂપ (Ral no Dhup) ,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Dry coconut powder, કોપરાનો પાવડર (Kopra no Powder) ,0,0,0,0,0.25,0,0,0.2,0,0,0,0.25,0.25,0,0,0,0.25,0
+Sugandhi valo, સુગંધી વાળો (Sugandhi Valo) ,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0
+Tamal patra, તમાલપત્ર (Tamal Patra) ,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,1
 Dabhdo grass, દર્ભ ઘાસ (Darbh Ghas) ,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-Cow urine, ગૌમૂત્ર (Gomutra) ,0,0,0,0,qs,0,qs,qs,0,0,0,qs,0,0,0,0,qs,0
+Cow urine, ગૌમૂત્ર (Gomutra) ,0,0,0,0,10,0,10,10,0,0,0,10,0,0,0,0,10,0
 Chana, ચણા (Chana) ,0,0,0,0,0.5,0,0.5,0,0,0,1,0,0,0,0,0,0.5,0
 Savliyu, સાવળિયું (Savaliyu) ,0,1,1,0,5,0,5,4,0,0,2,2,0,0,0,0,4,0
 Trambano trass, તાંબાનો ત્રાંસ (Tamba no Tras) ,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0

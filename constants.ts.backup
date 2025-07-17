@@ -255,8 +255,8 @@ export const POOJA_ITEMS_MASTER: Record<string, Omit<PoojaItem, 'quantity'>> = {
     id: 'honey',
     name: 'Pure Honey',
     description: 'Natural honey for panchamrit',
-    price: 25,
-    unit: UNITS.PIECE
+    price: 800,
+    unit: UNITS.KILOGRAM
   },
   'dry-fruits': {
     id: 'dry-fruits',
@@ -316,7 +316,13 @@ export const POOJA_ITEMS_MASTER: Record<string, Omit<PoojaItem, 'quantity'>> = {
     price: 2.5,
     unit: UNITS.PIECE
   },
-
+  'guggul': {
+    id: 'guggul',
+    name: 'Guggul',
+    description: 'Sacred resin for havan',
+    price: 200,
+    unit: UNITS.GRAM
+  },
 
   // Cotton & Wicks
   'cotton-wicks': {
@@ -538,147 +544,147 @@ export const POOJA_ITEMS_MASTER: Record<string, Omit<PoojaItem, 'quantity'>> = {
     id: 'coconut-watered',
     name: 'Coconut Watered - પાણીવાળું નાળિયેર (Pani valu Naliyer)',
     description: 'Fresh coconut with water for offerings',
-    price: 30,
+    price: 40,
     unit: UNITS.PIECE
   },
   'coconut-without-water': {
     id: 'coconut-without-water',
     name: 'Coconut without water - કોરું નાળિયેર (Koru Naliyer)',
     description: 'Dry coconut without water for specific rituals',
-    price: 30,
+    price: 35,
     unit: UNITS.PIECE
   },
   'kanku': {
     id: 'kanku',
     name: 'Kanku - કંકુ (Kanku)',
-    description: 'Vermillion powder for tilak',
-    price: 1,
+    description: 'Red kumkum powder for tilak',
+    price: 2,
     unit: UNITS.GRAM
   },
   'gulal': {
     id: 'gulal',
     name: 'Gulal - ગુલાલ (Gulal)',
     description: 'Colored powder for festivities',
-    price: 1,
+    price: 3,
     unit: UNITS.GRAM
   },
   'abel': {
     id: 'abel',
     name: 'Abel - અબીલ (Abil)',
     description: 'Fragrant powder for worship',
-    price: 1,
+    price: 4,
     unit: UNITS.GRAM
   },
   'sakar': {
     id: 'sakar',
     name: 'Sakar - સાકર (Sakar)',
     description: 'Sugar for offerings and prasad',
-    price: 0.15,
+    price: 0.5,
     unit: UNITS.GRAM
   },
   'drax': {
     id: 'drax',
-    name: 'kismis દ્રાક્ષ (Drax)',
+    name: 'Drax',
     description: 'Grapes for offerings',
-    price: 0.4,
+    price: 8,
     unit: UNITS.GRAM
   },
   'common-dry-fruits': {
     id: 'common-dry-fruits',
     name: 'Common dry fruits - સુકા મેવા (Suka Meva)',
     description: 'Mixed dry fruits for offerings',
-    price: 1,
+    price: 4,
     unit: UNITS.GRAM
   },
   'supari': {
     id: 'supari',
     name: 'Supari - સોપારી (Sopari)',
     description: 'Betel nuts for offerings',
-    price: 800,
+    price: 400,
     unit: UNITS.KILOGRAM
   },
   'taj': {
     id: 'taj',
     name: 'Taj - તજ (Taj)',
     description: 'Cinnamon for offerings',
-    price: 0.8,
+    price: 30,
     unit: UNITS.GRAM
   },
   'lavang': {
     id: 'lavang',
     name: 'Lavang - લવિંગ (Laving)',
     description: 'Cloves for offerings',
-    price: 0.9,
+    price: 40,
     unit: UNITS.GRAM
   },
   'elichi': {
     id: 'elichi',
     name: 'Elichi - એલચી (Elachi)',
     description: 'Cardamom for offerings',
-    price: 3.5,
+    price: 60,
     unit: UNITS.GRAM
   },
   'nadachadi-thread': {
     id: 'nadachadi-thread',
     name: 'Nadachadi thread - નાડાછડી (Nadachhadi)',
     description: 'Sacred thread for rituals',
-    price: 20,
+    price: 10,
     unit: UNITS.PIECE
   },
   'agarbatti': {
     id: 'agarbatti',
     name: 'Agarbatti - અગરબત્તી (Agarbatti)',
     description: 'Incense sticks for worship',
-    price: 40,
+    price: 1,
     unit: UNITS.PIECE
   },
   'topra-na-vatka': {
     id: 'topra-na-vatka',
     name: 'Topra na vatka - કોપરાના વાટકા (Kopra na Vatka)',
     description: 'Coconut pieces for offerings',
-    price: 20,
+    price: 5,
     unit: UNITS.PIECE
   },
   'ganpati-idol': {
     id: 'ganpati-idol',
     name: 'Ganpati Idol - ગણપતિની મૂર્તિ (Ganpati ni Murti)',
     description: 'Clay idol of Lord Ganesha',
-    price: 250,
+    price: 200,
     unit: UNITS.PIECE
   },
   'bajot': {
     id: 'bajot',
     name: 'Bajot - બાજોટ (Bajot)',
     description: 'Wooden platform for worship',
-    price: 0,
+    price: 150,
     unit: UNITS.PIECE
   },
   'patla': {
     id: 'patla',
     name: 'Patla - પાટલો (Patlo)',
     description: 'Wooden board for offerings',
-    price: 0,
+    price: 100,
     unit: UNITS.PIECE
   },
   'kel-na-pan': {
     id: 'kel-na-pan',
     name: 'Kel na pan - કેળના પાન (Kel na Pan)',
     description: 'Banana leaves for serving',
-    price: 30,
+    price: 5,
     unit: UNITS.PIECE
   },
   'tulsi-na-pan': {
     id: 'tulsi-na-pan',
     name: 'Tulsi na pan - તુલસીના પાન (Tulsi na Pan)',
     description: 'Holy basil leaves for worship',
-    price: 0.1,
+    price: 0.5,
     unit: UNITS.PIECE
   },
   'aasopalav-na-pan': {
     id: 'aasopalav-na-pan',
     name: 'Aasopalav na Pan - આસોપાલવના પાન (Aasopalav na Pan)',
     description: 'Aasopalav leaves for rituals',
-    price: 0.5,
+    price: 1,
     unit: UNITS.PIECE
   },
   'nagarvel-na-pan': {
@@ -692,28 +698,28 @@ export const POOJA_ITEMS_MASTER: Record<string, Omit<PoojaItem, 'quantity'>> = {
     id: 'gud',
     name: 'Gud - ગોળ (Gol)',
     description: 'Jaggery for offerings',
-    price: 70,
+    price: 80,
     unit: UNITS.KILOGRAM
   },
   'panchamrit': {
     id: 'panchamrit',
     name: 'Panchamrit - પંચામૃત (Panchamrit)',
     description: 'Sacred mixture of five ingredients',
-    price: 2,
-    unit: UNITS.MILLILITER
+    price: 5,
+    unit: UNITS.GRAM
   },
   'chhuta-phool': {
     id: 'chhuta-phool',
     name: 'Chhuta Phool - છૂટા ફૂલ (Chhuta Phool)',
     description: 'Loose flowers for worship',
-    price: 200,
-    unit: UNITS.KILOGRAM
+    price: 2,
+    unit: UNITS.GRAM
   },
   'phool-har': {
     id: 'phool-har',
     name: 'Phool Har - ફૂલ હાર (Phool Har)',
     description: 'Flower garland for decoration',
-    price: 40,
+    price: 25,
     unit: UNITS.PIECE
   },
   'kagaj-na-duna': {
@@ -727,28 +733,28 @@ export const POOJA_ITEMS_MASTER: Record<string, Omit<PoojaItem, 'quantity'>> = {
     id: 'ghau',
     name: 'Ghau - ઘઉં (Ghau)',
     description: 'Wheat for offerings',
-    price: 200,
+    price: 50,
     unit: UNITS.KILOGRAM
   },
   'chokha': {
     id: 'chokha',
     name: 'Chokha - ચોખા (Chokha)',
     description: 'Rice for offerings',
-    price: 200,
+    price: 90,
     unit: UNITS.KILOGRAM
   },
   'mindhol': {
     id: 'mindhol',
     name: 'Mindhol - મીંઢોળ (Mindhol)',
     description: 'Special ingredient for marriage rituals',
-    price: 20,
+    price: 50,
     unit: UNITS.KILOGRAM
   },
   'chali': {
     id: 'chali',
     name: 'Chali - છાલી (Chhali)',
     description: 'Rice husks for rituals',
-    price: 10,
+    price: 30,
     unit: UNITS.KILOGRAM
   },
   'manik-stambh': {
@@ -762,21 +768,21 @@ export const POOJA_ITEMS_MASTER: Record<string, Omit<PoojaItem, 'quantity'>> = {
     id: 'pipal-na-pan',
     name: 'Pipal na pan - પીપળના પાન (Pipal na Pan)',
     description: 'Pipal leaves for worship',
-    price: 0.2,
+    price: 1,
     unit: UNITS.PIECE
   },
   'pakka-fal': {
     id: 'pakka-fal',
     name: 'Pakka fal - પાકા ફળ (Pakka Fal)',
     description: 'Ripe fruits for offerings',
-    price: 150,
+    price: 50,
     unit: UNITS.KILOGRAM
   },
   'mag': {
     id: 'mag',
     name: 'Mag - મગ (Mag)',
     description: 'Mung beans for offerings',
-    price: 150,
+    price: 120,
     unit: UNITS.KILOGRAM
   },
   'sutli-thread': {
@@ -790,12 +796,982 @@ export const POOJA_ITEMS_MASTER: Record<string, Omit<PoojaItem, 'quantity'>> = {
     id: 'clay-divda',
     name: 'Small clay Divda / Kodiya',
     description: 'Small clay lamps for lighting',
-    price: 10,
+    price: 3,
     unit: UNITS.PIECE
   },
   'aluminium-thali': {
     id: 'aluminium-thali',
     name: 'Utensil aluminium thali - એલ્યુમિનિયમ થાળી (Aluminium Thali)',
+    description: 'Aluminium plate for worship',
+    price: 80,
+    unit: UNITS.PIECE
+  },
+  'vatka': {
+    id: 'vatka',
+    name: 'Vatka - વાટકા (Vatka)',
+    description: 'Small bowl for offerings',
+    price: 15,
+    unit: UNITS.PIECE
+  },
+  'rakabi': {
+    id: 'rakabi',
+    name: 'Rakabi - રકાબી (Rakabi)',
+    description: 'Plate for offerings',
+    price: 25,
+    unit: UNITS.PIECE
+  },
+  'lamp-divo': {
+    id: 'lamp-divo',
+    name: 'Lamp - દીવો (Divo)',
+    description: 'Oil lamp for lighting',
+    price: 20,
+    unit: UNITS.PIECE
+  },
+  'ghee-liquid': {
+    id: 'ghee-liquid',
+    name: 'Ghee - ઘી (Ghee)',
+    description: 'Clarified butter for lamps and offerings',
+    price: 600,
+    unit: UNITS.KILOGRAM
+  },
+  'ghee-cotton': {
+    id: 'ghee-cotton',
+    name: 'Ghee cotton - વાટ (Vaat)',
+    description: 'Cotton wicks for oil lamps',
+    price: 1,
+    unit: UNITS.PIECE
+  },
+  'machis': {
+    id: 'machis',
+    name: 'Machis - માચીસ (Machis)',
+    description: 'Matchbox for lighting',
+    price: 3,
+    unit: UNITS.PIECE
+  },
+  'dhana': {
+    id: 'dhana',
+    name: 'Dhana - ધાણા (Dhana)',
+    description: 'Coriander seeds for offerings',
+    price: 200,
+    unit: UNITS.KILOGRAM
+  },
+  'guggul': {
+    id: 'guggul',
+    name: 'Guggul - ગુગળ (Gugal)',
+    description: 'Sacred resin for havan',
+    price: 2,
+    unit: UNITS.GRAM
+  },
+  'cow-mud': {
+    id: 'cow-mud',
+    name: 'Cow mud - ગાયનું છાણ (Gay nu Chhan)',
+    description: 'Cow dung for purification',
+    price: 10,
+    unit: UNITS.KILOGRAM
+  },
+  'sthapan-clothing-other': {
+    id: 'sthapan-clothing-other',
+    name: 'Sthapan clothing other colour - સ્થાપન વસ્ત્રો (Sthapan Vastron)',
+    description: 'Cloth for deity installation',
+    price: 100,
+    unit: UNITS.PIECE
+  },
+  'sthapan-clothing-red': {
+    id: 'sthapan-clothing-red',
+    name: 'Sthapan clothing Red - સ્થાપન વસ્ત્રો લાલ (Sthapan Vastron Laal)',
+    description: 'Red cloth for deity installation',
+    price: 120,
+    unit: UNITS.PIECE
+  },
+  'sthapan-clothing-black': {
+    id: 'sthapan-clothing-black',
+    name: 'Sthapan clothing Black - સ્થાપન વસ્ત્રો કાળો (Sthapan Vastron Kalo)',
+    description: 'Black cloth for deity installation',
+    price: 110,
+    unit: UNITS.PIECE
+  },
+  'sthapan-clothing-green': {
+    id: 'sthapan-clothing-green',
+    name: 'Sthapan clothing Green - સ્થાપન વસ્ત્રો લીલો (Sthapan Vastron Lilo)',
+    description: 'Green cloth for deity installation',
+    price: 115,
+    unit: UNITS.PIECE
+  },
+  'sthapan-clothing-yellow': {
+    id: 'sthapan-clothing-yellow',
+    name: 'Sthapan clothing Yellow - સ્થાપન વસ્ત્રો પીળો (Sthapan Vastron Pilo)',
+    description: 'Yellow cloth for deity installation',
+    price: 115,
+    unit: UNITS.PIECE
+  },
+  'sthapan-clothing-white': {
+    id: 'sthapan-clothing-white',
+    name: 'Sthapan clothing White - સ્થાપન વસ્ત્રો સફેદ (Sthapan Vastron Safed)',
+    description: 'White cloth for deity installation',
+    price: 105,
+    unit: UNITS.PIECE
+  },
+  'udad': {
+    id: 'udad',
+    name: 'Udad - અડદ (Adad)',
+    description: 'Black gram for offerings',
+    price: 150,
+    unit: UNITS.KILOGRAM
+  },
+  'chanadal': {
+    id: 'chanadal',
+    name: 'Chanadal - ચણાની દાળ (Chana ni Dal)',
+    description: 'Split chickpeas for offerings',
+    price: 100,
+    unit: UNITS.KILOGRAM
+  },
+  'juvar': {
+    id: 'juvar',
+    name: 'Juvar - જુવાર (Juvar)',
+    description: 'Sorghum for offerings',
+    price: 80,
+    unit: UNITS.KILOGRAM
+  },
+  'chandan-powder': {
+    id: 'chandan-powder',
+    name: 'Chandan powder - ચંદન પાવડર (Chandan Powder)',
+    description: 'Sandalwood powder for tilak',
+    price: 100,
+    unit: UNITS.GRAM
+  },
+  'pittal-utensils-other': {
+    id: 'pittal-utensils-other',
+    name: 'Pittal utensils other - પિત્તળના વાસણો (Pittala na Vasano)',
+    description: 'Brass utensils for worship',
+    price: 500,
+    unit: UNITS.PIECE
+  },
+  'pittal-utensils-dish': {
+    id: 'pittal-utensils-dish',
+    name: 'Pittal utensils Dish - પિત્તળના વાસણો ડીશ (Dish)',
+    description: 'Brass dish for offerings',
+    price: 300,
+    unit: UNITS.PIECE
+  },
+  'pittal-utensils-lota': {
+    id: 'pittal-utensils-lota',
+    name: 'Pittal utensils Lota - પિત્તળના વાસણો લોટો (Loto)',
+    description: 'Brass water pot',
+    price: 400,
+    unit: UNITS.PIECE
+  },
+  'pittal-utensils-glass': {
+    id: 'pittal-utensils-glass',
+    name: 'Pittal utensils Glass - પિત્તળના વાસણો ગ્લાસ (Glass)',
+    description: 'Brass glass for offerings',
+    price: 200,
+    unit: UNITS.PIECE
+  },
+  'pittal-utensils-dabbo': {
+    id: 'pittal-utensils-dabbo',
+    name: 'Pittal utensils Dabbo - પિત્તળના વાસણો ડબ્બો (Dabbo)',
+    description: 'Brass container for storage',
+    price: 250,
+    unit: UNITS.PIECE
+  },
+  'tramba-kumbh': {
+    id: 'tramba-kumbh',
+    name: 'Tramba kumbh - તાંબાનો કુંભ (Tamba no Kumbh)',
+    description: 'Copper pot for rituals',
+    price: 800,
+    unit: UNITS.PIECE
+  },
+  'clay-kumbh': {
+    id: 'clay-kumbh',
+    name: 'Clay kumbh - માટીનો કુંભ (Mati no Kumbh)',
+    description: 'Clay pot for rituals',
+    price: 50,
+    unit: UNITS.PIECE
+  },
+  'dhoti': {
+    id: 'dhoti',
+    name: 'Dhoti - ધોતી (Dhoti)',
+    description: 'Traditional male garment',
+    price: 300,
+    unit: UNITS.PIECE
+  },
+  'jabbha-nu-kapad': {
+    id: 'jabbha-nu-kapad',
+    name: 'Jabbha nu kapad - ઝભ્ભાનું કાપડ (Jabbha nu Kapad)',
+    description: 'Cloth for religious robe',
+    price: 200,
+    unit: UNITS.PIECE
+  },
+  'sari': {
+    id: 'sari',
+    name: 'Sari - સાડી (Sari)',
+    description: 'Traditional female garment',
+    price: 500,
+    unit: UNITS.PIECE
+  },
+  'chanio': {
+    id: 'chanio',
+    name: 'Chanio - ચાણિયો (Chanio)',
+    description: 'Traditional head covering',
+    price: 150,
+    unit: UNITS.PIECE
+  },
+  'blouse-piece': {
+    id: 'blouse-piece',
+    name: 'Blouse piece - બ્લાઉઝ પીસ (Blouse Piece)',
+    description: 'Cloth for blouse',
+    price: 200,
+    unit: UNITS.PIECE
+  },
+  'godadu': {
+    id: 'godadu',
+    name: 'Godadu - ગોદડું (Godadu)',
+    description: 'Blanket for rituals',
+    price: 400,
+    unit: UNITS.PIECE
+  },
+  'oshiku': {
+    id: 'oshiku',
+    name: 'Oshiku - ઓશીકું (Oshiku)',
+    description: 'Pillow for rituals',
+    price: 200,
+    unit: UNITS.PIECE
+  },
+  'ochhad': {
+    id: 'ochhad',
+    name: 'Ochhad - ઓઢાડ (Ochhad)',
+    description: 'Covering cloth',
+    price: 300,
+    unit: UNITS.PIECE
+  },
+  'chatri': {
+    id: 'chatri',
+    name: 'Chatri - છત્રી (Chatri)',
+    description: 'Umbrella for deity',
+    price: 150,
+    unit: UNITS.PIECE
+  },
+  'chappal': {
+    id: 'chappal',
+    name: 'Chappal - ચપ્પલ (Chappal)',
+    description: 'Footwear for deity',
+    price: 100,
+    unit: UNITS.PIECE
+  },
+  'vas-ni-chhabdi': {
+    id: 'vas-ni-chhabdi',
+    name: 'Vas ni chhabdi - વાંસની છાબડી (Vas ni Chhabdi)',
+    description: 'Bamboo basket',
+    price: 80,
+    unit: UNITS.PIECE
+  },
+  'chandla-packet': {
+    id: 'chandla-packet',
+    name: 'Chandla packet - ચાંદલાનું પેકેટ (Chandla nu Packet)',
+    description: 'Sandalwood packet',
+    price: 50,
+    unit: UNITS.PIECE
+  },
+  'bangdi': {
+    id: 'bangdi',
+    name: 'Bangdi - બંગડી (Bangdi)',
+    description: 'Bangles for deity',
+    price: 30,
+    unit: UNITS.PIECE
+  },
+  'ariso': {
+    id: 'ariso',
+    name: 'Ariso - અરીસો (Ariso)',
+    description: 'Mirror for deity',
+    price: 50,
+    unit: UNITS.PIECE
+  },
+  'comb': {
+    id: 'comb',
+    name: 'Comb - કાંસકો (Kansko)',
+    description: 'Comb for deity',
+    price: 20,
+    unit: UNITS.PIECE
+  },
+  'oil-bottle': {
+    id: 'oil-bottle',
+    name: 'Oil bottle - તેલની બોટલ (Tel ni Bottle)',
+    description: 'Oil bottle for rituals',
+    price: 25,
+    unit: UNITS.PIECE
+  },
+  'kajal': {
+    id: 'kajal',
+    name: 'Kajal - કાજળ (Kajal)',
+    description: 'Kohl for deity',
+    price: 30,
+    unit: UNITS.PIECE
+  },
+  'sent': {
+    id: 'sent',
+    name: 'Sent - સેન્ટ (Sent)',
+    description: 'Perfume for deity',
+    price: 100,
+    unit: UNITS.PIECE
+  },
+  'kang': {
+    id: 'kang',
+    name: 'Kang - કાંગ (Kang)',
+    description: 'Comb for deity',
+    price: 25,
+    unit: UNITS.PIECE
+  },
+  'til': {
+    id: 'til',
+    name: 'Til - તલ (Tal)',
+    description: 'Sesame seeds for offerings',
+    price: 150,
+    unit: UNITS.KILOGRAM
+  },
+  'jaar': {
+    id: 'jaar',
+    name: 'Jaar - જાર (Jar)',
+    description: 'Jar for storing offerings',
+    price: 100,
+    unit: UNITS.PIECE
+  },
+  'moti': {
+    id: 'moti',
+    name: 'Moti - મોતી (Moti)',
+    description: 'Pearls for decoration',
+    price: 500,
+    unit: UNITS.KILOGRAM
+  },
+  'sutar-thread-ni-dadi': {
+    id: 'sutar-thread-ni-dadi',
+    name: 'Sutar thread ni dadi - સૂતરની દડી (Sutar ni Dadi)',
+    description: 'Cotton thread ball',
+    price: 10,
+    unit: UNITS.PIECE
+  },
+  'kali-drax': {
+    id: 'kali-drax',
+    name: 'Kali drax - કાળી દ્રાક્ષ (Kali Drax)',
+    description: 'Black grapes for offerings',
+    price: 200,
+    unit: UNITS.KILOGRAM
+  },
+  'darbh-leaves': {
+    id: 'darbh-leaves',
+    name: 'Darbh leaves - દર્ભ (Darbh)',
+    description: 'Sacred grass for rituals',
+    price: 2,
+    unit: UNITS.PIECE
+  },
+  'jav': {
+    id: 'jav',
+    name: 'Jav - જવ (Jav)',
+    description: 'Barley for offerings',
+    price: 60,
+    unit: UNITS.KILOGRAM
+  },
+  'kamod': {
+    id: 'kamod',
+    name: 'Kamod - કામોદ (Kamod)',
+    description: 'Wheat flour for offerings',
+    price: 50,
+    unit: UNITS.KILOGRAM
+  },
+  'black-til': {
+    id: 'black-til',
+    name: 'Black til - કાળા તલ (Kala Tal)',
+    description: 'Black sesame seeds for offerings',
+    price: 200,
+    unit: UNITS.KILOGRAM
+  },
+  'jav-flour': {
+    id: 'jav-flour',
+    name: 'Jav flour - જવનો લોટ (Jav no Lot)',
+    description: 'Barley flour for offerings',
+    price: 70,
+    unit: UNITS.KILOGRAM
+  },
+  'udad-flour': {
+    id: 'udad-flour',
+    name: 'Udad flour - અડદનો લોટ (Adad no Lot)',
+    description: 'Black gram flour for offerings',
+    price: 180,
+    unit: UNITS.KILOGRAM
+  },
+  'kala-til-powder': {
+    id: 'kala-til-powder',
+    name: 'Kala til powder - કાળા તલનો પાવડર (Kala Tal no Powder)',
+    description: 'Black sesame powder',
+    price: 220,
+    unit: UNITS.KILOGRAM
+  },
+  'black-clay-matki': {
+    id: 'black-clay-matki',
+    name: 'Black clay matki - કાળી માટીની માટલી (Kali Mati ni Matli)',
+    description: 'Black clay pot for rituals',
+    price: 30,
+    unit: UNITS.PIECE
+  },
+  'vas-ni-sundli': {
+    id: 'vas-ni-sundli',
+    name: 'Vas ni sundli - વાંસની સુડલી (Vas ni Sudli)',
+    description: 'Bamboo stick for rituals',
+    price: 10,
+    unit: UNITS.PIECE
+  },
+  'wood-for-yagna': {
+    id: 'wood-for-yagna',
+    name: 'Wood for yagna - યજ્ઞ માટે લાકડું (Yagna mate Lakdu)',
+    description: 'Sacred wood for fire rituals',
+    price: 50,
+    unit: UNITS.KILOGRAM
+  },
+  'janoi': {
+    id: 'janoi',
+    name: 'Janoi - જનોઈ (Janoi)',
+    description: 'Sacred thread for rituals',
+    price: 10,
+    unit: UNITS.PIECE
+  },
+  'pako-siddho': {
+    id: 'pako-siddho',
+    name: 'Pako Siddho - પાકો સિદ્ધો (Pako Siddho)',
+    description: 'Cooked offering for deity',
+    price: 20,
+    unit: UNITS.PIECE
+  },
+  'towel': {
+    id: 'towel',
+    name: 'Towel - ટુવાલ (Tuval)',
+    description: 'Towel for deity',
+    price: 80,
+    unit: UNITS.PIECE
+  },
+  'napkin': {
+    id: 'napkin',
+    name: 'Napkin - નેપકિન (Napkin)',
+    description: 'Napkin for rituals',
+    price: 5,
+    unit: UNITS.PIECE
+  },
+  'male-shirt-pant-kapad': {
+    id: 'male-shirt-pant-kapad',
+    name: 'Male Shirt and Pant Kapad - પુરુષ માટે શર્ટ અને પેન્ટનું કાપડ (Purush mate Shirt ane Pant nu Kapad)',
+    description: 'Cloth for male garments',
+    price: 400,
+    unit: UNITS.PIECE
+  },
+  'water': {
+    id: 'water',
+    name: 'Water - પાણી (Pani)',
+    description: 'Sacred water for rituals',
+    price: 1,
+    unit: UNITS.LITER
+  },
+  'silver-turtle': {
+    id: 'silver-turtle',
+    name: 'Silver turtle - ચાંદીનો કાચબો (Chandi no Kachbo)',
+    description: 'Silver turtle for rituals',
+    price: 2000,
+    unit: UNITS.PIECE
+  },
+  'silver-snake': {
+    id: 'silver-snake',
+    name: 'Silver snake - ચાંદીનો સાપ (Chandi no Saap)',
+    description: 'Silver snake for rituals',
+    price: 1500,
+    unit: UNITS.PIECE
+  },
+  'tambani-tabudi': {
+    id: 'tambani-tabudi',
+    name: 'Tambani Tabudi - તાંબાની તબુડી (Tambani Tabudi)',
+    description: 'Copper vessel for rituals',
+    price: 600,
+    unit: UNITS.PIECE
+  },
+  'char-chock-ni-mati': {
+    id: 'char-chock-ni-mati',
+    name: 'Char chock ni mati - ચાર ચોકની માટી (Char Chok ni Mati)',
+    description: 'Clay from four corners',
+    price: 20,
+    unit: UNITS.KILOGRAM
+  },
+  'aasan': {
+    id: 'aasan',
+    name: 'Aasan - આસન (Aasan)',
+    description: 'Seat for deity',
+    price: 100,
+    unit: UNITS.PIECE
+  },
+  'chamachi': {
+    id: 'chamachi',
+    name: 'Chamachi - ચમચી (Chamachi)',
+    description: 'Spoon for offerings',
+    price: 15,
+    unit: UNITS.PIECE
+  },
+  'kalash-tramba': {
+    id: 'kalash-tramba',
+    name: 'Kalash tramba - કળશ તાંબા (Kalash Tamba)',
+    description: 'Copper sacred pot',
+    price: 1000,
+    unit: UNITS.PIECE
+  },
+  'chundi': {
+    id: 'chundi',
+    name: 'Chundi - ચૂંદડી (Chundi)',
+    description: 'Sacred vessel for rituals',
+    price: 300,
+    unit: UNITS.PIECE
+  },
+  'rumal': {
+    id: 'rumal',
+    name: 'Rumal - રૂમાલ (Rumal)',
+    description: 'Handkerchief for deity',
+    price: 50,
+    unit: UNITS.PIECE
+  },
+  'face-powder': {
+    id: 'face-powder',
+    name: 'Face powder - ફેસ પાવડર (Face Powder)',
+    description: 'Face powder for deity',
+    price: 100,
+    unit: UNITS.PIECE
+  },
+  'nail-polish': {
+    id: 'nail-polish',
+    name: 'Nail polish - નિલ પોલિશ (Nail Polish)',
+    description: 'Nail polish for deity',
+    price: 80,
+    unit: UNITS.PIECE
+  },
+  'kapoor': {
+    id: 'kapoor',
+    name: 'Kapoor - કપૂર (Kapoor)',
+    description: 'Camphor for aarti',
+    price: 2.5,
+    unit: UNITS.PIECE
+  },
+  'kamalkakdi': {
+    id: 'kamalkakdi',
+    name: 'Kamalkakdi - કમલ કાકડી (Kamal Kakdi)',
+    description: 'Lotus stem for offerings',
+    price: 50,
+    unit: UNITS.KILOGRAM
+  },
+  'ral-no-dhup': {
+    id: 'ral-no-dhup',
+    name: 'Ral no dhup - રાલનો ધૂપ (Ral no Dhup)',
+    description: 'Resin incense for worship',
+    price: 100,
+    unit: UNITS.PACKET
+  },
+  'dry-coconut-powder': {
+    id: 'dry-coconut-powder',
+    name: 'Dry coconut powder - કોપરાનો પાવડર (Kopra no Powder)',
+    description: 'Dried coconut powder',
+    price: 150,
+    unit: UNITS.KILOGRAM
+  },
+  'sugandhi-valo': {
+    id: 'sugandhi-valo',
+    name: 'Sugandhi valo - સુગંધી વાળો (Sugandhi Valo)',
+    description: 'Fragrant material for worship',
+    price: 200,
+    unit: UNITS.PACKET
+  },
+  'tamal-patra': {
+    id: 'tamal-patra',
+    name: 'Tamal patra - તમાલપત્ર (Tamal Patra)',
+    description: 'Tamal leaves for worship',
+    price: 10,
+    unit: UNITS.PIECE
+  },
+  'dabhdo-grass': {
+    id: 'dabhdo-grass',
+    name: 'Dabhdo grass - દર્ભ ઘાસ (Darbh Ghas)',
+    description: 'Sacred grass for rituals',
+    price: 2,
+    unit: UNITS.PIECE
+  },
+  'cow-urine': {
+    id: 'cow-urine',
+    name: 'Cow urine - ગૌમૂત્ર (Gomutra)',
+    description: 'Cow urine for purification',
+    price: 50,
+    unit: UNITS.LITER
+  },
+  'chana': {
+    id: 'chana',
+    name: 'Chana - ચણા (Chana)',
+    description: 'Chickpeas for offerings',
+    price: 100,
+    unit: UNITS.KILOGRAM
+  },
+  'savliyu': {
+    id: 'savliyu',
+    name: 'Savliyu - સાવળિયું (Savaliyu)',
+    description: 'Sacred offering for deity',
+    price: 50,
+    unit: UNITS.KILOGRAM
+  },
+  'trambano-trass': {
+    id: 'trambano-trass',
+    name: 'Trambano trass - તાંબાનો ત્રાંસ (Tamba no Tras)',
+    description: 'Copper vessel for rituals',
+    price: 800,
+    unit: UNITS.PIECE
+  },
+  'kanthi-mala': {
+    id: 'kanthi-mala',
+    name: 'Kanthi/Mala - કંઠી/માળા (Kanthi/Mala)',
+    description: 'Sacred necklace for deity',
+    price: 200,
+    unit: UNITS.PIECE
+  },
+  'gaumukhi': {
+    id: 'gaumukhi',
+    name: 'Gaumukhi - ગૌમુખી (Gaumukhi)',
+    description: 'Cow-shaped vessel for rituals',
+    price: 500,
+    unit: UNITS.PIECE
+  },
+  'dhramraja-silver-image': {
+    id: 'dhramraja-silver-image',
+    name: 'Dhramraja silver image - ધર્મરાજની ચાંદીની છબી (Dharmaraj ni Chandi ni Chhabi)',
+    description: 'Silver image of Dharmaraj',
+    price: 1000,
+    unit: UNITS.PIECE
+  },
+  'cow-silver-image': {
+    id: 'cow-silver-image',
+    name: 'Cow silver image - ગાયની ચાંદીની છબી (Gay ni Chandi ni Chhabi)',
+    description: 'Silver image of cow',
+    price: 800,
+    unit: UNITS.PIECE
+  },
+  'swastik-silver': {
+    id: 'swastik-silver',
+    name: 'Swastik silver - ચાંદીનો સ્વસ્તિક (Chandi no Swastik)',
+    description: 'Silver swastik symbol',
+    price: 500,
+    unit: UNITS.PIECE
+  },
+  'nisarani-silver': {
+    id: 'nisarani-silver',
+    name: 'Nisarani silver - ચાંદીની નિસરણી (Chandi ni Nisarani)',
+    description: 'Silver nisarani for rituals',
+    price: 600,
+    unit: UNITS.PIECE
+  },
+  'ship-silver': {
+    id: 'ship-silver',
+    name: 'Ship silver - ચાંદીનો જહાજ (Chandi no Nav)',
+    description: 'Silver ship for rituals',
+    price: 1200,
+    unit: UNITS.PIECE
+  },
+  'janoi-silver': {
+    id: 'janoi-silver',
+    name: 'Janoi silver - ચાંદીની જનોઈ (Chandi ni Janoi)',
+    description: 'Silver sacred thread',
+    price: 800,
+    unit: UNITS.PIECE
+  },
+  'durva-grass': {
+    id: 'durva-grass',
+    name: 'Durva Grass',
+    description: 'Sacred grass beloved by Lord Ganesha',
+    price: 2,
+    unit: UNITS.BUNDLE
+  },
+  'red-flowers': {
+    id: 'red-flowers',
+    name: 'Red Flowers (Jaba)',
+    description: 'Fresh red hibiscus flowers',
+    price: 5,
+    unit: UNITS.PIECE
+  },
+  'laddu-ready': {
+    id: 'laddu-ready',
+    name: 'Ready Laddus',
+    description: 'Sweet laddus as offering to Ganesha',
+    price: 20,
+    unit: UNITS.PIECE
+  },
+
+  // Gujarati Items
+  'coconut-naliyer': {
+    id: 'coconut-naliyer',
+    name: 'Coconut - નાળિયેર (Naliyer)',
+    description: 'Fresh coconut for offerings',
+    price: 30,
+    unit: UNITS.PIECE
+  },
+  'kanku': {
+    id: 'kanku',
+    name: 'Kanku - કંકુ (Kanku)',
+    description: 'Vermillion powder for tilak',
+    price: 0.1,
+    unit: UNITS.GRAM
+  },
+  'gulal': {
+    id: 'gulal',
+    name: 'Gulal - ગુલાલ (Gulal)',
+    description: 'Colored powder (often pink/red)',
+    price: 0.1,
+    unit: UNITS.GRAM
+  },
+  'abel': {
+    id: 'abel',
+    name: 'Abel - અબીલ (Abil)',
+    description: 'White fragrant powder',
+    price: 0.1,
+    unit: UNITS.GRAM
+  },
+  'sakar': {
+    id: 'sakar',
+    name: 'Sakar - સાકર (Sakar)',
+    description: 'Rock sugar/Sugar candy',
+    price: 0.08,
+    unit: UNITS.GRAM
+  },
+  'common-dry-fruits': {
+    id: 'common-dry-fruits',
+    name: 'Common Dry Fruits - સુકા મેવા (Suka Meva)',
+    description: 'Mix of dry fruits for offerings',
+    price: 1,
+    unit: UNITS.GRAM
+  },
+  'supari': {
+    id: 'supari',
+    name: 'Supari - સોપારી (Sopari)',
+    description: 'Areca nut/Betel nut',
+    price: 0.6,
+    unit: UNITS.GRAM
+  },
+  'taj': {
+    id: 'taj',
+    name: 'Taj - તજ (Taj)',
+    description: 'Cinnamon for aromatics',
+    price: 3,
+    unit: UNITS.GRAM
+  },
+  'lavang': {
+    id: 'lavang',
+    name: 'Lavang - લવિંગ (Laving)',
+    description: 'Cloves for fragrance',
+    price: 6,
+    unit: UNITS.GRAM
+  },
+  'elichi': {
+    id: 'elichi',
+    name: 'Elichi - એલચી (Elachi)',
+    description: 'Cardamom for flavoring',
+    price: 8,
+    unit: UNITS.GRAM
+  },
+  'nadachadi-thread': {
+    id: 'nadachadi-thread',
+    name: 'Nadachadi Thread - નાડાછડી (Nadachhadi)',
+    description: 'Sacred thread for rituals',
+    price: 20,
+    unit: UNITS.PIECE
+  },
+  'agarbatti': {
+    id: 'agarbatti',
+    name: 'Agarbatti - અગરબત્તી (Agarbatti)',
+    description: 'Incense sticks for worship',
+    price: 20,
+    unit: UNITS.PACKET
+  },
+  'topra-na-vatka': {
+    id: 'topra-na-vatka',
+    name: 'Topra na Vatka - કોપરાના વાટકા (Kopra na Vatka)',
+    description: 'Dried coconut halves/bowls',
+    price: 0.1,
+    unit: UNITS.GRAM
+  },
+  'ganpati-idol': {
+    id: 'ganpati-idol',
+    name: 'Ganpati Idol - ગણપતિની મૂર્તિ (Ganpati ni Murti)',
+    description: 'Ganpati Idol for worship',
+    price: 250,
+    unit: UNITS.PIECE
+  },
+  'bajot': {
+    id: 'bajot',
+    name: 'Bajot - બાજોટ (Bajot)',
+    description: 'Small wooden stool/seat (for idols)',
+    price: 1000,
+    unit: UNITS.PIECE
+  },
+  'patla': {
+    id: 'patla',
+    name: 'Patla - પાટલો (Patlo)',
+    description: 'Wooden plank/stool (similar to Bajot)',
+    price: 1000,
+    unit: UNITS.PIECE
+  },
+  'kel-na-pan': {
+    id: 'kel-na-pan',
+    name: 'Kel na Pan - કેળના પાન (Kel na Pan)',
+    description: 'Banana leaves for rituals',
+    price: 20,
+    unit: UNITS.PIECE
+  },
+  'tulsi-na-pan': {
+    id: 'tulsi-na-pan',
+    name: 'Tulsi na Pan - તુલસીના પાન (Tulsi na Pan)',
+    description: 'Basil leaves for worship',
+    price: 0.2,
+    unit: UNITS.PIECE
+  },
+  'aasopalav-na-pan': {
+    id: 'aasopalav-na-pan',
+    name: 'Aasopalav na Pan - આસોપાલવના પાન (Aasopalav na Pan)',
+    description: 'Ashoka leaves for offerings',
+    price: 0.5,
+    unit: UNITS.PIECE
+  },
+  'nagarvel-na-pan': {
+    id: 'nagarvel-na-pan',
+    name: 'Nagarvel na Pan - નાગરવેલના પાન (Nagarvel na Pan)',
+    description: 'Betel leaves for rituals',
+    price: 5,
+    unit: UNITS.PIECE
+  },
+  'gud': {
+    id: 'gud',
+    name: 'Gud - ગોળ (Gol)',
+    description: 'Jaggery for sweetening',
+    price: 60,
+    unit: UNITS.KILOGRAM
+  },
+  'panchamrit': {
+    id: 'panchamrit',
+    name: 'Panchamrit - પંચામૃત (Panchamrit)',
+    description: 'A mixture of five sacred foods (milk, yogurt, ghee, honey, sugar)',
+    price: 0.5,
+    unit: UNITS.MILLILITER
+  },
+  'chhuta-phool': {
+    id: 'chhuta-phool',
+    name: 'Chhuta Phool - છૂટા ફૂલ (Chhuta Phool)',
+    description: 'Loose flowers for decoration',
+    price: 0.16,
+    unit: UNITS.GRAM
+  },
+  'phool-har': {
+    id: 'phool-har',
+    name: 'Phool Har - ફૂલ હાર (Phool Har)',
+    description: 'Flower garland for worship',
+    price: 30,
+    unit: UNITS.PIECE
+  },
+  'kagaj-na-duna': {
+    id: 'kagaj-na-duna',
+    name: 'Kagaj na Duna - કાગળના દુના (Kagaj na Duna)',
+    description: 'Paper bowls/cups for offerings',
+    price: 0.6,
+    unit: UNITS.PIECE
+  },
+  'kacha-fal': {
+    id: 'kacha-fal',
+    name: 'Kacha Fal - કાચા ફળ (Kacha Fal)',
+    description: 'Raw fruits for offerings',
+    price: 20,
+    unit: UNITS.PIECE
+  },
+  'ghau': {
+    id: 'ghau',
+    name: 'Ghau - ઘઉં (Ghau)',
+    description: 'Wheat grains for offerings',
+    price: 50,
+    unit: UNITS.KILOGRAM
+  },
+  'chokha': {
+    id: 'chokha',
+    name: 'Chokha - ચોખા (Chokha)',
+    description: 'Rice for rituals and offerings',
+    price: 60,
+    unit: UNITS.KILOGRAM
+  },
+
+  // Additional Gujarati Items
+  'mindhol': {
+    id: 'mindhol',
+    name: 'Mindhol - મીંઢોળ (Mindhol)',
+    description: 'A type of wristband or decorative item, often made with turmeric or other auspicious materials, used in weddings',
+    price: 10,
+    unit: UNITS.PIECE
+  },
+  'chali': {
+    id: 'chali',
+    name: 'Chali - છાલી (Chhali)',
+    description: 'Betel nut skin/peel (often used in rituals)',
+    price: 5,
+    unit: UNITS.PIECE
+  },
+  'manik-stambh': {
+    id: 'manik-stambh',
+    name: 'Manik Stambh - માણેક સ્તંભ (Manek Stambh)',
+    description: 'A pillar or column, often symbolic, possibly referring to a decorative or ritualistic pillar',
+    price: 50,
+    unit: UNITS.PIECE
+  },
+  'pipal-na-pan': {
+    id: 'pipal-na-pan',
+    name: 'Pipal na Pan - પીપળના પાન (Pipal na Pan)',
+    description: 'Peepal leaves for worship',
+    price: 1,
+    unit: UNITS.PIECE
+  },
+  'phool-loose': {
+    id: 'phool-loose',
+    name: 'Phool - ફૂલ (Phool)',
+    description: 'Flowers (loose) for decoration',
+    price: 0.05,
+    unit: UNITS.GRAM
+  },
+  'pakka-fal': {
+    id: 'pakka-fal',
+    name: 'Pakka Fal - પાકા ફળ (Pakka Fal)',
+    description: 'Ripe fruits for offerings',
+    price: 20,
+    unit: UNITS.PIECE
+  },
+  'mag': {
+    id: 'mag',
+    name: 'Mag - મગ (Mag)',
+    description: 'Green gram (moong dal)',
+    price: 120,
+    unit: UNITS.KILOGRAM
+  },
+  'sutli-thread': {
+    id: 'sutli-thread',
+    name: 'Sutli Thread for Toran - સૂતળી (Sutli)',
+    description: 'Jute twine/thread (for making toran)',
+    price: 20,
+    unit: UNITS.PIECE
+  },
+  'sthapan-red-blouse': {
+    id: 'sthapan-red-blouse',
+    name: 'Sthapan Red Blouse Piece - સ્થાપન માટે લાલ બ્લાઉઝ પીસ (Sthapan mate Lal Blouse Piece)',
+    description: 'Red blouse piece for ritualistic placement/establishment',
+    price: 40,
+    unit: UNITS.PIECE
+  },
+  'clay-divda': {
+    id: 'clay-divda',
+    name: 'Small Clay Divda/Kodiya - દિવડા/કોડિયા (Divda/Kodiya)',
+    description: 'Small clay lamps for worship',
+    price: 20,
+    unit: UNITS.PIECE
+  },
+  'aluminium-thali': {
+    id: 'aluminium-thali',
+    name: 'Aluminium Thali - એલ્યુમિનિયમ થાળી (Aluminium Thali)',
     description: 'Aluminium plate for worship',
     price: 100,
     unit: UNITS.PIECE
@@ -803,42 +1779,42 @@ export const POOJA_ITEMS_MASTER: Record<string, Omit<PoojaItem, 'quantity'>> = {
   'vatka': {
     id: 'vatka',
     name: 'Vatka - વાટકા (Vatka)',
-    description: 'Small bowl for offerings',
+    description: 'Small bowls for offerings',
     price: 50,
     unit: UNITS.PIECE
   },
   'rakabi': {
     id: 'rakabi',
     name: 'Rakabi - રકાબી (Rakabi)',
-    description: 'Plate for offerings',
+    description: 'Saucer for rituals',
     price: 50,
     unit: UNITS.PIECE
   },
   'lamp-divo': {
     id: 'lamp-divo',
     name: 'Lamp - દીવો (Divo)',
-    description: 'Oil lamp for lighting',
-    price: 150,
+    description: 'Traditional lamp for worship',
+    price: 250,
     unit: UNITS.PIECE
   },
   'ghee-liquid': {
     id: 'ghee-liquid',
     name: 'Ghee - ઘી (Ghee)',
-    description: 'Clarified butter for lamps and offerings',
-    price: 1,
+    description: 'Clarified butter for rituals',
+    price: 1.2,
     unit: UNITS.MILLILITER
   },
   'ghee-cotton': {
     id: 'ghee-cotton',
-    name: 'Ghee cotton - વાટ (Vaat)',
-    description: 'Cotton wicks for oil lamps',
+    name: 'Ghee Cotton - વાટ (Vaat)',
+    description: 'Cotton wicks for ghee lamps',
     price: 20,
-    unit: UNITS.PIECE
+    unit: UNITS.PACKET
   },
   'machis': {
     id: 'machis',
     name: 'Machis - માચીસ (Machis)',
-    description: 'Matchbox for lighting',
+    description: 'Matchbox for lighting lamps',
     price: 5,
     unit: UNITS.PIECE
   },
@@ -846,63 +1822,380 @@ export const POOJA_ITEMS_MASTER: Record<string, Omit<PoojaItem, 'quantity'>> = {
     id: 'dhana',
     name: 'Dhana - ધાણા (Dhana)',
     description: 'Coriander seeds for offerings',
-    price: 600,
-    unit: UNITS.KILOGRAM
-  },
-  'guggul': {
-    id: 'guggul',
-    name: 'Guggul - ગુગળ (Gugal)',
-    description: 'Sacred resin for havan',
     price: 0.8,
     unit: UNITS.GRAM
   },
-  'cow-mud': {
-    id: 'cow-mud',
-    name: 'Cow mud - ગાયનું છાણ (Gay nu Chhan)',
-    description: 'Cow dung for purification',
-    price: 20,
+  'coins-offering': {
+    id: 'coins-offering',
+    name: 'Coins for Offering - સિક્કા (Sikka)',
+    description: 'Coins for monetary offerings',
+    price: 1,
+    unit: UNITS.PIECE
+  },
+
+  // Additional items from CSV
+  'coconut-watered': {
+    id: 'coconut-watered',
+    name: 'Coconut Watered - પાણીવાળું નાળિયેર (Pani valu Naliyer)',
+    description: 'Fresh coconut with water for offerings',
+    price: 30,
+    unit: UNITS.PIECE
+  },
+  'coconut-without-water': {
+    id: 'coconut-without-water',
+    name: 'Coconut without Water - કોરું નાળિયેર (Koru Naliyer)',
+    description: 'Dry coconut without water',
+    price: 30,
+    unit: UNITS.PIECE
+  },
+  'drax': {
+    id: 'drax',
+    name: 'Drax',
+    description: 'Grapes for offerings',
+    price: 0, // Price not specified in CSV
+    unit: UNITS.GRAM
+  },
+  'kali-drax': {
+    id: 'kali-drax',
+    name: 'Kali Drax - કાળી દ્રાક્ષ (Kali Drax)',
+    description: 'Black grapes for offerings',
+    price: 0.6,
+    unit: UNITS.GRAM
+  },
+  'darbh-leaves': {
+    id: 'darbh-leaves',
+    name: 'Darbh Leaves - દર્ભ (Darbh)',
+    description: 'Sacred darbh grass for rituals',
+    price: 10,
+    unit: UNITS.GRAM
+  },
+  'honey-madh': {
+    id: 'honey-madh',
+    name: 'Honey - મધ (Madh)',
+    description: 'Pure honey for panchamrit',
+    price: 25,
+    unit: UNITS.PIECE
+  },
+  'jav': {
+    id: 'jav',
+    name: 'Jav - જવ (Jav)',
+    description: 'Barley grains for offerings',
+    price: 150,
     unit: UNITS.KILOGRAM
   },
-  'sthapan-clothing-other': {
-    id: 'sthapan-clothing-other',
-    name: 'Sthapan clothing other colour - સ્થાપન વસ્ત્રો (Sthapan Vastron)',
-    description: 'Cloth for deity installation',
+  'kamod': {
+    id: 'kamod',
+    name: 'Kamod - કામોદ (Kamod)',
+    description: 'Kamod rice for rituals',
+    price: 200,
+    unit: UNITS.KILOGRAM
+  },
+  'black-til': {
+    id: 'black-til',
+    name: 'Black Til - કાળા તલ (Kala Tal)',
+    description: 'Black sesame seeds for specific rituals',
+    price: 200,
+    unit: UNITS.KILOGRAM
+  },
+  'jav-flour': {
+    id: 'jav-flour',
+    name: 'Jav Flour - જવનો લોટ (Jav no Lot)',
+    description: 'Barley flour for offerings',
+    price: 400,
+    unit: UNITS.KILOGRAM
+  },
+  'udad-flour': {
+    id: 'udad-flour',
+    name: 'Udad Flour - અડદનો લોટ (Adad no Lot)',
+    description: 'Black gram flour for rituals',
+    price: 200,
+    unit: UNITS.KILOGRAM
+  },
+  'kala-til-powder': {
+    id: 'kala-til-powder',
+    name: 'Kala Til Powder - કાળા તલનો પાવડર (Kala Tal no Powder)',
+    description: 'Black sesame powder for rituals',
+    price: 400,
+    unit: UNITS.KILOGRAM
+  },
+  'black-clay-matki': {
+    id: 'black-clay-matki',
+    name: 'Black Clay Matki - કાળી માટીની માટલી (Kali Mati ni Matli)',
+    description: 'Black clay pot for rituals',
+    price: 200,
+    unit: UNITS.PIECE
+  },
+  'vas-ni-sundli': {
+    id: 'vas-ni-sundli',
+    name: 'Vas ni Sundli - વાંસની સુડલી (Vas ni Sudli)',
+    description: 'Bamboo needle for rituals',
+    price: 100,
+    unit: UNITS.PIECE
+  },
+  'wood-for-yagna': {
+    id: 'wood-for-yagna',
+    name: 'Wood for Yagna - યજ્ઞ માટે લાકડું (Yagna mate Lakdu)',
+    description: 'Sacred wood for fire rituals',
+    price: 200,
+    unit: UNITS.KILOGRAM
+  },
+  'janoi': {
+    id: 'janoi',
+    name: 'Janoi - જનોઈ (Janoi)',
+    description: 'Sacred thread for rituals',
+    price: 20,
+    unit: UNITS.PIECE
+  },
+  'pako-siddho': {
+    id: 'pako-siddho',
+    name: 'Pako Siddho - પાકો સિદ્ધો (Pako Siddho)',
+    description: 'A type of offering or ritual item',
+    price: 500,
+    unit: UNITS.PIECE
+  },
+  'towel': {
+    id: 'towel',
+    name: 'Towel - ટુવાલ (Tuval)',
+    description: 'Towel for rituals',
+    price: 100,
+    unit: UNITS.PIECE
+  },
+  'napkin': {
+    id: 'napkin',
+    name: 'Napkin - નેપકિન (Napkin)',
+    description: 'Napkin for rituals',
     price: 50,
     unit: UNITS.PIECE
   },
-  'sthapan-clothing-red': {
-    id: 'sthapan-clothing-red',
-    name: 'Sthapan clothing Red - સ્થાપન વસ્ત્રો લાલ (Sthapan Vastron Laal)',
-    description: 'Red cloth for deity installation',
+  'male-shirt-pant': {
+    id: 'male-shirt-pant',
+    name: 'Male Shirt and Pant - પુરુષ માટે શર્ટ અને પેન્ટનું કાપડ (Purush mate Shirt ane Pant nu Kapad)',
+    description: 'Cloth for male shirt and pant',
+    price: 1000,
+    unit: UNITS.PIECE
+  },
+  'water-pani': {
+    id: 'water-pani',
+    name: 'Water - પાણી (Pani)',
+    description: 'Water for rituals',
+    price: 20,
+    unit: UNITS.LITER
+  },
+  'silver-turtle': {
+    id: 'silver-turtle',
+    name: 'Silver Turtle - ચાંદીનો કાચબો (Chandi no Kachbo)',
+    description: 'Silver turtle for rituals',
+    price: 200,
+    unit: UNITS.PIECE
+  },
+  'silver-snake': {
+    id: 'silver-snake',
+    name: 'Silver Snake - ચાંદીનો સાપ (Chandi no Saap)',
+    description: 'Silver snake for rituals',
+    price: 200,
+    unit: UNITS.PIECE
+  },
+  'tambani-tabudi': {
+    id: 'tambani-tabudi',
+    name: 'Tambani Tabudi - તાંબાની તબુડી (Tambani Tabudi)',
+    description: 'Copper vessel for rituals',
+    price: 200,
+    unit: UNITS.PIECE
+  },
+  'char-chok-ni-mati': {
+    id: 'char-chok-ni-mati',
+    name: 'Char Chok ni Mati - ચાર ચોકની માટી (Char Chok ni Mati)',
+    description: 'Clay from four directions for rituals',
+    price: 100,
+    unit: UNITS.KILOGRAM
+  },
+  'silver-coin': {
+    id: 'silver-coin',
+    name: 'Silver Coin - ચાંદી (Chandi)',
+    description: 'Silver coin for offerings',
+    price: 500,
+    unit: UNITS.PIECE
+  },
+  'aasan': {
+    id: 'aasan',
+    name: 'Aasan - આસન (Aasan)',
+    description: 'Seat/mat for worship',
+    price: 250,
+    unit: UNITS.PIECE
+  },
+  'chamachi': {
+    id: 'chamachi',
+    name: 'Chamachi - ચમચી (Chamachi)',
+    description: 'Spoon for rituals',
     price: 50,
     unit: UNITS.PIECE
   },
-  'sthapan-clothing-black': {
-    id: 'sthapan-clothing-black',
-    name: 'Sthapan clothing Black - સ્થાપન વસ્ત્રો કાળો (Sthapan Vastron Kalo)',
-    description: 'Black cloth for deity installation',
+  'kalash-tramba': {
+    id: 'kalash-tramba',
+    name: 'Kalash Tramba - કળશ તાંબા (Kalash Tamba)',
+    description: 'Copper kalash for rituals',
+    price: 500,
+    unit: UNITS.PIECE
+  },
+  'chundi': {
+    id: 'chundi',
+    name: 'Chundi - ચૂંદડી (Chundi)',
+    description: 'A type of vessel for rituals',
+    price: 100,
+    unit: UNITS.PIECE
+  },
+  'rumal': {
+    id: 'rumal',
+    name: 'Rumal - રૂમાલ (Rumal)',
+    description: 'Handkerchief for rituals',
+    price: 20,
+    unit: UNITS.PIECE
+  },
+  'face-powder': {
+    id: 'face-powder',
+    name: 'Face Powder - ફેસ પાવડર (Face Powder)',
+    description: 'Face powder for rituals',
     price: 50,
     unit: UNITS.PIECE
   },
-  'sthapan-clothing-green': {
-    id: 'sthapan-clothing-green',
-    name: 'Sthapan clothing Green - સ્થાપન વસ્ત્રો લીલો (Sthapan Vastron Lilo)',
-    description: 'Green cloth for deity installation',
+  'nail-polish': {
+    id: 'nail-polish',
+    name: 'Nail Polish - નિલ પોલિશ (Nail Polish)',
+    description: 'Nail polish for rituals',
     price: 50,
     unit: UNITS.PIECE
   },
-  'sthapan-clothing-yellow': {
-    id: 'sthapan-clothing-yellow',
-    name: 'Sthapan clothing Yellow - સ્થાપન વસ્ત્રો પીળો (Sthapan Vastron Pilo)',
-    description: 'Yellow cloth for deity installation',
+  'kapoor-camphor': {
+    id: 'kapoor-camphor',
+    name: 'Kapoor - કપૂર (Kapoor)',
+    description: 'Camphor for aarti',
     price: 50,
     unit: UNITS.PIECE
   },
-  'sthapan-clothing-white': {
-    id: 'sthapan-clothing-white',
-    name: 'Sthapan clothing White - સ્થાપન વસ્ત્રો સફેદ (Sthapan Vastron Safed)',
-    description: 'White cloth for deity installation',
+  'kamalkakdi': {
+    id: 'kamalkakdi',
+    name: 'Kamalkakdi - કમલ કાકડી (Kamal Kakdi)',
+    description: 'Lotus stem for offerings',
+    price: 200,
+    unit: UNITS.KILOGRAM
+  },
+  'ral-no-dhup': {
+    id: 'ral-no-dhup',
+    name: 'Ral no Dhup - રાલનો ધૂપ (Ral no Dhup)',
+    description: 'Resin incense for rituals',
     price: 50,
+    unit: UNITS.QS
+  },
+  'dry-coconut-powder': {
+    id: 'dry-coconut-powder',
+    name: 'Dry Coconut Powder - કોપરાનો પાવડર (Kopra no Powder)',
+    description: 'Dried coconut powder for offerings',
+    price: 50,
+    unit: UNITS.QS
+  },
+  'sugandhi-valo': {
+    id: 'sugandhi-valo',
+    name: 'Sugandhi Valo - સુગંધી વાળો (Sugandhi Valo)',
+    description: 'Fragrant item for rituals',
+    price: 50,
+    unit: UNITS.QS
+  },
+  'tamal-patra': {
+    id: 'tamal-patra',
+    name: 'Tamal Patra - તમાલપત્ર (Tamal Patra)',
+    description: 'Tamal leaves for rituals',
+    price: 50,
+    unit: UNITS.QS
+  },
+  'dabhdo-grass': {
+    id: 'dabhdo-grass',
+    name: 'Dabhdo Grass - દર્ભ ઘાસ (Darbh Ghas)',
+    description: 'Sacred darbh grass for rituals',
+    price: 50,
+    unit: UNITS.QS
+  },
+  'cow-urine': {
+    id: 'cow-urine',
+    name: 'Cow Urine - ગૌમૂત્ર (Gomutra)',
+    description: 'Cow urine for purification',
+    price: 20,
+    unit: UNITS.QS
+  },
+  'chana': {
+    id: 'chana',
+    name: 'Chana - ચણા (Chana)',
+    description: 'Chickpeas for offerings',
+    price: 200,
+    unit: UNITS.KILOGRAM
+  },
+  'savliyu': {
+    id: 'savliyu',
+    name: 'Savliyu - સાવળિયું (Savaliyu)',
+    description: 'A type of vessel for rituals',
+    price: 250,
+    unit: UNITS.PIECE
+  },
+  'trambano-trass': {
+    id: 'trambano-trass',
+    name: 'Trambano Trass - તાંબાનો ત્રાંસ (Tamba no Tras)',
+    description: 'Copper tray for rituals',
+    price: 1000,
+    unit: UNITS.PIECE
+  },
+  'kanthi-mala': {
+    id: 'kanthi-mala',
+    name: 'Kanthi/Mala - કંઠી/માળા (Kanthi/Mala)',
+    description: 'Sacred necklace for worship',
+    price: 50,
+    unit: UNITS.PIECE
+  },
+  'gaumukhi': {
+    id: 'gaumukhi',
+    name: 'Gaumukhi - ગૌમુખી (Gaumukhi)',
+    description: 'Cow-shaped vessel for rituals',
+    price: 25,
+    unit: UNITS.PIECE
+  },
+  'dhramraja-silver-foil': {
+    id: 'dhramraja-silver-foil',
+    name: 'Dhramraja Silver Image Foil - ધર્મરાજની ચાંદીની છબી (Dharmaraj ni Chandi ni Chhabi)',
+    description: 'Silver foil image of Dharmraj',
+    price: 100,
+    unit: UNITS.PIECE
+  },
+  'cow-silver-foil': {
+    id: 'cow-silver-foil',
+    name: 'Cow Silver Image Foil - ગાયની ચાંદીની છબી (Gay ni Chandi ni Chhabi)',
+    description: 'Silver foil image of cow',
+    price: 100,
+    unit: UNITS.PIECE
+  },
+  'swastik-silver': {
+    id: 'swastik-silver',
+    name: 'Swastik Silver - ચાંદીનો સ્વસ્તિક (Chandi no Swastik)',
+    description: 'Silver swastik for rituals',
+    price: 100,
+    unit: UNITS.PIECE
+  },
+  'nisarani-silver': {
+    id: 'nisarani-silver',
+    name: 'Nisarani Silver - ચાંદીની નિસરણી (Chandi ni Nisarani)',
+    description: 'Silver nisarani for rituals',
+    price: 100,
+    unit: UNITS.PIECE
+  },
+  'ship-silver': {
+    id: 'ship-silver',
+    name: 'Ship Silver - ચાંદીનો જહાજ (Chandi no Nav)',
+    description: 'Silver ship for rituals',
+    price: 100,
+    unit: UNITS.PIECE
+  },
+  'janoi-silver': {
+    id: 'janoi-silver',
+    name: 'Janoi Silver - ચાંદીની જનોઈ (Chandi ni Janoi)',
+    description: 'Silver sacred thread',
+    price: 100,
     unit: UNITS.PIECE
   },
   'udad': {
@@ -928,56 +2221,56 @@ export const POOJA_ITEMS_MASTER: Record<string, Omit<PoojaItem, 'quantity'>> = {
   },
   'chandan-powder': {
     id: 'chandan-powder',
-    name: 'Chandan powder - ચંદન પાવડર (Chandan Powder)',
+    name: 'Chandan Powder - ચંદન પાવડર (Chandan Powder)',
     description: 'Sandalwood powder for tilak',
     price: 150,
-    unit: UNITS.GRAM
+    unit: UNITS.PIECE
   },
   'pittal-utensils-other': {
     id: 'pittal-utensils-other',
-    name: 'Pittal utensils other - પિત્તળના વાસણો (Pittala na Vasano)',
-    description: 'Brass utensils for worship',
+    name: 'Pittal Utensils Other - પિત્તળના વાસણો (Pittala na Vasano)',
+    description: 'Brass utensils for rituals',
     price: 1000,
     unit: UNITS.PIECE
   },
   'pittal-utensils-dish': {
     id: 'pittal-utensils-dish',
-    name: 'Pittal utensils Dish - પિત્તળના વાસણો ડીશ (Dish)',
-    description: 'Brass dish for offerings',
+    name: 'Pittal Utensils Dish - પિત્તળના વાસણો ડીશ (Dish)',
+    description: 'Brass dish for rituals',
     price: 1000,
     unit: UNITS.PIECE
   },
   'pittal-utensils-lota': {
     id: 'pittal-utensils-lota',
-    name: 'Pittal utensils Lota - પિત્તળના વાસણો લોટો (Loto)',
-    description: 'Brass water pot',
+    name: 'Pittal Utensils Lota - પિત્તળના વાસણો લોટો (Loto)',
+    description: 'Brass water pot for rituals',
     price: 700,
     unit: UNITS.PIECE
   },
   'pittal-utensils-glass': {
     id: 'pittal-utensils-glass',
-    name: 'Pittal utensils Glass - પિત્તળના વાસણો ગ્લાસ (Glass)',
-    description: 'Brass glass for offerings',
+    name: 'Pittal Utensils Glass - પિત્તળના વાસણો ગ્લાસ (Glass)',
+    description: 'Brass glass for rituals',
     price: 500,
     unit: UNITS.PIECE
   },
   'pittal-utensils-dabbo': {
     id: 'pittal-utensils-dabbo',
-    name: 'Pittal utensils Dabbo - પિત્તળના વાસણો ડબ્બો (Dabbo)',
-    description: 'Brass container for storage',
+    name: 'Pittal Utensils Dabbo - પિત્તળના વાસણો ડબ્બો (Dabbo)',
+    description: 'Brass container for rituals',
     price: 1000,
     unit: UNITS.PIECE
   },
   'tramba-kumbh': {
     id: 'tramba-kumbh',
-    name: 'Tramba kumbh - તાંબાનો કુંભ (Tamba no Kumbh)',
+    name: 'Tramba Kumbh - તાંબાનો કુંભ (Tamba no Kumbh)',
     description: 'Copper pot for rituals',
-    price: 0,
+    price: 1000,
     unit: UNITS.PIECE
   },
   'clay-kumbh': {
     id: 'clay-kumbh',
-    name: 'Clay kumbh - માટીનો કુંભ (Mati no Kumbh)',
+    name: 'Clay Kumbh - માટીનો કુંભ (Mati no Kumbh)',
     description: 'Clay pot for rituals',
     price: 250,
     unit: UNITS.PIECE
@@ -985,34 +2278,34 @@ export const POOJA_ITEMS_MASTER: Record<string, Omit<PoojaItem, 'quantity'>> = {
   'dhoti': {
     id: 'dhoti',
     name: 'Dhoti - ધોતી (Dhoti)',
-    description: 'Traditional male garment',
+    description: 'Traditional men\'s garment',
     price: 400,
     unit: UNITS.PIECE
   },
   'jabbha-nu-kapad': {
     id: 'jabbha-nu-kapad',
-    name: 'Jabbha nu kapad - ઝભ્ભાનું કાપડ (Jabbha nu Kapad)',
-    description: 'Cloth for religious robe',
+    name: 'Jabbha nu Kapad - ઝભ્ભાનું કાપડ (Jabbha nu Kapad)',
+    description: 'Cloth for traditional robe',
     price: 500,
     unit: UNITS.PIECE
   },
   'sari': {
     id: 'sari',
     name: 'Sari - સાડી (Sari)',
-    description: 'Traditional female garment',
+    description: 'Traditional women\'s garment',
     price: 1000,
     unit: UNITS.PIECE
   },
   'chanio': {
     id: 'chanio',
     name: 'Chanio - ચાણિયો (Chanio)',
-    description: 'Traditional head covering',
+    description: 'Traditional blouse',
     price: 250,
     unit: UNITS.PIECE
   },
   'blouse-piece': {
     id: 'blouse-piece',
-    name: 'Blouse piece - બ્લાઉઝ પીસ (Blouse Piece)',
+    name: 'Blouse Piece - બ્લાઉઝ પીસ (Blouse Piece)',
     description: 'Cloth for blouse',
     price: 250,
     unit: UNITS.PIECE
@@ -1034,62 +2327,62 @@ export const POOJA_ITEMS_MASTER: Record<string, Omit<PoojaItem, 'quantity'>> = {
   'ochhad': {
     id: 'ochhad',
     name: 'Ochhad - ઓઢાડ (Ochhad)',
-    description: 'Covering cloth',
+    description: 'Bedsheet for rituals',
     price: 250,
     unit: UNITS.PIECE
   },
   'chatri': {
     id: 'chatri',
     name: 'Chatri - છત્રી (Chatri)',
-    description: 'Umbrella for deity',
+    description: 'Umbrella for rituals',
     price: 200,
     unit: UNITS.PIECE
   },
   'chappal': {
     id: 'chappal',
     name: 'Chappal - ચપ્પલ (Chappal)',
-    description: 'Footwear for deity',
+    description: 'Footwear for rituals',
     price: 250,
     unit: UNITS.PIECE
   },
   'vas-ni-chhabdi': {
     id: 'vas-ni-chhabdi',
-    name: 'Vas ni chhabdi - વાંસની છાબડી (Vas ni Chhabdi)',
-    description: 'Bamboo basket',
+    name: 'Vas ni Chhabdi - વાંસની છાબડી (Vas ni Chhabdi)',
+    description: 'Bamboo basket for rituals',
     price: 100,
     unit: UNITS.PIECE
   },
   'chandla-packet': {
     id: 'chandla-packet',
-    name: 'Chandla packet - ચાંદલાનું પેકેટ (Chandla nu Packet)',
-    description: 'Sandalwood packet',
+    name: 'Chandla Packet - ચાંદલાનું પેકેટ (Chandla nu Packet)',
+    description: 'Chandla packet for rituals',
     price: 20,
     unit: UNITS.PIECE
   },
   'bangdi': {
     id: 'bangdi',
     name: 'Bangdi - બંગડી (Bangdi)',
-    description: 'Bangles for deity',
+    description: 'Bangles for rituals',
     price: 50,
     unit: UNITS.PIECE
   },
   'ariso': {
     id: 'ariso',
     name: 'Ariso - અરીસો (Ariso)',
-    description: 'Mirror for deity',
+    description: 'Mirror for rituals',
     price: 50,
     unit: UNITS.PIECE
   },
   'comb': {
     id: 'comb',
     name: 'Comb - કાંસકો (Kansko)',
-    description: 'Comb for deity',
+    description: 'Comb for rituals',
     price: 20,
     unit: UNITS.PIECE
   },
   'oil-bottle': {
     id: 'oil-bottle',
-    name: 'Oil bottle - તેલની બોટલ (Tel ni Bottle)',
+    name: 'Oil Bottle - તેલની બોટલ (Tel ni Bottle)',
     description: 'Oil bottle for rituals',
     price: 40,
     unit: UNITS.PIECE
@@ -1097,23 +2390,23 @@ export const POOJA_ITEMS_MASTER: Record<string, Omit<PoojaItem, 'quantity'>> = {
   'kajal': {
     id: 'kajal',
     name: 'Kajal - કાજળ (Kajal)',
-    description: 'Kohl for deity',
+    description: 'Kajal/Kohl for rituals',
     price: 20,
     unit: UNITS.PIECE
   },
   'sent': {
     id: 'sent',
     name: 'Sent - સેન્ટ (Sent)',
-    description: 'Perfume for deity',
+    description: 'Perfume/Scent for rituals',
     price: 50,
     unit: UNITS.PIECE
   },
   'kang': {
     id: 'kang',
     name: 'Kang - કાંગ (Kang)',
-    description: 'Comb for deity',
+    description: 'Kang grains for offerings',
     price: 200,
-    unit: UNITS.PIECE
+    unit: UNITS.KILOGRAM
   },
   'til': {
     id: 'til',
@@ -1125,434 +2418,73 @@ export const POOJA_ITEMS_MASTER: Record<string, Omit<PoojaItem, 'quantity'>> = {
   'jaar': {
     id: 'jaar',
     name: 'Jaar - જાર (Jar)',
-    description: 'Jar for storing offerings',
+    description: 'Jaar grain for offerings',
     price: 150,
     unit: UNITS.KILOGRAM
   },
   'moti': {
     id: 'moti',
     name: 'Moti - મોતી (Moti)',
-    description: 'Pearls for decoration',
+    description: 'Pearls for rituals',
     price: 500,
     unit: UNITS.KILOGRAM
   },
   'sutar-thread-ni-dadi': {
     id: 'sutar-thread-ni-dadi',
-    name: 'Sutar thread ni dadi - સૂતરની દડી (Sutar ni Dadi)',
-    description: 'Cotton thread ball',
+    name: 'Sutar Thread ni Dadi - સૂતરની દડી (Sutar ni Dadi)',
+    description: 'Cotton thread ball for rituals',
     price: 10,
     unit: UNITS.PIECE
   },
-  'kali-drax': {
-    id: 'kali-drax',
-    name: 'Kali drax - કાળી દ્રાક્ષ (Kali Drax)',
-    description: 'Black grapes for offerings',
-    price: 600,
-    unit: UNITS.KILOGRAM
-  },
-  'darbh-leaves': {
-    id: 'darbh-leaves',
-    name: 'Darbh leaves - દર્ભ (Darbh)',
-    description: 'Sacred grass for rituals',
-    price: 10,
-    unit: UNITS.GRAM
-  },
-  'jav': {
-    id: 'jav',
-    name: 'Jav - જવ (Jav)',
-    description: 'Barley for offerings',
-    price: 150,
-    unit: UNITS.KILOGRAM
-  },
-  'kamod': {
-    id: 'kamod',
-    name: 'Kamod - કામોદ (Kamod)',
-    description: 'Wheat flour for offerings',
-    price: 200,
-    unit: UNITS.KILOGRAM
-  },
-  'black-til': {
-    id: 'black-til',
-    name: 'Black til - કાળા તલ (Kala Tal)',
-    description: 'Black sesame seeds for offerings',
-    price: 200,
-    unit: UNITS.KILOGRAM
-  },
-  'jav-flour': {
-    id: 'jav-flour',
-    name: 'Jav flour - જવનો લોટ (Jav no Lot)',
-    description: 'Barley flour for offerings',
-    price: 400,
-    unit: UNITS.KILOGRAM
-  },
-  'udad-flour': {
-    id: 'udad-flour',
-    name: 'Udad flour - અડદનો લોટ (Adad no Lot)',
-    description: 'Black gram flour for offerings',
-    price: 200,
-    unit: UNITS.KILOGRAM
-  },
-  'kala-til-powder': {
-    id: 'kala-til-powder',
-    name: 'Kala til powder - કાળા તલનો પાવડર (Kala Tal no Powder)',
-    description: 'Black sesame powder',
-    price: 400,
-    unit: UNITS.KILOGRAM
-  },
-  'black-clay-matki': {
-    id: 'black-clay-matki',
-    name: 'Black clay matki - કાળી માટીની માટલી (Kali Mati ni Matli)',
-    description: 'Black clay pot for rituals',
-    price: 200,
-    unit: UNITS.PIECE
-  },
-  'vas-ni-sundli': {
-    id: 'vas-ni-sundli',
-    name: 'Vas ni sundli - વાંસની સુડલી (Vas ni Sudli)',
-    description: 'Bamboo stick for rituals',
-    price: 100,
-    unit: UNITS.PIECE
-  },
-  'wood-for-yagna': {
-    id: 'wood-for-yagna',
-    name: 'Wood for yagna - યજ્ઞ માટે લાકડું (Yagna mate Lakdu)',
-    description: 'Sacred wood for fire rituals',
-    price: 200,
-    unit: UNITS.KILOGRAM
-  },
-  'janoi': {
-    id: 'janoi',
-    name: 'Janoi - જનોઈ (Janoi)',
-    description: 'Sacred thread for rituals',
+  'cow-mud': {
+    id: 'cow-mud',
+    name: 'Cow Mud - ગાયનું છાણ (Gay nu Chhan)',
+    description: 'Cow dung for purification',
     price: 20,
     unit: UNITS.PIECE
   },
-  'pako-siddho': {
-    id: 'pako-siddho',
-    name: 'Pako Siddho - પાકો સિદ્ધો (Pako Siddho)',
-    description: 'Cooked offering for deity',
-    price: 500,
-    unit: UNITS.PIECE
-  },
-  'towel': {
-    id: 'towel',
-    name: 'Towel - ટુવાલ (Tuval)',
-    description: 'Towel for deity',
-    price: 100,
-    unit: UNITS.PIECE
-  },
-  'napkin': {
-    id: 'napkin',
-    name: 'Napkin - નેપકિન (Napkin)',
-    description: 'Napkin for rituals',
+  'sthapan-clothing-other': {
+    id: 'sthapan-clothing-other',
+    name: 'Sthapan Clothing Other - સ્થાપન વસ્ત્રો (Sthapan Vastron)',
+    description: 'Clothing for ritualistic placement',
     price: 50,
     unit: UNITS.PIECE
   },
-  'male-shirt-pant-kapad': {
-    id: 'male-shirt-pant-kapad',
-    name: 'Male Shirt and Pant Kapad - પુરુષ માટે શર્ટ અને પેન્ટનું કાપડ (Purush mate Shirt ane Pant nu Kapad)',
-    description: 'Cloth for male garments',
-    price: 1000,
-    unit: UNITS.PIECE
-  },
-  'water': {
-    id: 'water',
-    name: 'Water - પાણી (Pani)',
-    description: 'Sacred water for rituals',
-    price: 20,
-    unit: UNITS.LITER
-  },
-  'silver-turtle': {
-    id: 'silver-turtle',
-    name: 'Silver turtle - ચાંદીનો કાચબો (Chandi no Kachbo)',
-    description: 'Silver turtle for rituals',
-    price: 200,
-    unit: UNITS.PIECE
-  },
-  'silver-snake': {
-    id: 'silver-snake',
-    name: 'Silver snake - ચાંદીનો સાપ (Chandi no Saap)',
-    description: 'Silver snake for rituals',
-    price: 200,
-    unit: UNITS.PIECE
-  },
-  'tambani-tabudi': {
-    id: 'tambani-tabudi',
-    name: 'Tambani Tabudi - તાંબાની તબુડી (Tambani Tabudi)',
-    description: 'Copper vessel for rituals',
-    price: 200,
-    unit: UNITS.PIECE
-  },
-  'char-chock-ni-mati': {
-    id: 'char-chock-ni-mati',
-    name: 'Char chock ni mati - ચાર ચોકની માટી (Char Chok ni Mati)',
-    description: 'Clay from four corners',
-    price: 100,
-    unit: UNITS.KILOGRAM
-  },
-  'aasan': {
-    id: 'aasan',
-    name: 'Aasan - આસન (Aasan)',
-    description: 'Seat for deity',
-    price: 100,
-    unit: UNITS.PIECE
-  },
-  'chamachi': {
-    id: 'chamachi',
-    name: 'Chamachi - ચમચી (Chamachi)',
-    description: 'Spoon for offerings',
+  'sthapan-clothing-red': {
+    id: 'sthapan-clothing-red',
+    name: 'Sthapan Clothing Red - સ્થાપન વસ્ત્રો લાલ (Sthapan Vastron Laal)',
+    description: 'Red clothing for ritualistic placement',
     price: 50,
     unit: UNITS.PIECE
   },
-  'kalash-tramba': {
-    id: 'kalash-tramba',
-    name: 'Kalash tramba - કળશ તાંબા (Kalash Tamba)',
-    description: 'Copper sacred pot',
-    price: 500,
-    unit: UNITS.PIECE
-  },
-  'chundi': {
-    id: 'chundi',
-    name: 'Chundi - ચૂંદડી (Chundi)',
-    description: 'Sacred vessel for rituals',
-    price: 100,
-    unit: UNITS.PIECE
-  },
-  'rumal': {
-    id: 'rumal',
-    name: 'Rumal - રૂમાલ (Rumal)',
-    description: 'Handkerchief for deity',
-    price: 20,
-    unit: UNITS.PIECE
-  },
-  'face-powder': {
-    id: 'face-powder',
-    name: 'Face powder - ફેસ પાવડર (Face Powder)',
-    description: 'Face powder for deity',
+  'sthapan-clothing-black': {
+    id: 'sthapan-clothing-black',
+    name: 'Sthapan Clothing Black - સ્થાપન વસ્ત્રો કાળો (Sthapan Vastron Kalo)',
+    description: 'Black clothing for ritualistic placement',
     price: 50,
     unit: UNITS.PIECE
   },
-  'nail-polish': {
-    id: 'nail-polish',
-    name: 'Nail polish - નિલ પોલિશ (Nail Polish)',
-    description: 'Nail polish for deity',
+  'sthapan-clothing-green': {
+    id: 'sthapan-clothing-green',
+    name: 'Sthapan Clothing Green - સ્થાપન વસ્ત્રો લીલો (Sthapan Vastron Lilo)',
+    description: 'Green clothing for ritualistic placement',
     price: 50,
     unit: UNITS.PIECE
   },
-  'kapoor': {
-    id: 'kapoor',
-    name: 'Kapoor - કપૂર (Kapoor)',
-    description: 'Camphor for aarti',
+  'sthapan-clothing-yellow': {
+    id: 'sthapan-clothing-yellow',
+    name: 'Sthapan Clothing Yellow - સ્થાપન વસ્ત્રો પીળો (Sthapan Vastron Pilo)',
+    description: 'Yellow clothing for ritualistic placement',
     price: 50,
     unit: UNITS.PIECE
   },
-  'kamalkakdi': {
-    id: 'kamalkakdi',
-    name: 'Kamalkakdi - કમલ કાકડી (Kamal Kakdi)',
-    description: 'Lotus stem for offerings',
-    price: 200,
-    unit: UNITS.KILOGRAM
-  },
-  'ral-no-dhup': {
-    id: 'ral-no-dhup',
-    name: 'Ral no dhup - રાલનો ધૂપ (Ral no Dhup)',
-    description: 'Resin incense for worship',
-    price: 50,
-    unit: UNITS.QS
-  },
-  'dry-coconut-powder': {
-    id: 'dry-coconut-powder',
-    name: 'Dry coconut powder - કોપરાનો પાવડર (Kopra no Powder)',
-    description: 'Dried coconut powder',
-    price: 50,
-    unit: UNITS.QS
-  },
-  'sugandhi-valo': {
-    id: 'sugandhi-valo',
-    name: 'Sugandhi valo - સુગંધી વાળો (Sugandhi Valo)',
-    description: 'Fragrant material for worship',
-    price: 50,
-    unit: UNITS.QS
-  },
-  'tamal-patra': {
-    id: 'tamal-patra',
-    name: 'Tamal patra - તમાલપત્ર (Tamal Patra)',
-    description: 'Tamal leaves for worship',
-    price: 50,
-    unit: UNITS.QS
-  },
-  'dabhdo-grass': {
-    id: 'dabhdo-grass',
-    name: 'Dabhdo grass - દર્ભ ઘાસ (Darbh Ghas)',
-    description: 'Sacred grass for rituals',
-    price: 50,
-    unit: UNITS.QS
-  },
-  'cow-urine': {
-    id: 'cow-urine',
-    name: 'Cow urine - ગૌમૂત્ર (Gomutra)',
-    description: 'Cow urine for purification',
-    price: 20,
-    unit: UNITS.QS
-  },
-  'chana': {
-    id: 'chana',
-    name: 'Chana - ચણા (Chana)',
-    description: 'Chickpeas for offerings',
-    price: 200,
-    unit: UNITS.KILOGRAM
-  },
-  'savliyu': {
-    id: 'savliyu',
-    name: 'Savliyu - સાવળિયું (Savaliyu)',
-    description: 'Sacred offering for deity',
-    price: 100,
-    unit: UNITS.PIECE
-  },
-  'trambano-trass': {
-    id: 'trambano-trass',
-    name: 'Trambano trass - તાંબાનો ત્રાંસ (Tamba no Tras)',
-    description: 'Copper vessel for rituals',
-    price: 1000,
-    unit: UNITS.PIECE
-  },
-  'kanthi-mala': {
-    id: 'kanthi-mala',
-    name: 'Kanthi/Mala - કંઠી/માળા (Kanthi/Mala)',
-    description: 'Sacred necklace for deity',
+  'sthapan-clothing-white': {
+    id: 'sthapan-clothing-white',
+    name: 'Sthapan Clothing White - સ્થાપન વસ્ત્રો સફેદ (Sthapan Vastron Safed)',
+    description: 'White clothing for ritualistic placement',
     price: 50,
     unit: UNITS.PIECE
   },
-  'gaumukhi': {
-    id: 'gaumukhi',
-    name: 'Gaumukhi - ગૌમુખી (Gaumukhi)',
-    description: 'Cow-shaped vessel for rituals',
-    price: 25,
-    unit: UNITS.PIECE
-  },
-  'dhramraja-silver-image': {
-    id: 'dhramraja-silver-image',
-    name: 'Dhramraja silver image - ધર્મરાજની ચાંદીની છબી (Dharmaraj ni Chandi ni Chhabi)',
-    description: 'Silver image of Dharmaraj',
-    price: 100,
-    unit: UNITS.PIECE
-  },
-  'cow-silver-image': {
-    id: 'cow-silver-image',
-    name: 'Cow silver image - ગાયની ચાંદીની છબી (Gay ni Chandi ni Chhabi)',
-    description: 'Silver image of cow',
-    price: 100,
-    unit: UNITS.PIECE
-  },
-  'swastik-silver': {
-    id: 'swastik-silver',
-    name: 'Swastik silver - ચાંદીનો સ્વસ્તિક (Chandi no Swastik)',
-    description: 'Silver swastik symbol',
-    price: 100,
-    unit: UNITS.PIECE
-  },
-  'nisarani-silver': {
-    id: 'nisarani-silver',
-    name: 'Nisarani silver - ચાંદીની નિસરણી (Chandi ni Nisarani)',
-    description: 'Silver nisarani for rituals',
-    price: 100,
-    unit: UNITS.PIECE
-  },
-  'ship-silver': {
-    id: 'ship-silver',
-    name: 'Ship silver - ચાંદીનો જહાજ (Chandi no Nav)',
-    description: 'Silver ship for rituals',
-    price: 100,
-    unit: UNITS.PIECE
-  },
-  'janoi-silver': {
-    id: 'janoi-silver',
-    name: 'Janoi silver - ચાંદીની જનોઈ (Chandi ni Janoi)',
-    description: 'Silver sacred thread',
-    price: 100,
-    unit: UNITS.PIECE
-  },
- 
-  // Gujarati Items
-  'coconut-naliyer': {
-    id: 'coconut-naliyer',
-    name: 'Coconut - નાળિયેર (Naliyer)',
-    description: 'Fresh coconut for offerings',
-    price: 30,
-    unit: UNITS.PIECE
-  },
-
-  'kacha-fal': {
-    id: 'kacha-fal',
-    name: 'Kacha Fal - કાચા ફળ (Kacha Fal)',
-    description: 'Raw fruits for offerings',
-    price: 20,
-    unit: UNITS.PIECE
-  },
-  'sthapan-red-blouse': {
-    id: 'sthapan-red-blouse',
-    name: 'Sthapan Red Blouse Piece - સ્થાપન માટે લાલ બ્લાઉઝ પીસ (Sthapan mate Lal Blouse Piece)',
-    description: 'Red blouse piece for ritualistic placement/establishment',
-    price: 40,
-    unit: UNITS.PIECE
-  },
-  'coins-offering': {
-    id: 'coins-offering',
-    name: 'Coins for Offering - સિક્કા (Sikka)',
-    description: 'Coins for monetary offerings',
-    price: 1,
-    unit: UNITS.PIECE
-  },
-
-  'male-shirt-pant': {
-    id: 'male-shirt-pant',
-    name: 'Male Shirt and Pant - પુરુષ માટે શર્ટ અને પેન્ટનું કાપડ (Purush mate Shirt ane Pant nu Kapad)',
-    description: 'Cloth for male shirt and pant',
-    price: 1000,
-    unit: UNITS.PIECE
-  },
-  'water-pani': {
-    id: 'water-pani',
-    name: 'Water - પાણી (Pani)',
-    description: 'Water for rituals',
-    price: 20,
-    unit: UNITS.LITER
-  },
-  'char-chok-ni-mati': {
-    id: 'char-chok-ni-mati',
-    name: 'Char Chok ni Mati - ચાર ચોકની માટી (Char Chok ni Mati)',
-    description: 'Clay from four directions for rituals',
-    price: 100,
-    unit: UNITS.KILOGRAM
-  },
-  'silver-coin': {
-    id: 'silver-coin',
-    name: 'Silver Coin - ચાંદી (Chandi)',
-    description: 'Silver coin for offerings',
-    price: 500,
-    unit: UNITS.PIECE
-  },
-  'kapoor-camphor': {
-    id: 'kapoor-camphor',
-    name: 'Kapoor - કપૂર (Kapoor)',
-    description: 'Camphor for aarti',
-    price: 50,
-    unit: UNITS.PIECE
-  },
-  'dhramraja-silver-foil': {
-    id: 'dhramraja-silver-foil',
-    name: 'Dhramraja Silver Image Foil - ધર્મરાજની ચાંદીની છબી (Dharmaraj ni Chandi ni Chhabi)',
-    description: 'Silver foil image of Dharmraj',
-    price: 100,
-    unit: UNITS.PIECE
-  },
-  'cow-silver-foil': {
-    id: 'cow-silver-foil',
-    name: 'Cow Silver Image Foil - ગાયની ચાંદીની છબી (Gay ni Chandi ni Chhabi)',
-    description: 'Silver foil image of cow',
-    price: 100,
-    unit: UNITS.PIECE
-  }
   
 };
 
@@ -1567,7 +2499,6 @@ const createPoojaItem = (itemId: string, quantity: number): PoojaItem => {
     quantity
   };
 };
-
 
 const POOJA_IMAGES = {
   // Existing Images
@@ -1603,18 +2534,7 @@ const POOJA_IMAGES = {
 };
 
 export const POOJA_TYPES: PoojaType[] = [
-  {
-    id: 'ganapati-pooja',
-    name: 'Ganapati Pooja',
-    description: 'Worship of Lord Ganesha to remove obstacles and ensure success in all endeavors.',
-    image: POOJA_IMAGES.ganesh,
-  },
-  {
-    id: 'shiv-pooja-rudrabhishek',
-    name: 'Shiv Pooja / Rudrabhishek',
-    description: 'Sacred ritual to worship Lord Shiva with Rudrabhishek for spiritual growth and blessings.',
-    image: POOJA_IMAGES.shiv,
-  },
+  // Existing Poojas
   {
     id: 'satyanarayan-pooja',
     name: 'Satyanarayan Pooja',
@@ -1622,95 +2542,194 @@ export const POOJA_TYPES: PoojaType[] = [
     image: POOJA_IMAGES.satyanarayan,
   },
   {
-    id: 'randal-na-lota',
-    name: 'Randal na Lota',
-    description: 'Traditional Gujarati ritual performed for cooking and preparing food with divine blessings.',
-    image: POOJA_IMAGES.havan,
-  },
-  {
-    id: 'navchandi-yagna',
-    name: 'NavChandi Yagna',
-    description: 'Powerful fire ritual dedicated to Goddess Chandi for protection and prosperity.',
-    image: POOJA_IMAGES.navchandi,
-  },
-  {
-    id: 'new-home-kumbh-sthapan',
-    name: 'New Home Kumbh Sthapan',
-    description: 'Sacred ritual for establishing positive energy and divine presence in a new home.',
-    image: POOJA_IMAGES.grihaPravesh,
-  },
-  {
-    id: 'vastu-pooja',
-    name: 'Vastu Pooja',
-    description: 'Ritual to harmonize living spaces according to Vastu principles for peace and prosperity.',
-    image: POOJA_IMAGES.grihaPravesh,
-  },
-  {
-    id: 'gayatri-yagna',
-    name: 'Gayatri Yagna',
-    description: 'Sacred fire ceremony dedicated to Goddess Gayatri for wisdom and spiritual enlightenment.',
-    image: POOJA_IMAGES.havan,
-  },
-  {
-    id: 'boy-marriage',
-    name: 'Boy Marriage',
-    description: 'Traditional wedding ceremonies and rituals performed for the groom.',
+    id: 'boys-marriage-pooja',
+    name: 'Boys Marriage Pooja',
+    description: 'Traditional rituals and ceremonies performed for the groom before and during the wedding ceremony.',
     image: POOJA_IMAGES.boysMarriage,
   },
   {
-    id: 'girl-marriage',
-    name: 'Girl Marriage',
-    description: 'Sacred wedding ceremonies and rituals performed for the bride.',
+    id: 'girls-marriage-pooja',
+    name: 'Girls Marriage Pooja',
+    description: 'Sacred rituals and ceremonies performed for the bride before and during the wedding ceremony.',
     image: POOJA_IMAGES.girlsMarriage,
   },
+
   {
-    id: 'dharamraja-vrat',
-    name: 'Dharamraja Vrat',
-    description: 'Vrat dedicated to Lord Dharamraja for righteousness and spiritual purification.',
+    id: 'griha-pravesh-pooja',
+    name: 'Griha Pravesh Pooja',
+    description: 'Performed when entering a new home to purify the space and bring good fortune.',
+    image: POOJA_IMAGES.grihaPravesh,
+  },
+  {
+    id: 'diwali-pooja',
+    name: 'Diwali Pooja',
+    description: 'Lakshmi Pooja performed on the auspicious day of Diwali to welcome wealth.',
+    image: POOJA_IMAGES.diwali,
+  },
+  {
+    id: 'ganesh-chaturthi-pooja',
+    name: 'Ganesh Chaturthi Pooja',
+    description: "Celebration of Lord Ganesha's birth with immense devotion and joy.",
+    image: POOJA_IMAGES.ganesh,
+  },
+   {
+    id: 'navratri-pooja',
+    name: 'Navratri Pooja',
+    description: 'Nine days of worship dedicated to Goddess Durga in her various forms.',
+    image: POOJA_IMAGES.navratri,
+  },
+   {
+    id: 'havan-yagna',
+    name: 'Havan / Yagna',
+    description: 'A fire ritual to invoke divine blessings for purification and specific goals.',
+    image: POOJA_IMAGES.havan,
+  },
+  // New Poojas
+  {
+    id: 'bol-chauth-gaumata-pooja',
+    name: 'Bol Chauth Gaumata Pooja',
+    description: 'A sacred pooja dedicated to the worship of cows (Gaumata) for blessings and prosperity.',
+    image: POOJA_IMAGES.bolChauth,
+  },
+  {
+    id: 'dashamaa-vrat',
+    name: 'Dashamaa Vrat',
+    description: 'A ten-day vrat to honor Goddess Dashamaa, seeking her protection from misfortunes.',
     image: POOJA_IMAGES.dashamaa,
   },
   {
-    id: 'shraddh-pooja',
-    name: 'Shraddh Pooja',
-    description: 'Annual ceremony to honor and pay respects to deceased ancestors.',
-    image: POOJA_IMAGES.pindDaan,
+    id: 'dhanlakshmi-pooja',
+    name: 'Dhanlakshmi Pooja',
+    description: 'Invoke the blessings of Goddess Dhanlakshmi for financial stability and wealth.',
+    image: POOJA_IMAGES.dhanlakshmi,
   },
   {
-    id: 'pret-bali-pooja',
-    name: 'Pret Bali Pooja',
-    description: 'Ritual performed to appease departed souls and ensure their peaceful transition.',
-    image: POOJA_IMAGES.pindDaan,
+    id: 'evrat-jivrat-vrat',
+    name: 'Evrat-Jivrat Vrat',
+    description: 'A traditional vrat observed by women for the health and longevity of their beloved husbands.',
+    image: POOJA_IMAGES.evratJivrat,
   },
   {
-    id: 'new-shop-pooja',
-    name: 'New Shop Pooja',
-    description: 'Auspicious ceremony for blessing a new business establishment with prosperity.',
-    image: POOJA_IMAGES.vishesh,
+    id: 'ful-kajli-vrat',
+    name: 'Ful-kajli Vrat',
+    description: 'An auspicious vrat celebrated with devotion, involving offerings of flowers and kajal.',
+    image: POOJA_IMAGES.fulKajli,
   },
   {
-    id: 'new-land-pooja',
-    name: 'New Land Pooja',
-    description: 'Sacred ritual performed when acquiring new land for blessings and positive energy.',
-    image: POOJA_IMAGES.vishesh,
+    id: 'ganesh-pooja',
+    name: 'Ganesh Pooja',
+    description: 'A devotional pooja to Lord Ganesha to remove obstacles and ensure success in endeavors.',
+    image: POOJA_IMAGES.ganeshGeneric,
   },
   {
-    id: 'new-vehicle-pooja',
-    name: 'New Vehicle Pooja',
-    description: 'Blessing ceremony for new vehicles to ensure safety and smooth journeys.',
-    image: POOJA_IMAGES.vishesh,
+    id: 'gauri-vrat',
+    name: 'Gauri Vrat',
+    description: 'Worship of Goddess Gauri to seek blessings for a blissful marital life and well-being.',
+    image: POOJA_IMAGES.gauriVrat,
   },
   {
     id: 'grah-shanti-pooja',
     name: 'Grah Shanti Pooja',
-    description: 'Ritual to pacify planetary influences and mitigate negative astrological effects.',
+    description: 'A ritual to appease the nine planets and mitigate their negative astrological effects.',
+    image: POOJA_IMAGES.havan, // Re-using havan image
+  },
+  {
+    id: 'jaya-parvati-vrat',
+    name: 'Jaya-Parvati Vrat',
+    description: 'A five-day vrat dedicated to Goddess Jaya and Parvati for a good husband and happy family life.',
+    image: POOJA_IMAGES.jayaParvati,
+  },
+  {
+    id: 'kalsarp-vidhi-pooja',
+    name: 'Kalsarp Vidhi Pooja',
+    description: "A specialized ritual performed to alleviate the effects of the Kalsarp Dosha in one's horoscope.",
+    image: POOJA_IMAGES.kalsarp,
+  },
+  {
+    id: 'kevda-trij-vrat',
+    name: 'Kevda Trij Vrat',
+    description: 'A significant vrat for marital bliss, where Kevda (pandanus) flowers are offered to deities.',
+    image: POOJA_IMAGES.kevdaTrij,
+  },
+  {
+    id: 'krishna-pooja',
+    name: 'Krishna Pooja',
+    description: 'Celebrate the divine presence of Lord Krishna with this joyous and devotional worship.',
+    image: POOJA_IMAGES.krishna,
+  },
+  {
+    id: 'meldi-mata-vrat',
+    name: 'Meldi Mata Vrat',
+    description: 'A vrat to seek blessings and protection from the powerful folk goddess, Meldi Mata.',
+    image: POOJA_IMAGES.dashamaa, // Re-using image
+  },
+  {
+    id: 'nakshatra-vidhi-pooja',
+    name: 'Nakshatra Vidhi Pooja',
+    description: 'A pooja to harmonize the energies of the Nakshatras (lunar mansions) for peace and progress.',
     image: POOJA_IMAGES.nakshatra,
   },
   {
-    id: 'garud-puran',
-    name: 'Garud Puran',
-    description: 'Sacred recitation of Garud Puran for spiritual guidance and ancestral blessings.',
+    id: 'navchandi-havan',
+    name: 'Navchandi Havan',
+    description: 'A powerful and intricate havan to Goddess Chandi for health, prosperity, and protection.',
+    image: POOJA_IMAGES.navchandi,
+  },
+  {
+    id: 'pind-daan-karma',
+    name: 'Pind Daan Karma',
+    description: "A vital Hindu ritual to offer homage to deceased ancestors, ensuring their soul's peace.",
+    image: POOJA_IMAGES.pindDaan,
+  },
+  {
+    id: 'pitru-shraddh-pooja',
+    name: 'Pitru Shraddh Pooja',
+    description: "An annual ceremony to express gratitude and pay respects to one's ancestors (Pitrus).",
+    image: POOJA_IMAGES.pindDaan, // Re-using image
+  },
+  {
+    id: 'saibaba-vrat',
+    name: 'Saibaba Vrat',
+    description: 'A nine-Thursday vrat dedicated to Shirdi Sai Baba to fulfill wishes and find spiritual guidance.',
+    image: POOJA_IMAGES.saibaba,
+  },
+  {
+    id: 'santoshi-mata-vrat',
+    name: 'Santoshi Mata Vrat',
+    description: 'A popular 16-Friday vrat to honor Santoshi Mata, the goddess of satisfaction and contentment.',
+    image: POOJA_IMAGES.navratri, // Re-using image
+  },
+  {
+    id: 'shiv-pooja',
+    name: 'Shiv Pooja',
+    description: 'Worship Lord Shiva, the supreme being, for spiritual growth, peace, and inner strength.',
+    image: POOJA_IMAGES.shiv,
+  },
+  {
+    id: 'shrimad-bhagvat-pooja',
+    name: 'Shrimad Bhagvat Pooja',
+    description: 'A sacred seven-day recitation of the Srimad Bhagavatam to attain spiritual enlightenment.',
     image: POOJA_IMAGES.bhagvat,
   },
+  {
+    id: 'vad-savitri-vrat',
+    name: 'Vad-Savitri Vrat',
+    description: "A traditional vrat where married women pray to the Banyan tree for their husband's long life.",
+    image: POOJA_IMAGES.vadSavitri,
+  },
+  {
+    id: 'vishesh-pooja',
+    name: 'Vishesh Pooja',
+    description: 'A special, customized pooja conducted for specific personal intentions or occasions.',
+    image: POOJA_IMAGES.vishesh,
+  },
+  {
+    id: 'vishnuyag-pooja',
+    name: 'Vishnuyag Pooja',
+    description: 'A grand yagna dedicated to Lord Vishnu to seek his divine blessings for universal peace.',
+    image: POOJA_IMAGES.havan, // Re-using havan image
+  },
+  
 ];
 
 // Vrat Images
@@ -2691,1318 +3710,418 @@ export const VRAT_TYPES: VratType[] = [
 ];
 
 
-export const POOJA_SAMAGRI_DATA: Record<string, PoojaItem[]> = {
-  // Based on CSV data - Ganapati pooja
- 'ganapati-pooja': [
-    createPoojaItem('coconut-watered', 2.0),
-    createPoojaItem('kanku', 50.0),
-    createPoojaItem('gulal', 50.0),
-    createPoojaItem('abel', 50.0),
-    createPoojaItem('sakar', 250.0),
-    createPoojaItem('drax', 50.0),
-    createPoojaItem('common-dry-fruits', 250.0),
-    createPoojaItem('supari', 0.2),
-    createPoojaItem('taj', 50.0),
-    createPoojaItem('lavang', 50.0),
-    createPoojaItem('elichi', 50.0),
-    createPoojaItem('nadachadi-thread', 1.0),
-    createPoojaItem('agarbatti', 1.0),
-    createPoojaItem('topra-na-vatka', 2.0),
-    createPoojaItem('ganpati-idol', 1.0),
-    createPoojaItem('bajot', 1.0),
-    createPoojaItem('tulsi-na-pan', 20.0),
-    createPoojaItem('aasopalav-na-pan', 50.0),
-    createPoojaItem('nagarvel-na-pan', 5.0),
-    createPoojaItem('gud', 0.25),
-    createPoojaItem('panchamrit', 20.0),
-    createPoojaItem('chhuta-phool', 0.5),
-    createPoojaItem('phool-har', 2.0),
-    createPoojaItem('kagaj-na-duna', 30.0),
-    createPoojaItem('ghau', 1.0),
-    createPoojaItem('chokha', 0.5),
-    createPoojaItem('pakka-fal', 1.0),
-    createPoojaItem('sutli-thread', 1.0),
-    createPoojaItem('clay-divda', 2.0),
-    createPoojaItem('aluminium-thali', 2.0),
-    createPoojaItem('vatka', 4.0),
-    createPoojaItem('rakabi', 2.0),
-    createPoojaItem('lamp-divo', 1.0),
-    createPoojaItem('ghee-liquid', 100.0),
-    createPoojaItem('ghee-cotton', 1.0),
-    createPoojaItem('machis', 1.0),
-    createPoojaItem('sthapan-clothing-red', 1.0),
-    createPoojaItem('sthapan-clothing-green', 1.0),
-    createPoojaItem('chandan-powder', 1.0),
-    createPoojaItem('tramba-kumbh', 1.0),
-    createPoojaItem('dhoti', 1.0),
-    createPoojaItem('jabbha-nu-kapad', 1.0),
-    createPoojaItem('sent', 1.0),
-    createPoojaItem('sutar-thread-ni-dadi', 1.0),
-    createPoojaItem('kali-drax', 0.15),
-    createPoojaItem('darbh-leaves', 10.0),
-    createPoojaItem('honey', 1.0),
-    createPoojaItem('janoi', 1.0),
-    createPoojaItem('pako-siddho', 1.0),
-    createPoojaItem('water', 1.0),
-    createPoojaItem('chamachi', 4.0),
-    createPoojaItem('kalash-tramba', 1.0),
-    createPoojaItem('kapoor', 1.0),
-    createPoojaItem('dabhdo-grass', 1.0),
+
+  'griha-pravesh-pooja': [
+    createPoojaItem('kalash-new-home', 1),
+    createPoojaItem('mango-leaves', 25),
+    createPoojaItem('ganga-jal', 250),
+    createPoojaItem('rock-salt', 200),
+    createPoojaItem('rangoli-powder', 1),
+    createPoojaItem('dhoop-sticks', 12),
+    createPoojaItem('swastik-stickers', 10),
+    createPoojaItem('coconut-entrance', 1),
+    createPoojaItem('cow-milk', 1),
+    createPoojaItem('brass-lamp', 1)
   ],
 
-  'shiv-pooja-rudrabhishek': [
-    createPoojaItem('coconut-watered', 1.0),
-    createPoojaItem('kanku', 50.0),
-    createPoojaItem('gulal', 50.0),
-    createPoojaItem('abel', 50.0),
-    createPoojaItem('sakar', 250.0),
-    createPoojaItem('drax', 50.0),
-    createPoojaItem('common-dry-fruits', 250.0),
-    createPoojaItem('supari', 0.2),
-    createPoojaItem('taj', 50.0),
-    createPoojaItem('lavang', 50.0),
-    createPoojaItem('elichi', 50.0),
-    createPoojaItem('nadachadi-thread', 1.0),
-    createPoojaItem('agarbatti', 1.0),
-    createPoojaItem('topra-na-vatka', 1.0),
-    createPoojaItem('ganpati-idol', 1.0),
-    createPoojaItem('bajot', 1.0),
-    createPoojaItem('tulsi-na-pan', 20.0),
-    createPoojaItem('aasopalav-na-pan', 20.0),
-    createPoojaItem('nagarvel-na-pan', 5.0),
-    createPoojaItem('gud', 0.25),
-    createPoojaItem('panchamrit', 20.0),
-    createPoojaItem('chhuta-phool', 0.5),
-    createPoojaItem('phool-har', 2.0),
-    createPoojaItem('kagaj-na-duna', 30.0),
-    createPoojaItem('chokha', 0.5),
-    createPoojaItem('pakka-fal', 1.0),
-    createPoojaItem('clay-divda', 2.0),
-    createPoojaItem('aluminium-thali', 2.0),
-    createPoojaItem('vatka', 4.0),
-    createPoojaItem('rakabi', 2.0),
-    createPoojaItem('lamp-divo', 1.0),
-    createPoojaItem('ghee-liquid', 100.0),
-    createPoojaItem('ghee-cotton', 1.0),
-    createPoojaItem('machis', 1.0),
-    createPoojaItem('sthapan-clothing-red', 1.0),
-    createPoojaItem('sthapan-clothing-green', 1.0),
-    createPoojaItem('sthapan-clothing-white', 1.0),
-    createPoojaItem('chandan-powder', 1.0),
-    createPoojaItem('tramba-kumbh', 1.0),
-    createPoojaItem('dhoti', 1.0),
-    createPoojaItem('jabbha-nu-kapad', 1.0),
-    createPoojaItem('sent', 1.0),
-    createPoojaItem('sutar-thread-ni-dadi', 1.0),
-    createPoojaItem('kali-drax', 0.15),
-    createPoojaItem('darbh-leaves', 10.0),
-    createPoojaItem('honey', 1.0),
-    createPoojaItem('janoi', 2.0),
-    createPoojaItem('pako-siddho', 1.0),
-    createPoojaItem('male-shirt-pant-kapad', 1.0),
-    createPoojaItem('water', 5.0),
-    createPoojaItem('chamachi', 4.0),
-    createPoojaItem('kalash-tramba', 1.0),
-    createPoojaItem('kapoor', 1.0),
-    createPoojaItem('dabhdo-grass', 1.0),
-    createPoojaItem('savliyu', 1.0),
+  'diwali-pooja': [
+    createPoojaItem('lakshmi-idol', 1),
+    createPoojaItem('diyas-earthen', 21),
+    createPoojaItem('mustard-oil', 1),
+    createPoojaItem('lotus-flowers', 8),
+    createPoojaItem('gold-coins', 5),
+    createPoojaItem('rice-red', 1),
+    createPoojaItem('puffed-rice', 1),
+    createPoojaItem('dry-fruits', 1),
+    createPoojaItem('silver-coins', 2),
+    createPoojaItem('kumkum-packets', 5)
   ],
 
-  'satyanarayan-pooja': [
-    createPoojaItem('coconut-watered', 2.0),
-    createPoojaItem('kanku', 50.0),
-    createPoojaItem('gulal', 50.0),
-    createPoojaItem('abel', 50.0),
-    createPoojaItem('sakar', 250.0),
-    createPoojaItem('drax', 50.0),
-    createPoojaItem('common-dry-fruits', 250.0),
-    createPoojaItem('supari', 0.2),
-    createPoojaItem('taj', 50.0),
-    createPoojaItem('lavang', 50.0),
-    createPoojaItem('elichi', 50.0),
-    createPoojaItem('nadachadi-thread', 1.0),
-    createPoojaItem('agarbatti', 1.0),
-    createPoojaItem('topra-na-vatka', 2.0),
-    createPoojaItem('ganpati-idol', 1.0),
-    createPoojaItem('bajot', 2.0),
-    createPoojaItem('patla', 2.0),
-    createPoojaItem('kel-na-pan', 4.0),
-    createPoojaItem('tulsi-na-pan', 1020.0),
-    createPoojaItem('aasopalav-na-pan', 50.0),
-    createPoojaItem('nagarvel-na-pan', 5.0),
-    createPoojaItem('gud', 0.25),
-    createPoojaItem('panchamrit', 20.0),
-    createPoojaItem('chhuta-phool', 0.5),
-    createPoojaItem('phool-har', 2.0),
-    createPoojaItem('kagaj-na-duna', 30.0),
-    createPoojaItem('ghau', 1.0),
-    createPoojaItem('chokha', 1.0),
-    createPoojaItem('pakka-fal', 1.0),
-    createPoojaItem('sutli-thread', 1.0),
-    createPoojaItem('clay-divda', 2.0),
-    createPoojaItem('aluminium-thali', 2.0),
-    createPoojaItem('vatka', 4.0),
-    createPoojaItem('rakabi', 2.0),
-    createPoojaItem('lamp-divo', 1.0),
-    createPoojaItem('ghee-liquid', 250.0),
-    createPoojaItem('ghee-cotton', 1.0),
-    createPoojaItem('machis', 1.0),
-    createPoojaItem('sthapan-clothing-red', 1.0),
-    createPoojaItem('sthapan-clothing-white', 1.0),
-    createPoojaItem('chandan-powder', 1.0),
-    createPoojaItem('tramba-kumbh', 2.0),
-    createPoojaItem('sent', 1.0),
-    createPoojaItem('sutar-thread-ni-dadi', 1.0),
-    createPoojaItem('kali-drax', 0.15),
-    createPoojaItem('darbh-leaves', 10.0),
-    createPoojaItem('honey', 1.0),
-    createPoojaItem('janoi', 2.0),
-    createPoojaItem('pako-siddho', 1.0),
-    createPoojaItem('water', 2.0),
-    createPoojaItem('chamachi', 4.0),
-    createPoojaItem('kalash-tramba', 2.0),
-    createPoojaItem('kapoor', 1.0),
-    createPoojaItem('dabhdo-grass', 1.0),
-    createPoojaItem('savliyu', 1.0),
+  'ganesh-chaturthi-pooja': [
+    {
+      id: 'ganesh-murti',
+      name: 'Ganesha Murti',
+      description: 'Clay idol of Lord Ganesha',
+      quantity: 1,
+      price: 300,
+      unit: UNITS.PIECE
+    },
+    {
+      id: 'modak-ingredients',
+      name: 'Modak Making Kit',
+      description: 'Rice flour, jaggery, coconut for Ganesha\'s favorite sweet',
+      quantity: 1,
+      price: 120,
+      unit: UNITS.SET
+    },
+    {
+      id: 'durva-grass',
+      name: 'Durva Grass',
+      description: 'Sacred grass beloved by Lord Ganesha',
+      quantity: 21,
+      price: 30,
+      unit: UNITS.BUNDLE
+    },
+    {
+      id: 'red-flowers',
+      name: 'Red Flowers (Jaba)',
+      description: 'Fresh red hibiscus flowers',
+      quantity: 21,
+      price: 105,
+      unit: UNITS.PIECE
+    },
+    {
+      id: 'laddu-ready',
+      name: 'Ready Laddus',
+      description: 'Sweet laddus as offering to Ganesha',
+      quantity: 5,
+      price: 100,
+      unit: UNITS.PIECE
+    },
+    {
+      id: 'sindoor-red',
+      name: 'Bright Red Sindoor',
+      description: 'Vermillion for decorating Ganesha',
+      quantity: 1,
+      price: 45,
+      unit: UNITS.PACKET
+    },
+    {
+      id: 'sandalwood-paste',
+      name: 'Sandalwood Paste',
+      description: 'Fragrant paste for tilak and decoration',
+      quantity: 50,
+      price: 80,
+      unit: UNITS.GRAM
+    },
+    {
+      id: 'banana-offering',
+      name: 'Yellow Bananas',
+      description: 'Fresh ripe bananas for offering',
+      quantity: 11,
+      price: 55,
+      unit: UNITS.PIECE
+    },
+    {
+      id: 'sacred-thread',
+      name: 'Sacred Thread (Janeu)',
+      description: 'White thread for ritual purposes',
+      quantity: 1,
+      price: 20,
+      unit: UNITS.PIECE
+    },
+    {
+      id: 'decorative-cloth',
+      name: 'Decorative Cloth',
+      description: 'Red and gold cloth for Ganesha decoration',
+      quantity: 1,
+      price: 150,
+      unit: UNITS.PIECE
+    }
   ],
 
-  'randal-na-lota': [
-    createPoojaItem('coconut-watered', 5.0),
-    createPoojaItem('kanku', 50.0),
-    createPoojaItem('gulal', 50.0),
-    createPoojaItem('abel', 50.0),
-    createPoojaItem('sakar', 250.0),
-    createPoojaItem('drax', 50.0),
-    createPoojaItem('common-dry-fruits', 250.0),
-    createPoojaItem('supari', 0.7),
-    createPoojaItem('taj', 50.0),
-    createPoojaItem('lavang', 50.0),
-    createPoojaItem('elichi', 50.0),
-    createPoojaItem('nadachadi-thread', 1.0),
-    createPoojaItem('agarbatti', 1.0),
-    createPoojaItem('topra-na-vatka', 5.0),
-    createPoojaItem('ganpati-idol', 1.0),
-    createPoojaItem('bajot', 2.0),
-    createPoojaItem('patla', 2.0),
-    createPoojaItem('tulsi-na-pan', 20.0),
-    createPoojaItem('aasopalav-na-pan', 50.0),
-    createPoojaItem('nagarvel-na-pan', 10.0),
-    createPoojaItem('gud', 0.25),
-    createPoojaItem('panchamrit', 20.0),
-    createPoojaItem('chhuta-phool', 0.5),
-    createPoojaItem('phool-har', 5.0),
-    createPoojaItem('kagaj-na-duna', 30.0),
-    createPoojaItem('ghau', 1.0),
-    createPoojaItem('chokha', 2.0),
-    createPoojaItem('pakka-fal', 1.0),
-    createPoojaItem('mag', 0.5),
-    createPoojaItem('sutli-thread', 1.0),
-    createPoojaItem('clay-divda', 4.0),
-    createPoojaItem('aluminium-thali', 2.0),
-    createPoojaItem('vatka', 4.0),
-    createPoojaItem('rakabi', 2.0),
-    createPoojaItem('lamp-divo', 1.0),
-    createPoojaItem('ghee-liquid', 250.0),
-    createPoojaItem('ghee-cotton', 1.0),
-    createPoojaItem('machis', 1.0),
-    createPoojaItem('guggul', 100.0),
-    createPoojaItem('cow-mud', 2.0),
-    createPoojaItem('sthapan-clothing-red', 1.0),
-    createPoojaItem('sthapan-clothing-green', 1.0),
-    createPoojaItem('sthapan-clothing-white', 1.0),
-    createPoojaItem('chandan-powder', 1.0),
-    createPoojaItem('tramba-kumbh', 4.0),
-    createPoojaItem('sari', 1.0),
-    createPoojaItem('chanio', 1.0),
-    createPoojaItem('blouse-piece', 1.0),
-    createPoojaItem('chandla-packet', 4.0),
-    createPoojaItem('bangdi', 4.0),
-    createPoojaItem('ariso', 4.0),
-    createPoojaItem('comb', 4.0),
-    createPoojaItem('oil-bottle', 4.0),
-    createPoojaItem('kajal', 4.0),
-    createPoojaItem('sent', 1.0),
-    createPoojaItem('jaar', 1.0),
-    createPoojaItem('sutar-thread-ni-dadi', 1.0),
-    createPoojaItem('kali-drax', 0.15),
-    createPoojaItem('darbh-leaves', 10.0),
-    createPoojaItem('honey', 1.0),
-    createPoojaItem('janoi', 1.0),
-    createPoojaItem('pako-siddho', 1.0),
-    createPoojaItem('napkin', 2.0),
-    createPoojaItem('water', 1.0),
-    createPoojaItem('chamachi', 4.0),
-    createPoojaItem('kalash-tramba', 4.0),
-    createPoojaItem('chundi', 4.0),
-    createPoojaItem('rumal', 1.0),
-    createPoojaItem('face-powder', 1.0),
-    createPoojaItem('nail-polish', 1.0),
-    createPoojaItem('kapoor', 1.0),
-    createPoojaItem('dabhdo-grass', 1.0),
+  'navratri-pooja': [
+    {
+      id: 'durga-kalash',
+      name: 'Durga Kalash Set',
+      description: 'Decorated pot for invoking Goddess Durga',
+      quantity: 1,
+      price: 450,
+      unit: UNITS.SET
+    },
+    {
+      id: 'barley-seeds',
+      name: 'Barley Seeds (Jau)',
+      description: 'Seeds for growing during Navratri',
+      quantity: 200,
+      price: 40,
+      unit: UNITS.GRAM
+    },
+    {
+      id: 'clay-pot-small',
+      name: 'Small Clay Pots',
+      description: 'For growing barley and other offerings',
+      quantity: 9,
+      price: 90,
+      unit: UNITS.PIECE
+    },
+    {
+      id: 'coconut-nine',
+      name: 'Nine Coconuts',
+      description: 'One coconut for each day of Navratri',
+      quantity: 9,
+      price: 360,
+      unit: UNITS.PIECE
+    },
+    {
+      id: 'chunri-red',
+      name: 'Red Chunri',
+      description: 'Sacred red cloth for Mata Rani',
+      quantity: 9,
+      price: 270,
+      unit: UNITS.PIECE
+    },
+    {
+      id: 'navratri-colors',
+      name: 'Nine Color Powders',
+      description: 'Different colored powders for each day',
+      quantity: 1,
+      price: 120,
+      unit: UNITS.SET
+    },
+    {
+      id: 'prasad-ingredients',
+      name: 'Navratri Prasad Kit',
+      description: 'Ingredients for different day prasads',
+      quantity: 1,
+      price: 200,
+      unit: UNITS.SET
+    },
+    {
+      id: 'durga-photo',
+      name: 'Durga Mata Photo',
+      description: 'Beautiful framed photo of Goddess Durga',
+      quantity: 1,
+      price: 100,
+      unit: UNITS.PIECE
+    },
+    {
+      id: 'aarti-book',
+      name: 'Navratri Aarti Book',
+      description: 'Book containing all Navratri aartis',
+      quantity: 1,
+      price: 50,
+      unit: UNITS.PIECE
+    },
+    {
+      id: 'kalava-thread',
+      name: 'Kalava (Red Thread)',
+      description: 'Sacred red thread for protection',
+      quantity: 1,
+      price: 15,
+      unit: UNITS.PIECE
+    }
   ],
 
-  'navchandi-yagna': [
-    createPoojaItem('coconut-watered', 10.0),
-    createPoojaItem('coconut-without-water', 1.0),
-    createPoojaItem('kanku', 50.0),
-    createPoojaItem('gulal', 50.0),
-    createPoojaItem('abel', 50.0),
-    createPoojaItem('sakar', 250.0),
-    createPoojaItem('drax', 50.0),
-    createPoojaItem('common-dry-fruits', 250.0),
-    createPoojaItem('supari', 1.0),
-    createPoojaItem('taj', 100.0),
-    createPoojaItem('lavang', 100.0),
-    createPoojaItem('elichi', 100.0),
-    createPoojaItem('nadachadi-thread', 2.0),
-    createPoojaItem('agarbatti', 1.0),
-    createPoojaItem('topra-na-vatka', 10.0),
-    createPoojaItem('ganpati-idol', 1.0),
-    createPoojaItem('bajot', 5.0),
-    createPoojaItem('patla', 5.0),
-    createPoojaItem('tulsi-na-pan', 20.0),
-    createPoojaItem('aasopalav-na-pan', 50.0),
-    createPoojaItem('nagarvel-na-pan', 10.0),
-    createPoojaItem('gud', 0.25),
-    createPoojaItem('panchamrit', 20.0),
-    createPoojaItem('chhuta-phool', 1.0),
-    createPoojaItem('phool-har', 10.0),
-    createPoojaItem('kagaj-na-duna', 30.0),
-    createPoojaItem('ghau', 2.5),
-    createPoojaItem('chokha', 2.5),
-    createPoojaItem('pakka-fal', 2.0),
-    createPoojaItem('mag', 1.0),
-    createPoojaItem('sutli-thread', 1.0),
-    createPoojaItem('clay-divda', 10.0),
-    createPoojaItem('aluminium-thali', 5.0),
-    createPoojaItem('vatka', 4.0),
-    createPoojaItem('rakabi', 2.0),
-    createPoojaItem('lamp-divo', 1.0),
-    createPoojaItem('ghee-liquid', 1000.0),
-    createPoojaItem('ghee-cotton', 1.0),
-    createPoojaItem('machis', 1.0),
-    createPoojaItem('guggul', 200.0),
-    createPoojaItem('cow-mud', 10.0),
-    createPoojaItem('sthapan-clothing-other', 1.0),
-    createPoojaItem('sthapan-clothing-red', 1.0),
-    createPoojaItem('sthapan-clothing-black', 1.0),
-    createPoojaItem('sthapan-clothing-green', 1.0),
-    createPoojaItem('sthapan-clothing-yellow', 1.0),
-    createPoojaItem('sthapan-clothing-white', 1.0),
-    createPoojaItem('udad', 1.0),
-    createPoojaItem('chanadal', 1.0),
-    createPoojaItem('juvar', 1.0),
-    createPoojaItem('chandan-powder', 1.0),
-    createPoojaItem('tramba-kumbh', 5.0),
-    createPoojaItem('dhoti', 1.0),
-    createPoojaItem('jabbha-nu-kapad', 1.0),
-    createPoojaItem('sari', 1.0),
-    createPoojaItem('chanio', 1.0),
-    createPoojaItem('blouse-piece', 1.0),
-    createPoojaItem('chandla-packet', 1.0),
-    createPoojaItem('bangdi', 1.0),
-    createPoojaItem('ariso', 1.0),
-    createPoojaItem('comb', 1.0),
-    createPoojaItem('oil-bottle', 1.0),
-    createPoojaItem('kajal', 1.0),
-    createPoojaItem('sent', 1.0),
-    createPoojaItem('til', 1.0),
-    createPoojaItem('jaar', 1.0),
-    createPoojaItem('sutar-thread-ni-dadi', 1.0),
-    createPoojaItem('kali-drax', 0.15),
-    createPoojaItem('darbh-leaves', 10.0),
-    createPoojaItem('honey', 1.0),
-    createPoojaItem('jav', 1.0),
-    createPoojaItem('kamod', 1.0),
-    createPoojaItem('black-til', 1.0),
-    createPoojaItem('wood-for-yagna', 3.0),
-    createPoojaItem('janoi', 5.0),
-    createPoojaItem('pako-siddho', 1.0),
-    createPoojaItem('towel', 1.0),
-    createPoojaItem('napkin', 5.0),
-    createPoojaItem('male-shirt-pant-kapad', 1.0),
-    createPoojaItem('water', 5.0),
-    createPoojaItem('aasan', 5.0),
-    createPoojaItem('chamachi', 4.0),
-    createPoojaItem('kalash-tramba', 5.0),
-    createPoojaItem('chundi', 2.0),
-    createPoojaItem('rumal', 1.0),
-    createPoojaItem('face-powder', 1.0),
-    createPoojaItem('nail-polish', 1.0),
-    createPoojaItem('kapoor', 1.0),
-    createPoojaItem('kamalkakdi', 0.25),
-    createPoojaItem('dry-coconut-powder', 0.25),
-    createPoojaItem('sugandhi-valo', 1.0),
-    createPoojaItem('tamal-patra', 1.0),
-    createPoojaItem('dabhdo-grass', 1.0),
-    createPoojaItem('cow-urine', 10.0),
-    createPoojaItem('chana', 0.5),
-    createPoojaItem('savliyu', 5.0),
+  'havan-yagna': [
+    {
+      id: 'havan-kund',
+      name: 'Havan Kund',
+      description: 'Square copper vessel for fire ceremony',
+      quantity: 1,
+      price: 800,
+      unit: UNITS.PIECE
+    },
+    {
+      id: 'havan-samagri',
+      name: 'Havan Samagri Mix',
+      description: 'Mixed herbs and materials for havan',
+      quantity: 500,
+      price: 150,
+      unit: UNITS.GRAM
+    },
+    {
+      id: 'mango-wood',
+      name: 'Mango Wood Sticks',
+      description: 'Sacred wood pieces for burning',
+      quantity: 1,
+      price: 80,
+      unit: UNITS.BUNDLE
+    },
+    {
+      id: 'cow-ghee-pure',
+      name: 'Pure Cow Ghee',
+      description: 'Clarified butter for offering to fire',
+      quantity: 500,
+      price: 300,
+      unit: UNITS.GRAM
+    },
+    {
+      id: 'sesame-seeds',
+      name: 'White Sesame Seeds',
+      description: 'Seeds for havan offerings',
+      quantity: 250,
+      price: 80,
+      unit: UNITS.GRAM
+    },
+    {
+      id: 'barley-havan',
+      name: 'Barley for Havan',
+      description: 'Clean barley grains for fire offerings',
+      quantity: 250,
+      price: 60,
+      unit: UNITS.GRAM
+    },
+    {
+      id: 'rice-broken',
+      name: 'Broken Rice',
+      description: 'Rice pieces for havan samagri',
+      quantity: 200,
+      price: 40,
+      unit: UNITS.GRAM
+    },
+    {
+      id: 'sandal-powder',
+      name: 'Sandalwood Powder',
+      description: 'Fragrant powder for havan',
+      quantity: 50,
+      price: 120,
+      unit: UNITS.GRAM
+    },
+    {
+      id: 'camphor-blocks',
+      name: 'Camphor Blocks',
+      description: 'Large camphor pieces for fire',
+      quantity: 10,
+      price: 60,
+      unit: UNITS.PIECE
+    },
+    {
+      id: 'cotton-cloth',
+      name: 'Cotton Cloth Pieces',
+      description: 'Pure cotton for fire offerings',
+      quantity: 1,
+      price: 50,
+      unit: UNITS.PIECE
+    }
   ],
 
-  'new-home-kumbh-sthapan': [
-    createPoojaItem('coconut-watered', 1.0),
-    createPoojaItem('kanku', 50.0),
-    createPoojaItem('gulal', 50.0),
-    createPoojaItem('abel', 50.0),
-    createPoojaItem('sakar', 250.0),
-    createPoojaItem('drax', 50.0),
-    createPoojaItem('common-dry-fruits', 250.0),
-    createPoojaItem('supari', 0.1),
-    createPoojaItem('taj', 50.0),
-    createPoojaItem('lavang', 50.0),
-    createPoojaItem('elichi', 50.0),
-    createPoojaItem('nadachadi-thread', 1.0),
-    createPoojaItem('agarbatti', 1.0),
-    createPoojaItem('topra-na-vatka', 1.0),
-    createPoojaItem('ganpati-idol', 1.0),
-    createPoojaItem('bajot', 1.0),
-    createPoojaItem('patla', 1.0),
-    createPoojaItem('tulsi-na-pan', 20.0),
-    createPoojaItem('aasopalav-na-pan', 50.0),
-    createPoojaItem('nagarvel-na-pan', 2.0),
-    createPoojaItem('gud', 0.25),
-    createPoojaItem('panchamrit', 20.0),
-    createPoojaItem('chhuta-phool', 0.5),
-    createPoojaItem('phool-har', 2.0),
-    createPoojaItem('kagaj-na-duna', 30.0),
-    createPoojaItem('ghau', 1.0),
-    createPoojaItem('chokha', 1.0),
-    createPoojaItem('pakka-fal', 1.0),
-    createPoojaItem('mag', 0.5),
-    createPoojaItem('sutli-thread', 1.0),
-    createPoojaItem('clay-divda', 1.0),
-    createPoojaItem('aluminium-thali', 1.0),
-    createPoojaItem('vatka', 4.0),
-    createPoojaItem('rakabi', 2.0),
-    createPoojaItem('lamp-divo', 1.0),
-    createPoojaItem('ghee-liquid', 10.0),
-    createPoojaItem('ghee-cotton', 1.0),
-    createPoojaItem('machis', 1.0),
-    createPoojaItem('dhana', 0.15),
-    createPoojaItem('sthapan-clothing-red', 1.0),
-    createPoojaItem('sthapan-clothing-green', 1.0),
-    createPoojaItem('chandan-powder', 1.0),
-    createPoojaItem('tramba-kumbh', 1.0),
-    createPoojaItem('clay-kumbh', 1.0),
-    createPoojaItem('sent', 1.0),
-    createPoojaItem('sutar-thread-ni-dadi', 1.0),
-    createPoojaItem('kali-drax', 0.15),
-    createPoojaItem('darbh-leaves', 10.0),
-    createPoojaItem('honey', 1.0),
-    createPoojaItem('janoi', 1.0),
-    createPoojaItem('pako-siddho', 1.0),
-    createPoojaItem('water', 2.0),
-    createPoojaItem('chamachi', 4.0),
-    createPoojaItem('kalash-tramba', 1.0),
-    createPoojaItem('kapoor', 1.0),
-    createPoojaItem('dabhdo-grass', 1.0),
+  // Add more pooja types with their specific samagri...
+  'ganesh-pooja': [
+    {
+      id: 'small-ganesh',
+      name: 'Small Ganesha Idol',
+      description: 'Compact clay idol for home worship',
+      quantity: 1,
+      price: 150,
+      unit: UNITS.PIECE
+    },
+    {
+      id: 'elephant-grass',
+      name: 'Durva (Elephant Grass)',
+      description: 'Sacred grass for Ganesha worship',
+      quantity: 25,
+      price: 25,
+      unit: UNITS.BUNDLE
+    },
+    {
+      id: 'jaggery-gud',
+      name: 'Jaggery (Gud)',
+      description: 'Natural sweetener for offerings',
+      quantity: 250,
+      price: 50,
+      unit: UNITS.GRAM
+    },
+    {
+      id: 'coconut-small',
+      name: 'Small Coconut',
+      description: 'Perfect sized coconut for offering',
+      quantity: 1,
+      price: 30,
+      unit: UNITS.PIECE
+    },
+    {
+      id: 'red-cloth',
+      name: 'Red Cloth Piece',
+      description: 'Sacred red fabric for covering',
+      quantity: 1,
+      price: 40,
+      unit: UNITS.PIECE
+    }
   ],
 
-  'vastu-pooja': [
-    createPoojaItem('coconut-watered', 6.0),
-    createPoojaItem('coconut-without-water', 1.0),
-    createPoojaItem('kanku', 50.0),
-    createPoojaItem('gulal', 50.0),
-    createPoojaItem('abel', 50.0),
-    createPoojaItem('sakar', 250.0),
-    createPoojaItem('drax', 50.0),
-    createPoojaItem('common-dry-fruits', 250.0),
-    createPoojaItem('supari', 1.0),
-    createPoojaItem('taj', 100.0),
-    createPoojaItem('lavang', 100.0),
-    createPoojaItem('elichi', 100.0),
-    createPoojaItem('nadachadi-thread', 2.0),
-    createPoojaItem('agarbatti', 1.0),
-    createPoojaItem('topra-na-vatka', 6.0),
-    createPoojaItem('ganpati-idol', 1.0),
-    createPoojaItem('bajot', 7.0),
-    createPoojaItem('patla', 7.0),
-    createPoojaItem('tulsi-na-pan', 50.0),
-    createPoojaItem('aasopalav-na-pan', 50.0),
-    createPoojaItem('nagarvel-na-pan', 10.0),
-    createPoojaItem('gud', 0.5),
-    createPoojaItem('panchamrit', 50.0),
-    createPoojaItem('chhuta-phool', 1.0),
-    createPoojaItem('phool-har', 6.0),
-    createPoojaItem('kagaj-na-duna', 30.0),
-    createPoojaItem('ghau', 2.5),
-    createPoojaItem('chokha', 2.5),
-    createPoojaItem('pakka-fal', 2.0),
-    createPoojaItem('mag', 1.0),
-    createPoojaItem('sutli-thread', 1.0),
-    createPoojaItem('clay-divda', 10.0),
-    createPoojaItem('aluminium-thali', 5.0),
-    createPoojaItem('vatka', 4.0),
-    createPoojaItem('rakabi', 2.0),
-    createPoojaItem('lamp-divo', 1.0),
-    createPoojaItem('ghee-liquid', 1000.0),
-    createPoojaItem('ghee-cotton', 1.0),
-    createPoojaItem('machis', 1.0),
-    createPoojaItem('dhana', 0.25),
-    createPoojaItem('guggul', 200.0),
-    createPoojaItem('cow-mud', 10.0),
-    createPoojaItem('sthapan-clothing-other', 1.0),
-    createPoojaItem('sthapan-clothing-red', 1.0),
-    createPoojaItem('sthapan-clothing-black', 1.0),
-    createPoojaItem('sthapan-clothing-green', 1.0),
-    createPoojaItem('sthapan-clothing-yellow', 1.0),
-    createPoojaItem('sthapan-clothing-white', 1.0),
-    createPoojaItem('udad', 1.0),
-    createPoojaItem('chanadal', 1.0),
-    createPoojaItem('juvar', 1.0),
-    createPoojaItem('chandan-powder', 1.0),
-    createPoojaItem('tramba-kumbh', 5.0),
-    createPoojaItem('clay-kumbh', 1.0),
-    createPoojaItem('dhoti', 1.0),
-    createPoojaItem('jabbha-nu-kapad', 1.0),
-    createPoojaItem('sari', 1.0),
-    createPoojaItem('chanio', 1.0),
-    createPoojaItem('blouse-piece', 1.0),
-    createPoojaItem('chandla-packet', 1.0),
-    createPoojaItem('bangdi', 1.0),
-    createPoojaItem('ariso', 1.0),
-    createPoojaItem('comb', 1.0),
-    createPoojaItem('oil-bottle', 1.0),
-    createPoojaItem('kajal', 1.0),
-    createPoojaItem('sent', 1.0),
-    createPoojaItem('til', 1.0),
-    createPoojaItem('jaar', 1.0),
-    createPoojaItem('sutar-thread-ni-dadi', 1.0),
-    createPoojaItem('kali-drax', 0.15),
-    createPoojaItem('darbh-leaves', 10.0),
-    createPoojaItem('honey', 1.0),
-    createPoojaItem('jav', 1.0),
-    createPoojaItem('kamod', 1.0),
-    createPoojaItem('black-til', 1.0),
-    createPoojaItem('wood-for-yagna', 4.0),
-    createPoojaItem('janoi', 5.0),
-    createPoojaItem('pako-siddho', 1.0),
-    createPoojaItem('towel', 1.0),
-    createPoojaItem('napkin', 5.0),
-    createPoojaItem('male-shirt-pant-kapad', 1.0),
-    createPoojaItem('water', 5.0),
-    createPoojaItem('aasan', 5.0),
-    createPoojaItem('chamachi', 4.0),
-    createPoojaItem('kalash-tramba', 5.0),
-    createPoojaItem('chundi', 2.0),
-    createPoojaItem('rumal', 1.0),
-    createPoojaItem('face-powder', 1.0),
-    createPoojaItem('nail-polish', 1.0),
-    createPoojaItem('kapoor', 1.0),
-    createPoojaItem('kamalkakdi', 0.25),
-    createPoojaItem('dabhdo-grass', 1.0),
-    createPoojaItem('cow-urine', 10.0),
-    createPoojaItem('chana', 0.5),
-    createPoojaItem('savliyu', 5.0),
+  'shiv-pooja': [
+    {
+      id: 'shivling',
+      name: 'Shivling',
+      description: 'Sacred stone representation of Lord Shiva',
+      quantity: 1,
+      price: 200,
+      unit: UNITS.PIECE
+    },
+    {
+      id: 'bilva-leaves',
+      name: 'Bilva Leaves',
+      description: 'Trifoliate leaves sacred to Lord Shiva',
+      quantity: 108,
+      price: 40,
+      unit: UNITS.PIECE
+    },
+    {
+      id: 'white-flowers',
+      name: 'White Flowers',
+      description: 'Pure white flowers for Shiva worship',
+      quantity: 25,
+      price: 75,
+      unit: UNITS.PIECE
+    },
+    {
+      id: 'rudraksha',
+      name: 'Rudraksha Beads',
+      description: 'Sacred beads for Shiva devotion',
+      quantity: 1,
+      price: 100,
+      unit: UNITS.PACKET
+    },
+    {
+      id: 'vibhuti',
+      name: 'Vibhuti (Sacred Ash)',
+      description: 'Holy ash for tilak and offerings',
+      quantity: 50,
+      price: 30,
+      unit: UNITS.GRAM
+    },
+    {
+      id: 'raw-milk',
+      name: 'Raw Milk',
+      description: 'Fresh milk for Shivling abhishek',
+      quantity: 500,
+      price: 35,
+      unit: UNITS.MILLILITER
+    },
+    {
+      id: 'honey-pure',
+      name: 'Pure Honey',
+      description: 'Natural honey for panchamrit',
+      quantity: 100,
+      price: 80,
+      unit: UNITS.GRAM
+    }
   ],
-
-  'gayatri-yagna': [
-    createPoojaItem('coconut-watered', 3.0),
-    createPoojaItem('coconut-without-water', 1.0),
-    createPoojaItem('kanku', 50.0),
-    createPoojaItem('gulal', 50.0),
-    createPoojaItem('abel', 50.0),
-    createPoojaItem('sakar', 250.0),
-    createPoojaItem('drax', 50.0),
-    createPoojaItem('common-dry-fruits', 250.0),
-    createPoojaItem('supari', 0.25),
-    createPoojaItem('taj', 50.0),
-    createPoojaItem('lavang', 50.0),
-    createPoojaItem('elichi', 50.0),
-    createPoojaItem('nadachadi-thread', 1.0),
-    createPoojaItem('agarbatti', 1.0),
-    createPoojaItem('topra-na-vatka', 3.0),
-    createPoojaItem('ganpati-idol', 1.0),
-    createPoojaItem('bajot', 3.0),
-    createPoojaItem('patla', 3.0),
-    createPoojaItem('tulsi-na-pan', 20.0),
-    createPoojaItem('aasopalav-na-pan', 50.0),
-    createPoojaItem('nagarvel-na-pan', 5.0),
-    createPoojaItem('gud', 0.25),
-    createPoojaItem('panchamrit', 20.0),
-    createPoojaItem('chhuta-phool', 0.5),
-    createPoojaItem('phool-har', 3.0),
-    createPoojaItem('kagaj-na-duna', 30.0),
-    createPoojaItem('ghau', 1.0),
-    createPoojaItem('chokha', 1.0),
-    createPoojaItem('pakka-fal', 1.0),
-    createPoojaItem('mag', 0.5),
-    createPoojaItem('sutli-thread', 1.0),
-    createPoojaItem('clay-divda', 5.0),
-    createPoojaItem('aluminium-thali', 2.0),
-    createPoojaItem('vatka', 4.0),
-    createPoojaItem('rakabi', 2.0),
-    createPoojaItem('lamp-divo', 1.0),
-    createPoojaItem('ghee-liquid', 250.0),
-    createPoojaItem('ghee-cotton', 1.0),
-    createPoojaItem('machis', 1.0),
-    createPoojaItem('guggul', 100.0),
-    createPoojaItem('cow-mud', 10.0),
-    createPoojaItem('sthapan-clothing-red', 1.0),
-    createPoojaItem('sthapan-clothing-black', 1.0),
-    createPoojaItem('sthapan-clothing-green', 1.0),
-    createPoojaItem('sthapan-clothing-yellow', 1.0),
-    createPoojaItem('sthapan-clothing-white', 1.0),
-    createPoojaItem('udad', 0.5),
-    createPoojaItem('chanadal', 0.5),
-    createPoojaItem('juvar', 0.5),
-    createPoojaItem('chandan-powder', 1.0),
-    createPoojaItem('tramba-kumbh', 2.0),
-    createPoojaItem('sari', 1.0),
-    createPoojaItem('chanio', 1.0),
-    createPoojaItem('blouse-piece', 1.0),
-    createPoojaItem('chandla-packet', 1.0),
-    createPoojaItem('bangdi', 1.0),
-    createPoojaItem('ariso', 1.0),
-    createPoojaItem('comb', 1.0),
-    createPoojaItem('oil-bottle', 1.0),
-    createPoojaItem('kajal', 1.0),
-    createPoojaItem('sent', 1.0),
-    createPoojaItem('til', 0.5),
-    createPoojaItem('sutar-thread-ni-dadi', 1.0),
-    createPoojaItem('kali-drax', 0.15),
-    createPoojaItem('darbh-leaves', 10.0),
-    createPoojaItem('honey', 1.0),
-    createPoojaItem('jav', 0.5),
-    createPoojaItem('kamod', 0.5),
-    createPoojaItem('black-til', 0.5),
-    createPoojaItem('wood-for-yagna', 1.0),
-    createPoojaItem('janoi', 1.0),
-    createPoojaItem('pako-siddho', 1.0),
-    createPoojaItem('napkin', 5.0),
-    createPoojaItem('water', 2.0),
-    createPoojaItem('chamachi', 4.0),
-    createPoojaItem('kalash-tramba', 4.0),
-    createPoojaItem('chundi', 2.0),
-    createPoojaItem('rumal', 1.0),
-    createPoojaItem('face-powder', 1.0),
-    createPoojaItem('nail-polish', 1.0),
-    createPoojaItem('kapoor', 1.0),
-    createPoojaItem('kamalkakdi', 0.1),
-    createPoojaItem('dry-coconut-powder', 0.2),
-    createPoojaItem('sugandhi-valo', 1.0),
-    createPoojaItem('tamal-patra', 1.0),
-    createPoojaItem('dabhdo-grass', 1.0),
-    createPoojaItem('cow-urine', 10.0),
-    createPoojaItem('savliyu', 4.0),
+  'boys-marriage-pooja': [
+    // Gujarati items
+    createPoojaItem('mindhol', 1),
+    createPoojaItem('chali', 1),
+    createPoojaItem('manik-stambh', 1),
+    createPoojaItem('pipal-na-pan', 5),
+    createPoojaItem('phool-loose', 100), // assuming 100 grams
+    createPoojaItem('pakka-fal', 5),
+    createPoojaItem('mag', 1), // 1 kg
+    createPoojaItem('sutli-thread', 1),
+    createPoojaItem('sthapan-red-blouse', 1),
+    createPoojaItem('clay-divda', 5),
+    createPoojaItem('aluminium-thali', 1),
+    createPoojaItem('vatka', 2),
+    createPoojaItem('rakabi', 2),
+    createPoojaItem('lamp-divo', 1),
+    createPoojaItem('ghee-liquid', 250), // assuming 250 ml
+    createPoojaItem('ghee-cotton', 1),
+    createPoojaItem('machis', 1),
+    createPoojaItem('dhana', 50), // assuming 50 grams
+    createPoojaItem('coins-offering', 5)
   ],
-
-  'boy-mrg': [
-    createPoojaItem('coconut-watered', 5.0),
-    createPoojaItem('kanku', 50.0),
-    createPoojaItem('gulal', 50.0),
-    createPoojaItem('abel', 50.0),
-    createPoojaItem('sakar', 250.0),
-    createPoojaItem('drax', 50.0),
-    createPoojaItem('common-dry-fruits', 250.0),
-    createPoojaItem('supari', 0.2),
-    createPoojaItem('taj', 50.0),
-    createPoojaItem('lavang', 50.0),
-    createPoojaItem('elichi', 50.0),
-    createPoojaItem('nadachadi-thread', 1.0),
-    createPoojaItem('agarbatti', 1.0),
-    createPoojaItem('topra-na-vatka', 5.0),
-    createPoojaItem('ganpati-idol', 1.0),
-    createPoojaItem('bajot', 1.0),
-    createPoojaItem('patla', 1.0),
-    createPoojaItem('tulsi-na-pan', 10.0),
-    createPoojaItem('aasopalav-na-pan', 50.0),
-    createPoojaItem('nagarvel-na-pan', 5.0),
-    createPoojaItem('gud', 0.5),
-    createPoojaItem('panchamrit', 20.0),
-    createPoojaItem('chhuta-phool', 1.0),
-    createPoojaItem('phool-har', 5.0),
-    createPoojaItem('kagaj-na-duna', 30.0),
-    createPoojaItem('ghau', 1.0),
-    createPoojaItem('chokha', 1.0),
-    createPoojaItem('mindhol', 2.0),
-    createPoojaItem('chali', 2.0),
-    createPoojaItem('manik-stambh', 1.0),
-    createPoojaItem('pipal-na-pan', 20.0),
-    createPoojaItem('pakka-fal', 1.0),
-    createPoojaItem('mag', 0.5),
-    createPoojaItem('sutli-thread', 1.0),
-    createPoojaItem('clay-divda', 5.0),
-    createPoojaItem('aluminium-thali', 4.0),
-    createPoojaItem('vatka', 4.0),
-    createPoojaItem('rakabi', 2.0),
-    createPoojaItem('lamp-divo', 1.0),
-    createPoojaItem('ghee-liquid', 100.0),
-    createPoojaItem('ghee-cotton', 1.0),
-    createPoojaItem('machis', 1.0),
-    createPoojaItem('dhana', 0.25),
-    createPoojaItem('sthapan-clothing-red', 1.0),
-    createPoojaItem('sthapan-clothing-green', 1.0),
-    createPoojaItem('chandan-powder', 1.0),
-    createPoojaItem('tramba-kumbh', 2.0),
-    createPoojaItem('clay-kumbh', 1.0),
-    createPoojaItem('sent', 1.0),
-    createPoojaItem('sutar-thread-ni-dadi', 1.0),
-    createPoojaItem('kali-drax', 0.15),
-    createPoojaItem('darbh-leaves', 10.0),
-    createPoojaItem('honey', 1.0),
-    createPoojaItem('janoi', 1.0),
-    createPoojaItem('pako-siddho', 1.0),
-    createPoojaItem('napkin', 1.0),
-    createPoojaItem('water', 1.0),
-    createPoojaItem('chamachi', 4.0),
-    createPoojaItem('kalash-tramba', 2.0),
-    createPoojaItem('kapoor', 1.0),
-    createPoojaItem('dabhdo-grass', 1.0),
+  'girls-marriage-pooja': [
+    createPoojaItem('lakshmi-idol', 1),
+    createPoojaItem('diyas-earthen', 21),
+    createPoojaItem('mustard-oil', 1),
+    createPoojaItem('lotus-flowers', 8),
+    createPoojaItem('gold-coins', 5),
+    createPoojaItem('rice-red', 1),
+    createPoojaItem('puffed-rice', 1),
+    createPoojaItem('dry-fruits', 1),
+    createPoojaItem('silver-coins', 2),
+    createPoojaItem('kumkum-packets', 5)
   ],
-
-  'girl-mrg': [
-    createPoojaItem('coconut-watered', 10.0),
-    createPoojaItem('kanku', 50.0),
-    createPoojaItem('gulal', 50.0),
-    createPoojaItem('abel', 50.0),
-    createPoojaItem('sakar', 250.0),
-    createPoojaItem('drax', 50.0),
-    createPoojaItem('common-dry-fruits', 250.0),
-    createPoojaItem('supari', 0.5),
-    createPoojaItem('taj', 50.0),
-    createPoojaItem('lavang', 50.0),
-    createPoojaItem('elichi', 50.0),
-    createPoojaItem('nadachadi-thread', 1.0),
-    createPoojaItem('agarbatti', 1.0),
-    createPoojaItem('topra-na-vatka', 10.0),
-    createPoojaItem('ganpati-idol', 1.0),
-    createPoojaItem('bajot', 2.0),
-    createPoojaItem('patla', 2.0),
-    createPoojaItem('tulsi-na-pan', 20.0),
-    createPoojaItem('aasopalav-na-pan', 50.0),
-    createPoojaItem('nagarvel-na-pan', 10.0),
-    createPoojaItem('gud', 0.5),
-    createPoojaItem('panchamrit', 20.0),
-    createPoojaItem('chhuta-phool', 1.0),
-    createPoojaItem('phool-har', 10.0),
-    createPoojaItem('kagaj-na-duna', 30.0),
-    createPoojaItem('ghau', 3.0),
-    createPoojaItem('chokha', 2.0),
-    createPoojaItem('mindhol', 2.0),
-    createPoojaItem('chali', 2.0),
-    createPoojaItem('manik-stambh', 1.0),
-    createPoojaItem('pipal-na-pan', 20.0),
-    createPoojaItem('pakka-fal', 1.0),
-    createPoojaItem('mag', 1.0),
-    createPoojaItem('sutli-thread', 1.0),
-    createPoojaItem('clay-divda', 5.0),
-    createPoojaItem('aluminium-thali', 4.0),
-    createPoojaItem('vatka', 4.0),
-    createPoojaItem('rakabi', 2.0),
-    createPoojaItem('lamp-divo', 1.0),
-    createPoojaItem('ghee-liquid', 250.0),
-    createPoojaItem('ghee-cotton', 1.0),
-    createPoojaItem('machis', 1.0),
-    createPoojaItem('dhana', 0.25),
-    createPoojaItem('cow-mud', 5.0),
-    createPoojaItem('sthapan-clothing-red', 1.0),
-    createPoojaItem('sthapan-clothing-green', 1.0),
-    createPoojaItem('sthapan-clothing-white', 1.0),
-    createPoojaItem('chandan-powder', 1.0),
-    createPoojaItem('tramba-kumbh', 2.0),
-    createPoojaItem('clay-kumbh', 1.0),
-    createPoojaItem('sent', 1.0),
-    createPoojaItem('til', 0.5),
-    createPoojaItem('sutar-thread-ni-dadi', 1.0),
-    createPoojaItem('kali-drax', 0.15),
-    createPoojaItem('darbh-leaves', 10.0),
-    createPoojaItem('honey', 1.0),
-    createPoojaItem('wood-for-yagna', 1.0),
-    createPoojaItem('janoi', 2.0),
-    createPoojaItem('pako-siddho', 1.0),
-    createPoojaItem('napkin', 1.0),
-    createPoojaItem('water', 2.0),
-    createPoojaItem('chamachi', 4.0),
-    createPoojaItem('kalash-tramba', 2.0),
-    createPoojaItem('kapoor', 1.0),
-    createPoojaItem('dabhdo-grass', 1.0),
-  ],
-
-  'dharamraja-vrat': [
-    createPoojaItem('coconut-watered', 3.0),
-    createPoojaItem('kanku', 50.0),
-    createPoojaItem('gulal', 50.0),
-    createPoojaItem('abel', 50.0),
-    createPoojaItem('sakar', 250.0),
-    createPoojaItem('drax', 50.0),
-    createPoojaItem('common-dry-fruits', 250.0),
-    createPoojaItem('supari', 0.25),
-    createPoojaItem('taj', 50.0),
-    createPoojaItem('lavang', 50.0),
-    createPoojaItem('elichi', 50.0),
-    createPoojaItem('nadachadi-thread', 1.0),
-    createPoojaItem('agarbatti', 1.0),
-    createPoojaItem('topra-na-vatka', 3.0),
-    createPoojaItem('ganpati-idol', 1.0),
-    createPoojaItem('bajot', 1.0),
-    createPoojaItem('patla', 1.0),
-    createPoojaItem('tulsi-na-pan', 20.0),
-    createPoojaItem('aasopalav-na-pan', 50.0),
-    createPoojaItem('nagarvel-na-pan', 10.0),
-    createPoojaItem('gud', 0.25),
-    createPoojaItem('panchamrit', 20.0),
-    createPoojaItem('chhuta-phool', 1.0),
-    createPoojaItem('phool-har', 3.0),
-    createPoojaItem('kagaj-na-duna', 30.0),
-    createPoojaItem('ghau', 2.0),
-    createPoojaItem('chokha', 2.0),
-    createPoojaItem('pakka-fal', 1.0),
-    createPoojaItem('mag', 1.0),
-    createPoojaItem('sutli-thread', 1.0),
-    createPoojaItem('clay-divda', 5.0),
-    createPoojaItem('aluminium-thali', 2.0),
-    createPoojaItem('vatka', 4.0),
-    createPoojaItem('rakabi', 2.0),
-    createPoojaItem('lamp-divo', 2.0),
-    createPoojaItem('ghee-liquid', 250.0),
-    createPoojaItem('ghee-cotton', 1.0),
-    createPoojaItem('machis', 1.0),
-    createPoojaItem('sthapan-clothing-red', 1.0),
-    createPoojaItem('sthapan-clothing-green', 1.0),
-    createPoojaItem('sthapan-clothing-white', 1.0),
-    createPoojaItem('udad', 1.0),
-    createPoojaItem('chanadal', 1.0),
-    createPoojaItem('juvar', 1.0),
-    createPoojaItem('chandan-powder', 1.0),
-    createPoojaItem('pittal-utensils-dish', 1.0),
-    createPoojaItem('pittal-utensils-lota', 1.0),
-    createPoojaItem('pittal-utensils-glass', 1.0),
-    createPoojaItem('pittal-utensils-dabbo', 1.0),
-    createPoojaItem('tramba-kumbh', 2.0),
-    createPoojaItem('clay-kumbh', 1.0),
-    createPoojaItem('dhoti', 1.0),
-    createPoojaItem('jabbha-nu-kapad', 1.0),
-    createPoojaItem('godadu', 1.0),
-    createPoojaItem('oshiku', 1.0),
-    createPoojaItem('ochhad', 1.0),
-    createPoojaItem('chatri', 1.0),
-    createPoojaItem('chappal', 1.0),
-    createPoojaItem('vas-ni-chhabdi', 1.0),
-    createPoojaItem('sent', 1.0),
-    createPoojaItem('kang', 1.0),
-    createPoojaItem('til', 1.0),
-    createPoojaItem('jaar', 1.0),
-    createPoojaItem('moti', 0.25),
-    createPoojaItem('sutar-thread-ni-dadi', 1.0),
-    createPoojaItem('kali-drax', 0.15),
-    createPoojaItem('darbh-leaves', 10.0),
-    createPoojaItem('honey', 1.0),
-    createPoojaItem('jav', 1.0),
-    createPoojaItem('kamod', 1.0),
-    createPoojaItem('black-til', 1.0),
-    createPoojaItem('janoi', 2.0),
-    createPoojaItem('pako-siddho', 1.0),
-    createPoojaItem('towel', 1.0),
-    createPoojaItem('napkin', 2.0),
-    createPoojaItem('male-shirt-pant-kapad', 1.0),
-    createPoojaItem('water', 1.0),
-    createPoojaItem('silver-turtle', 1.0),
-    createPoojaItem('silver-snake', 1.0),
-    createPoojaItem('tambani-tabudi', 1.0),
-    createPoojaItem('char-chock-ni-mati', 1.0),
-    createPoojaItem('silver-coin', 1.0),
-    createPoojaItem('aasan', 2.0),
-    createPoojaItem('chamachi', 4.0),
-    createPoojaItem('kalash-tramba', 2.0),
-    createPoojaItem('kapoor', 1.0),
-    createPoojaItem('dabhdo-grass', 1.0),
-    createPoojaItem('chana', 1.0),
-    createPoojaItem('savliyu', 2.0),
-    createPoojaItem('kanthi-mala', 1.0),
-    createPoojaItem('gaumukhi', 1.0),
-    createPoojaItem('dhramraja-silver-image', 1.0),
-    createPoojaItem('cow-silver-image', 1.0),
-    createPoojaItem('swastik-silver', 1.0),
-    createPoojaItem('nisarani-silver', 1.0),
-    createPoojaItem('ship-silver', 1.0),
-    createPoojaItem('janoi-silver', 1.0),
-  ],
-
-  'shraddh-pooja': [
-    createPoojaItem('coconut-watered', 5.0),
-    createPoojaItem('kanku', 50.0),
-    createPoojaItem('gulal', 50.0),
-    createPoojaItem('abel', 50.0),
-    createPoojaItem('sakar', 250.0),
-    createPoojaItem('drax', 50.0),
-    createPoojaItem('common-dry-fruits', 250.0),
-    createPoojaItem('supari', 0.5),
-    createPoojaItem('taj', 100.0),
-    createPoojaItem('lavang', 100.0),
-    createPoojaItem('elichi', 100.0),
-    createPoojaItem('nadachadi-thread', 1.0),
-    createPoojaItem('agarbatti', 1.0),
-    createPoojaItem('topra-na-vatka', 5.0),
-    createPoojaItem('ganpati-idol', 1.0),
-    createPoojaItem('bajot', 2.0),
-    createPoojaItem('patla', 2.0),
-    createPoojaItem('tulsi-na-pan', 20.0),
-    createPoojaItem('nagarvel-na-pan', 5.0),
-    createPoojaItem('gud', 0.25),
-    createPoojaItem('panchamrit', 20.0),
-    createPoojaItem('chhuta-phool', 1.0),
-    createPoojaItem('phool-har', 5.0),
-    createPoojaItem('kagaj-na-duna', 30.0),
-    createPoojaItem('ghau', 1.0),
-    createPoojaItem('chokha', 1.0),
-    createPoojaItem('pakka-fal', 1.0),
-    createPoojaItem('mag', 0.5),
-    createPoojaItem('clay-divda', 2.0),
-    createPoojaItem('aluminium-thali', 2.0),
-    createPoojaItem('vatka', 4.0),
-    createPoojaItem('rakabi', 2.0),
-    createPoojaItem('lamp-divo', 1.0),
-    createPoojaItem('ghee-liquid', 250.0),
-    createPoojaItem('ghee-cotton', 1.0),
-    createPoojaItem('machis', 1.0),
-    createPoojaItem('cow-mud', 10.0),
-    createPoojaItem('sthapan-clothing-red', 1.0),
-    createPoojaItem('sthapan-clothing-green', 1.0),
-    createPoojaItem('sthapan-clothing-white', 1.0),
-    createPoojaItem('chandan-powder', 1.0),
-    createPoojaItem('pittal-utensils-dish', 1.0),
-    createPoojaItem('pittal-utensils-lota', 1.0),
-    createPoojaItem('pittal-utensils-glass', 1.0),
-    createPoojaItem('pittal-utensils-dabbo', 1.0),
-    createPoojaItem('tramba-kumbh', 2.0),
-    createPoojaItem('clay-kumbh', 1.0),
-    createPoojaItem('dhoti', 1.0),
-    createPoojaItem('jabbha-nu-kapad', 1.0),
-    createPoojaItem('sari', 1.0),
-    createPoojaItem('chanio', 1.0),
-    createPoojaItem('blouse-piece', 1.0),
-    createPoojaItem('godadu', 1.0),
-    createPoojaItem('oshiku', 1.0),
-    createPoojaItem('ochhad', 1.0),
-    createPoojaItem('chatri', 1.0),
-    createPoojaItem('chappal', 1.0),
-    createPoojaItem('vas-ni-chhabdi', 1.0),
-    createPoojaItem('chandla-packet', 1.0),
-    createPoojaItem('bangdi', 1.0),
-    createPoojaItem('ariso', 1.0),
-    createPoojaItem('comb', 1.0),
-    createPoojaItem('oil-bottle', 1.0),
-    createPoojaItem('kajal', 1.0),
-    createPoojaItem('til', 0.5),
-    createPoojaItem('sutar-thread-ni-dadi', 1.0),
-    createPoojaItem('kali-drax', 0.15),
-    createPoojaItem('darbh-leaves', 10.0),
-    createPoojaItem('honey', 1.0),
-    createPoojaItem('jav', 1.0),
-    createPoojaItem('kamod', 1.0),
-    createPoojaItem('black-til', 1.0),
-    createPoojaItem('jav-flour', 1.0),
-    createPoojaItem('udad-flour', 1.0),
-    createPoojaItem('kala-til-powder', 1.0),
-    createPoojaItem('black-clay-matki', 1.0),
-    createPoojaItem('vas-ni-sundli', 1.0),
-    createPoojaItem('janoi', 2.0),
-    createPoojaItem('pako-siddho', 1.0),
-    createPoojaItem('towel', 1.0),
-    createPoojaItem('napkin', 2.0),
-    createPoojaItem('male-shirt-pant-kapad', 1.0),
-    createPoojaItem('water', 5.0),
-    createPoojaItem('aasan', 1.0),
-    createPoojaItem('chamachi', 4.0),
-    createPoojaItem('kalash-tramba', 2.0),
-    createPoojaItem('kapoor', 1.0),
-    createPoojaItem('kamalkakdi', 0.1),
-    createPoojaItem('dry-coconut-powder', 0.25),
-    createPoojaItem('dabhdo-grass', 1.0),
-    createPoojaItem('cow-urine', 10.0),
-    createPoojaItem('savliyu', 2.0),
-    createPoojaItem('trambano-trass', 1.0),
-    createPoojaItem('kanthi-mala', 1.0),
-    createPoojaItem('gaumukhi', 1.0),
-    createPoojaItem('cow-silver-image', 1.0),
-  ],
-
-  'pret-bali-pooja': [
-    createPoojaItem('coconut-watered', 5.0),
-    createPoojaItem('kanku', 50.0),
-    createPoojaItem('gulal', 50.0),
-    createPoojaItem('abel', 50.0),
-    createPoojaItem('sakar', 250.0),
-    createPoojaItem('drax', 50.0),
-    createPoojaItem('common-dry-fruits', 250.0),
-    createPoojaItem('supari', 0.25),
-    createPoojaItem('taj', 50.0),
-    createPoojaItem('lavang', 50.0),
-    createPoojaItem('elichi', 50.0),
-    createPoojaItem('nadachadi-thread', 1.0),
-    createPoojaItem('agarbatti', 1.0),
-    createPoojaItem('topra-na-vatka', 5.0),
-    createPoojaItem('ganpati-idol', 1.0),
-    createPoojaItem('bajot', 1.0),
-    createPoojaItem('tulsi-na-pan', 20.0),
-    createPoojaItem('gud', 0.25),
-    createPoojaItem('panchamrit', 20.0),
-    createPoojaItem('chhuta-phool', 0.5),
-    createPoojaItem('phool-har', 5.0),
-    createPoojaItem('kagaj-na-duna', 30.0),
-    createPoojaItem('ghau', 1.0),
-    createPoojaItem('chokha', 0.5),
-    createPoojaItem('pakka-fal', 0.5),
-    createPoojaItem('clay-divda', 2.0),
-    createPoojaItem('aluminium-thali', 2.0),
-    createPoojaItem('vatka', 4.0),
-    createPoojaItem('rakabi', 2.0),
-    createPoojaItem('lamp-divo', 1.0),
-    createPoojaItem('ghee-liquid', 150.0),
-    createPoojaItem('ghee-cotton', 1.0),
-    createPoojaItem('machis', 1.0),
-    createPoojaItem('guggul', 100.0),
-    createPoojaItem('cow-mud', 10.0),
-    createPoojaItem('sthapan-clothing-red', 1.0),
-    createPoojaItem('sthapan-clothing-green', 1.0),
-    createPoojaItem('sthapan-clothing-white', 1.0),
-    createPoojaItem('chandan-powder', 1.0),
-    createPoojaItem('til', 0.5),
-    createPoojaItem('jaar', 0.5),
-    createPoojaItem('sutar-thread-ni-dadi', 1.0),
-    createPoojaItem('kali-drax', 0.15),
-    createPoojaItem('darbh-leaves', 10.0),
-    createPoojaItem('honey', 1.0),
-    createPoojaItem('jav', 1.0),
-    createPoojaItem('kamod', 1.0),
-    createPoojaItem('black-til', 1.0),
-    createPoojaItem('jav-flour', 1.0),
-    createPoojaItem('udad-flour', 1.0),
-    createPoojaItem('kala-til-powder', 1.0),
-    createPoojaItem('black-clay-matki', 1.0),
-    createPoojaItem('vas-ni-sundli', 1.0),
-    createPoojaItem('wood-for-yagna', 0.5),
-    createPoojaItem('pako-siddho', 1.0),
-    createPoojaItem('water', 2.0),
-    createPoojaItem('aasan', 1.0),
-    createPoojaItem('chamachi', 4.0),
-    createPoojaItem('kalash-tramba', 2.0),
-    createPoojaItem('kapoor', 1.0),
-    createPoojaItem('kamalkakdi', 0.1),
-    createPoojaItem('ral-no-dhup', 1.0),
-    createPoojaItem('dry-coconut-powder', 0.25),
-    createPoojaItem('dabhdo-grass', 1.0),
-    createPoojaItem('trambano-trass', 1.0),
-  ],
-
-  'new-shop-pooja': [
-    createPoojaItem('coconut-watered', 2.0),
-    createPoojaItem('kanku', 50.0),
-    createPoojaItem('gulal', 50.0),
-    createPoojaItem('abel', 50.0),
-    createPoojaItem('sakar', 250.0),
-    createPoojaItem('drax', 50.0),
-    createPoojaItem('common-dry-fruits', 250.0),
-    createPoojaItem('supari', 0.2),
-    createPoojaItem('taj', 20.0),
-    createPoojaItem('lavang', 20.0),
-    createPoojaItem('elichi', 20.0),
-    createPoojaItem('nadachadi-thread', 1.0),
-    createPoojaItem('agarbatti', 1.0),
-    createPoojaItem('topra-na-vatka', 2.0),
-    createPoojaItem('ganpati-idol', 1.0),
-    createPoojaItem('bajot', 1.0),
-    createPoojaItem('tulsi-na-pan', 20.0),
-    createPoojaItem('aasopalav-na-pan', 50.0),
-    createPoojaItem('nagarvel-na-pan', 2.0),
-    createPoojaItem('gud', 0.25),
-    createPoojaItem('panchamrit', 20.0),
-    createPoojaItem('chhuta-phool', 0.5),
-    createPoojaItem('phool-har', 2.0),
-    createPoojaItem('kagaj-na-duna', 30.0),
-    createPoojaItem('ghau', 1.0),
-    createPoojaItem('chokha', 0.5),
-    createPoojaItem('pakka-fal', 0.5),
-    createPoojaItem('mag', 1.0),
-    createPoojaItem('sutli-thread', 1.0),
-    createPoojaItem('clay-divda', 1.0),
-    createPoojaItem('aluminium-thali', 1.0),
-    createPoojaItem('vatka', 4.0),
-    createPoojaItem('rakabi', 2.0),
-    createPoojaItem('lamp-divo', 1.0),
-    createPoojaItem('ghee-liquid', 100.0),
-    createPoojaItem('ghee-cotton', 1.0),
-    createPoojaItem('machis', 1.0),
-    createPoojaItem('dhana', 0.25),
-    createPoojaItem('sthapan-clothing-red', 1.0),
-    createPoojaItem('sthapan-clothing-green', 1.0),
-    createPoojaItem('sthapan-clothing-white', 1.0),
-    createPoojaItem('chandan-powder', 1.0),
-    createPoojaItem('tramba-kumbh', 1.0),
-    createPoojaItem('clay-kumbh', 1.0),
-    createPoojaItem('sent', 1.0),
-    createPoojaItem('sutar-thread-ni-dadi', 1.0),
-    createPoojaItem('kali-drax', 0.15),
-    createPoojaItem('darbh-leaves', 10.0),
-    createPoojaItem('honey', 1.0),
-    createPoojaItem('janoi', 1.0),
-    createPoojaItem('pako-siddho', 1.0),
-    createPoojaItem('water', 1.0),
-    createPoojaItem('chamachi', 4.0),
-    createPoojaItem('kalash-tramba', 1.0),
-    createPoojaItem('kapoor', 1.0),
-    createPoojaItem('dabhdo-grass', 1.0),
-  ],
-
-  'new-land-pooja': [
-    createPoojaItem('coconut-watered', 2.0),
-    createPoojaItem('kanku', 50.0),
-    createPoojaItem('gulal', 50.0),
-    createPoojaItem('abel', 50.0),
-    createPoojaItem('sakar', 250.0),
-    createPoojaItem('drax', 50.0),
-    createPoojaItem('common-dry-fruits', 250.0),
-    createPoojaItem('supari', 0.2),
-    createPoojaItem('taj', 20.0),
-    createPoojaItem('lavang', 20.0),
-    createPoojaItem('elichi', 20.0),
-    createPoojaItem('nadachadi-thread', 1.0),
-    createPoojaItem('agarbatti', 1.0),
-    createPoojaItem('topra-na-vatka', 2.0),
-    createPoojaItem('ganpati-idol', 1.0),
-    createPoojaItem('bajot', 1.0),
-    createPoojaItem('patla', 1.0),
-    createPoojaItem('tulsi-na-pan', 20.0),
-    createPoojaItem('aasopalav-na-pan', 50.0),
-    createPoojaItem('nagarvel-na-pan', 2.0),
-    createPoojaItem('gud', 0.25),
-    createPoojaItem('panchamrit', 20.0),
-    createPoojaItem('chhuta-phool', 0.5),
-    createPoojaItem('phool-har', 2.0),
-    createPoojaItem('kagaj-na-duna', 30.0),
-    createPoojaItem('ghau', 1.0),
-    createPoojaItem('chokha', 0.5),
-    createPoojaItem('pakka-fal', 0.5),
-    createPoojaItem('mag', 1.0),
-    createPoojaItem('sutli-thread', 1.0),
-    createPoojaItem('clay-divda', 1.0),
-    createPoojaItem('aluminium-thali', 1.0),
-    createPoojaItem('vatka', 4.0),
-    createPoojaItem('rakabi', 2.0),
-    createPoojaItem('lamp-divo', 1.0),
-    createPoojaItem('ghee-liquid', 100.0),
-    createPoojaItem('ghee-cotton', 1.0),
-    createPoojaItem('machis', 1.0),
-    createPoojaItem('dhana', 0.25),
-    createPoojaItem('sthapan-clothing-red', 1.0),
-    createPoojaItem('sthapan-clothing-green', 1.0),
-    createPoojaItem('sthapan-clothing-white', 1.0),
-    createPoojaItem('chandan-powder', 1.0),
-    createPoojaItem('tramba-kumbh', 1.0),
-    createPoojaItem('clay-kumbh', 1.0),
-    createPoojaItem('sent', 1.0),
-    createPoojaItem('sutar-thread-ni-dadi', 1.0),
-    createPoojaItem('kali-drax', 0.15),
-    createPoojaItem('darbh-leaves', 10.0),
-    createPoojaItem('honey', 1.0),
-    createPoojaItem('janoi', 1.0),
-    createPoojaItem('pako-siddho', 1.0),
-    createPoojaItem('water', 1.0),
-    createPoojaItem('chamachi', 4.0),
-    createPoojaItem('kalash-tramba', 1.0),
-    createPoojaItem('kapoor', 1.0),
-    createPoojaItem('dabhdo-grass', 1.0),
-  ],
-
-  'new-vehicle-pooja': [
-    createPoojaItem('coconut-watered', 1.0),
-    createPoojaItem('kanku', 50.0),
-    createPoojaItem('gulal', 50.0),
-    createPoojaItem('abel', 50.0),
-    createPoojaItem('sakar', 250.0),
-    createPoojaItem('drax', 50.0),
-    createPoojaItem('common-dry-fruits', 250.0),
-    createPoojaItem('supari', 0.1),
-    createPoojaItem('taj', 20.0),
-    createPoojaItem('lavang', 20.0),
-    createPoojaItem('elichi', 20.0),
-    createPoojaItem('nadachadi-thread', 1.0),
-    createPoojaItem('agarbatti', 1.0),
-    createPoojaItem('topra-na-vatka', 1.0),
-    createPoojaItem('ganpati-idol', 1.0),
-    createPoojaItem('tulsi-na-pan', 20.0),
-    createPoojaItem('aasopalav-na-pan', 50.0),
-    createPoojaItem('chhuta-phool', 0.5),
-    createPoojaItem('phool-har', 1.0),
-    createPoojaItem('kagaj-na-duna', 30.0),
-    createPoojaItem('pakka-fal', 0.5),
-    createPoojaItem('sutli-thread', 1.0),
-    createPoojaItem('clay-divda', 1.0),
-    createPoojaItem('vatka', 4.0),
-    createPoojaItem('rakabi', 2.0),
-    createPoojaItem('lamp-divo', 1.0),
-    createPoojaItem('ghee-liquid', 100.0),
-    createPoojaItem('ghee-cotton', 1.0),
-    createPoojaItem('machis', 1.0),
-    createPoojaItem('dhana', 0.25),
-    createPoojaItem('chandan-powder', 1.0),
-    createPoojaItem('sent', 1.0),
-    createPoojaItem('sutar-thread-ni-dadi', 1.0),
-    createPoojaItem('kali-drax', 0.15),
-    createPoojaItem('darbh-leaves', 10.0),
-    createPoojaItem('honey', 1.0),
-    createPoojaItem('janoi', 1.0),
-    createPoojaItem('pako-siddho', 1.0),
-    createPoojaItem('water', 1.0),
-    createPoojaItem('chamachi', 4.0),
-    createPoojaItem('chundi', 1.0),
-    createPoojaItem('kapoor', 1.0),
-    createPoojaItem('dabhdo-grass', 1.0),
-  ],
-
-  'grah-shanti-pooja': [
-    createPoojaItem('coconut-watered', 5.0),
-    createPoojaItem('coconut-without-water', 1.0),
-    createPoojaItem('kanku', 50.0),
-    createPoojaItem('gulal', 50.0),
-    createPoojaItem('abel', 50.0),
-    createPoojaItem('sakar', 250.0),
-    createPoojaItem('drax', 50.0),
-    createPoojaItem('common-dry-fruits', 250.0),
-    createPoojaItem('supari', 0.7),
-    createPoojaItem('taj', 50.0),
-    createPoojaItem('lavang', 50.0),
-    createPoojaItem('elichi', 50.0),
-    createPoojaItem('nadachadi-thread', 1.0),
-    createPoojaItem('agarbatti', 1.0),
-    createPoojaItem('topra-na-vatka', 5.0),
-    createPoojaItem('ganpati-idol', 1.0),
-    createPoojaItem('bajot', 4.0),
-    createPoojaItem('patla', 4.0),
-    createPoojaItem('tulsi-na-pan', 20.0),
-    createPoojaItem('aasopalav-na-pan', 50.0),
-    createPoojaItem('nagarvel-na-pan', 10.0),
-    createPoojaItem('gud', 0.25),
-    createPoojaItem('panchamrit', 20.0),
-    createPoojaItem('chhuta-phool', 0.5),
-    createPoojaItem('phool-har', 5.0),
-    createPoojaItem('kagaj-na-duna', 30.0),
-    createPoojaItem('ghau', 2.0),
-    createPoojaItem('chokha', 1.0),
-    createPoojaItem('pakka-fal', 1.0),
-    createPoojaItem('mag', 1.0),
-    createPoojaItem('sutli-thread', 1.0),
-    createPoojaItem('clay-divda', 5.0),
-    createPoojaItem('aluminium-thali', 4.0),
-    createPoojaItem('vatka', 4.0),
-    createPoojaItem('rakabi', 2.0),
-    createPoojaItem('lamp-divo', 1.0),
-    createPoojaItem('ghee-liquid', 500.0),
-    createPoojaItem('ghee-cotton', 1.0),
-    createPoojaItem('machis', 1.0),
-    createPoojaItem('guggul', 100.0),
-    createPoojaItem('cow-mud', 10.0),
-    createPoojaItem('sthapan-clothing-red', 1.0),
-    createPoojaItem('sthapan-clothing-black', 1.0),
-    createPoojaItem('sthapan-clothing-green', 1.0),
-    createPoojaItem('sthapan-clothing-yellow', 1.0),
-    createPoojaItem('sthapan-clothing-white', 1.0),
-    createPoojaItem('udad', 1.0),
-    createPoojaItem('chanadal', 1.0),
-    createPoojaItem('juvar', 1.0),
-    createPoojaItem('chandan-powder', 1.0),
-    createPoojaItem('tramba-kumbh', 5.0),
-    createPoojaItem('clay-kumbh', 1.0),
-    createPoojaItem('dhoti', 1.0),
-    createPoojaItem('jabbha-nu-kapad', 1.0),
-    createPoojaItem('sari', 1.0),
-    createPoojaItem('chanio', 1.0),
-    createPoojaItem('blouse-piece', 1.0),
-    createPoojaItem('chandla-packet', 1.0),
-    createPoojaItem('bangdi', 1.0),
-    createPoojaItem('ariso', 1.0),
-    createPoojaItem('comb', 1.0),
-    createPoojaItem('oil-bottle', 1.0),
-    createPoojaItem('kajal', 1.0),
-    createPoojaItem('sent', 1.0),
-    createPoojaItem('til', 0.5),
-    createPoojaItem('sutar-thread-ni-dadi', 1.0),
-    createPoojaItem('kali-drax', 0.15),
-    createPoojaItem('darbh-leaves', 10.0),
-    createPoojaItem('honey', 1.0),
-    createPoojaItem('jav', 1.0),
-    createPoojaItem('kamod', 1.0),
-    createPoojaItem('black-til', 1.0),
-    createPoojaItem('wood-for-yagna', 2.0),
-    createPoojaItem('janoi', 1.0),
-    createPoojaItem('pako-siddho', 1.0),
-    createPoojaItem('towel', 1.0),
-    createPoojaItem('napkin', 5.0),
-    createPoojaItem('male-shirt-pant-kapad', 1.0),
-    createPoojaItem('water', 2.0),
-    createPoojaItem('chamachi', 4.0),
-    createPoojaItem('kalash-tramba', 4.0),
-    createPoojaItem('chundi', 2.0),
-    createPoojaItem('rumal', 1.0),
-    createPoojaItem('face-powder', 1.0),
-    createPoojaItem('nail-polish', 1.0),
-    createPoojaItem('kapoor', 1.0),
-    createPoojaItem('kamalkakdi', 0.25),
-    createPoojaItem('dry-coconut-powder', 0.25),
-    createPoojaItem('sugandhi-valo', 1.0),
-    createPoojaItem('tamal-patra', 1.0),
-    createPoojaItem('dabhdo-grass', 1.0),
-    createPoojaItem('cow-urine', 10.0),
-    createPoojaItem('chana', 0.5),
-    createPoojaItem('savliyu', 4.0),
-  ],
-
-  'garud-puran': [
-    createPoojaItem('coconut-watered', 2.0),
-    createPoojaItem('kanku', 50.0),
-    createPoojaItem('gulal', 50.0),
-    createPoojaItem('abel', 50.0),
-    createPoojaItem('sakar', 250.0),
-    createPoojaItem('drax', 50.0),
-    createPoojaItem('common-dry-fruits', 250.0),
-    createPoojaItem('supari', 0.2),
-    createPoojaItem('taj', 25.0),
-    createPoojaItem('lavang', 25.0),
-    createPoojaItem('elichi', 25.0),
-    createPoojaItem('nadachadi-thread', 1.0),
-    createPoojaItem('agarbatti', 1.0),
-    createPoojaItem('topra-na-vatka', 2.0),
-    createPoojaItem('ganpati-idol', 1.0),
-    createPoojaItem('bajot', 2.0),
-    createPoojaItem('patla', 2.0),
-    createPoojaItem('tulsi-na-pan', 20.0),
-    createPoojaItem('nagarvel-na-pan', 2.0),
-    createPoojaItem('chhuta-phool', 0.5),
-    createPoojaItem('phool-har', 2.0),
-    createPoojaItem('kagaj-na-duna', 30.0),
-    createPoojaItem('chokha', 1.0),
-    createPoojaItem('pakka-fal', 1.0),
-    createPoojaItem('clay-divda', 1.0),
-    createPoojaItem('aluminium-thali', 2.0),
-    createPoojaItem('vatka', 4.0),
-    createPoojaItem('rakabi', 2.0),
-    createPoojaItem('lamp-divo', 1.0),
-    createPoojaItem('ghee-liquid', 100.0),
-    createPoojaItem('ghee-cotton', 1.0),
-    createPoojaItem('machis', 1.0),
-    createPoojaItem('sthapan-clothing-red', 1.0),
-    createPoojaItem('sthapan-clothing-white', 1.0),
-    createPoojaItem('chandan-powder', 1.0),
-    createPoojaItem('dhoti', 1.0),
-    createPoojaItem('jabbha-nu-kapad', 1.0),
-    createPoojaItem('sari', 1.0),
-    createPoojaItem('chanio', 1.0),
-    createPoojaItem('blouse-piece', 1.0),
-    createPoojaItem('sutar-thread-ni-dadi', 1.0),
-    createPoojaItem('kali-drax', 0.15),
-    createPoojaItem('darbh-leaves', 10.0),
-    createPoojaItem('honey', 1.0),
-    createPoojaItem('pako-siddho', 1.0),
-    createPoojaItem('water', 2.0),
-    createPoojaItem('chamachi', 4.0),
-    createPoojaItem('kalash-tramba', 1.0),
-    createPoojaItem('kapoor', 1.0),
-    createPoojaItem('tamal-patra', 1.0),
-    createPoojaItem('dabhdo-grass', 1.0),
-  ]
-
 };
 
 export const WHATSAPP_BUSINESS_NUMBER = '9265053201'; // Replace with your actual business number
