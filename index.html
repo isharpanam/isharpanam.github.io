@@ -2,42 +2,114 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- Favicon -->
+    
+    <!-- Enhanced Mobile Optimization -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="format-detection" content="telephone=no" />
+    
+    <!-- Enhanced Favicon Suite -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#FF6700" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Isharpanam - Your one-stop solution for authentic pooja items and divine rituals. Order complete samagri kits online." />
-    <meta name="keywords" content="pooja samagri, hindu rituals, prayer items, religious supplies, online pooja items" />
-    <title>Isharpanam - Authentic Religious Items Online</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="msapplication-TileColor" content="#FF6700" />
+    
+    <!-- Enhanced SEO Meta Tags -->
+    <meta name="description" content="Isharpanam - Your one-stop solution for authentic pooja items and divine rituals. Order complete samagri kits online with fast delivery." />
+    <meta name="keywords" content="pooja samagri, hindu rituals, prayer items, religious supplies, online pooja items, vrat kits, spiritual essentials, authentic puja items" />
+    <meta name="author" content="Isharpanam" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Isharpanam - Authentic Religious Items Online" />
+    <meta property="og:description" content="Your trusted source for authentic pooja kits and ritual essentials. Complete, traditional samagri sets for all your sacred ceremonies." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://isharpanam.com" />
+    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="og:site_name" content="Isharpanam" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Isharpanam - Authentic Religious Items Online" />
+    <meta name="twitter:description" content="Your trusted source for authentic pooja kits and ritual essentials." />
+    <meta name="twitter:image" content="/twitter-image.jpg" />
+    
+    <title>Isharpanam - Authentic Religious Items Online | Complete Pooja Kits & Sacred Essentials</title>
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" as="style" />
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="script" />
+    
+    <!-- Enhanced Font Loading -->
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS with Performance Optimization -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Enhanced Tailwind Configuration -->
     <script>
       tailwind.config = {
         theme: {
           extend: {
+            // Enhanced Responsive Breakpoints
+            screens: {
+              'xs': '475px',
+              'sm': '640px',
+              'md': '768px',
+              'lg': '1024px',
+              'xl': '1280px',
+              '2xl': '1536px',
+            },
+            // Enhanced Color Palette
             colors: {
               'brand-primary': '#FF6700', // Saffron
               'brand-secondary': '#800000', // Maroon
               'brand-accent': '#FFD700', // Gold
               'brand-bg': '#FFF8E1', // Creamy background
               'brand-dark': '#4A0404',
+              'brand-light': '#FFF4E6',
+              'brand-success': '#10B981',
+              'brand-warning': '#F59E0B',
+              'brand-error': '#EF4444',
             },
+            // Enhanced Font Family
             fontFamily: {
               heading: ['Teko', 'sans-serif'],
               body: ['Lora', 'serif'],
             },
+            // Enhanced Spacing Scale
+            spacing: {
+              '18': '4.5rem',
+              '72': '18rem',
+              '84': '21rem',
+              '96': '24rem',
+            },
+            // Enhanced Animation Keyframes
             keyframes: {
               fadeInUp: {
-                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '0%': { opacity: '0', transform: 'translateY(30px)' },
                 '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              fadeInDown: {
+                '0%': { opacity: '0', transform: 'translateY(-30px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              fadeInLeft: {
+                '0%': { opacity: '0', transform: 'translateX(-30px)' },
+                '100%': { opacity: '1', transform: 'translateX(0)' },
+              },
+              fadeInRight: {
+                '0%': { opacity: '0', transform: 'translateX(30px)' },
+                '100%': { opacity: '1', transform: 'translateX(0)' },
               },
               pulseSlow: {
                 '0%, 100%': { opacity: 1, transform: 'scale(1)' },
-                '50%': { opacity: 0.9, transform: 'scale(1.1)' },
+                '50%': { opacity: 0.8, transform: 'scale(1.05)' },
               },
               flash: {
                 '0%, 100%': { backgroundColor: 'transparent' },
@@ -51,26 +123,260 @@
                 '0%': { transform: 'translateX(0)' },
                 '100%': { transform: 'translateX(100%)' },
               },
+              slideInLeft: {
+                '0%': { transform: 'translateX(-100%)' },
+                '100%': { transform: 'translateX(0)' },
+              },
+              slideOutLeft: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-100%)' },
+              },
               fadeInMenu: {
                 '0%': { opacity: '0', transform: 'translateY(-10px)' },
                 '100%': { opacity: '1', transform: 'translateY(0)' },
-              }
+              },
+              bounceIn: {
+                '0%': { opacity: '0', transform: 'scale(0.3)' },
+                '50%': { opacity: '1', transform: 'scale(1.05)' },
+                '70%': { transform: 'scale(0.9)' },
+                '100%': { opacity: '1', transform: 'scale(1)' },
+              },
+              shake: {
+                '0%, 100%': { transform: 'translateX(0)' },
+                '10%, 30%, 50%, 70%, 90%': { transform: 'translateX(-5px)' },
+                '20%, 40%, 60%, 80%': { transform: 'translateX(5px)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0px)' },
+                '50%': { transform: 'translateY(-10px)' },
+              },
+              shimmer: {
+                '0%': { transform: 'translateX(-100%)' },
+                '100%': { transform: 'translateX(100%)' },
+              },
+              progress: {
+                '0%': { transform: 'translateX(-100%)' },
+                '50%': { transform: 'translateX(0%)' },
+                '100%': { transform: 'translateX(100%)' },
+              },
+              heartbeat: {
+                '0%, 100%': { transform: 'scale(1)' },
+                '50%': { transform: 'scale(1.1)' },
+              },
             },
+            // Enhanced Animation Classes
             animation: {
-              fadeInUp: 'fadeInUp 0.5s ease-out forwards',
+              fadeInUp: 'fadeInUp 0.6s ease-out forwards',
+              fadeInDown: 'fadeInDown 0.6s ease-out forwards',
+              fadeInLeft: 'fadeInLeft 0.6s ease-out forwards',
+              fadeInRight: 'fadeInRight 0.6s ease-out forwards',
               pulseSlow: 'pulseSlow 3s ease-in-out infinite',
               flash: 'flash 0.5s ease-in-out',
               slideInRight: 'slideInRight 0.3s ease-out forwards',
               slideOutRight: 'slideOutRight 0.3s ease-out forwards',
+              slideInLeft: 'slideInLeft 0.3s ease-out forwards',
+              slideOutLeft: 'slideOutLeft 0.3s ease-out forwards',
               fadeInMenu: 'fadeInMenu 0.2s ease-out forwards',
-            }
+              bounceIn: 'bounceIn 0.6s ease-out forwards',
+              shake: 'shake 0.5s ease-in-out',
+              float: 'float 3s ease-in-out infinite',
+              shimmer: 'shimmer 2s infinite',
+              progress: 'progress 2s ease-in-out infinite',
+              heartbeat: 'heartbeat 1.5s ease-in-out infinite',
+            },
+            // Enhanced Box Shadow
+            boxShadow: {
+              'brand': '0 4px 14px 0 rgba(255, 103, 0, 0.25)',
+              'brand-lg': '0 10px 25px -3px rgba(255, 103, 0, 0.3)',
+              'brand-xl': '0 20px 50px -12px rgba(255, 103, 0, 0.35)',
+            },
+            // Enhanced Border Radius
+            borderRadius: {
+              'xl': '1rem',
+              '2xl': '1.5rem',
+              '3xl': '2rem',
+            },
           }
-        }
+        },
+        // Enhanced Plugins and Utilities
+        plugins: [
+          // Custom utilities for touch devices
+          function({ addUtilities }) {
+            addUtilities({
+              '.touch-manipulation': {
+                'touch-action': 'manipulation'
+              },
+              '.touch-none': {
+                'touch-action': 'none'
+              },
+              '.touch-auto': {
+                'touch-action': 'auto'
+              },
+              '.safe-area-inset': {
+                'padding-top': 'env(safe-area-inset-top)',
+                'padding-bottom': 'env(safe-area-inset-bottom)',
+                'padding-left': 'env(safe-area-inset-left)',
+                'padding-right': 'env(safe-area-inset-right)',
+              },
+              '.scrollbar-hide': {
+                '-ms-overflow-style': 'none',
+                'scrollbar-width': 'none',
+                '&::-webkit-scrollbar': {
+                  display: 'none'
+                }
+              },
+              '.text-shadow': {
+                'text-shadow': '0 1px 3px rgba(0, 0, 0, 0.1)'
+              },
+              '.text-shadow-lg': {
+                'text-shadow': '0 4px 8px rgba(0, 0, 0, 0.2)'
+              },
+              '.backdrop-blur-brand': {
+                'backdrop-filter': 'blur(8px) saturate(180%)',
+                '-webkit-backdrop-filter': 'blur(8px) saturate(180%)',
+              }
+            })
+          }
+        ]
       }
     </script>
+    
+    <!-- Enhanced Import Map -->
 
-<link rel="stylesheet" href="/index.css">
-  <script type="importmap">
+
+    <!-- Enhanced Styles -->
+    <link rel="stylesheet" href="/index.css">
+    
+    <!-- Performance and Analytics -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//cdn.tailwindcss.com">
+    
+    <!-- Enhanced CSS for Better Mobile Experience -->
+    <style>
+      /* Enhanced scrollbar styling */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(45deg, #FF6700, #FFD700);
+        border-radius: 10px;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(45deg, #800000, #FF6700);
+      }
+      
+      /* Enhanced focus styles for accessibility */
+      button:focus-visible,
+      a:focus-visible,
+      input:focus-visible,
+      textarea:focus-visible {
+        outline: 2px solid #FF6700;
+        outline-offset: 2px;
+      }
+      
+      /* Enhanced touch feedback */
+      button:active {
+        transform: scale(0.98);
+        transition: transform 0.1s ease;
+      }
+      
+      /* Improved text selection */
+      ::selection {
+        background-color: rgba(255, 103, 0, 0.2);
+        color: #4A0404;
+      }
+      
+      /* Enhanced loading states */
+      .loading-shimmer {
+        background: linear-gradient(90deg, 
+          rgba(255, 255, 255, 0.1) 0%, 
+          rgba(255, 255, 255, 0.3) 50%, 
+          rgba(255, 255, 255, 0.1) 100%);
+        background-size: 200% 100%;
+        animation: shimmer 1.5s infinite;
+      }
+      
+      /* iOS Safari specific fixes */
+      @supports (-webkit-touch-callout: none) {
+        .ios-momentum-scroll {
+          -webkit-overflow-scrolling: touch;
+        }
+      }
+      
+      /* Enhanced responsive images */
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      /* Better font rendering */
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+      }
+      
+      /* Enhanced animations */
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+      
+      /* Enhanced container max-widths */
+      .container {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      
+      @media (min-width: 640px) {
+        .container {
+          max-width: 640px;
+          padding-left: 1.5rem;
+          padding-right: 1.5rem;
+        }
+      }
+      
+      @media (min-width: 768px) {
+        .container {
+          max-width: 768px;
+        }
+      }
+      
+      @media (min-width: 1024px) {
+        .container {
+          max-width: 1024px;
+          padding-left: 2rem;
+          padding-right: 2rem;
+        }
+      }
+      
+      @media (min-width: 1280px) {
+        .container {
+          max-width: 1280px;
+        }
+      }
+      
+      @media (min-width: 1536px) {
+        .container {
+          max-width: 1536px;
+        }
+      }
+    </style>
+    <script type="importmap">
 {
   "imports": {
     "react/": "https://esm.sh/react@^19.1.0/",
@@ -81,9 +387,47 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/assets/index-DAubN-1P.js"></script>
-</head>
+    <script type="module" crossorigin src="/assets/index-A7n-fL9F.js"></script>
+  </head>
+  
   <body class="bg-brand-bg">
-    <div id="root"></div>
-</body>
+    <!-- Enhanced root container with error boundary -->
+    <div id="root" class="min-h-screen"></div>
+    
+    <!-- Loading fallback -->
+    <noscript>
+      <div style="
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        min-height: 100vh; 
+        background-color: #FFF8E1;
+        font-family: 'Lora', serif;
+        text-align: center;
+        padding: 2rem;
+      ">
+        <div>
+          <h1 style="color: #800000; margin-bottom: 1rem; font-size: 2rem;">Isharpanam</h1>
+          <p style="color: #4A0404;">Please enable JavaScript to use this application.</p>
+        </div>
+      </div>
+    </noscript>
+    
+    <!-- Enhanced React App Loading -->
+    
+    <!-- Service Worker Registration (if available) -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(registration => {
+              console.log('SW registered: ', registration);
+            })
+            .catch(registrationError => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
+  </body>
 </html>
