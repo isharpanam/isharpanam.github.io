@@ -1,0 +1,43 @@
+./
+├── .env
+├── .gitignore
+├── .zencoder
+│   ├── docs
+│   └── rules
+├── App.tsx
+├── README.md
+├── assets
+│   └── Images
+│       ├── Satyanarayan_pooja.png
+│       └── griha-pravesh-muhurat.jpg
+├── components
+│   ├── Footer.tsx
+│   ├── Header.tsx
+│   ├── Loader.tsx
+│   ├── PoojaCard.tsx
+│   ├── QRCodeModal.tsx
+│   ├── QuantitySelector.tsx
+│   └── VratCard.tsx
+├── constants.ts
+├── constants.ts.backup
+├── context
+│   └── CartContext.tsx
+├── data.ts
+├── file_structure.txt
+├── filestr.py
+├── index.html
+├── index.tsx
+├── metadata.json
+├── package-lock.json
+├── package.json
+├── pages
+│   ├── CartPage.tsx
+│   ├── HomePage.tsx
+│   ├── PoojaPage.tsx
+│   ├── VratListPage.tsx
+│   └── VratPage.tsx
+├── services
+│   └── staticService.ts
+├── tsconfig.json
+├── types.ts
+└── vite.config.ts
