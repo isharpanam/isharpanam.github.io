@@ -256,7 +256,7 @@ const QRCodeModal: React.FC<QRCodeModalProps> = ({ isOpen, onClose, totalAmount 
               </button>
               <button
                 onClick={onClose}
-                className="flex-1 bg-gradient-to-r from-brand-primary to-brand-secondary text-white font-semibold py-3 px-6 rounded-xl hover:from-brand-secondary hover:to-brand-primary transition-all duration-300 shadow-lg"
+                className="flex-1 bg-brand-primary from-brand-primary to-brand-secondary text-white font-semibold py-3 px-6 rounded-xl hover:from-brand-secondary hover:to-brand-primary transition-all duration-300 shadow-lg"
               >
                 Done
               </button>

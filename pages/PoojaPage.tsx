@@ -182,36 +182,36 @@ const PoojaPage: React.FC = () => {
         </div>
         
         {/* Hero Content */}
-        <div className="absolute inset-0 flex flex-col justify-end p-6 sm:p-8 lg:p-12 text-white">
+        <div className="absolute inset-0 flex flex-col justify-end p-4 sm:p-6 md:p-8 lg:p-12 text-white">
           {/* Trust Badge */}
-          <div className="mb-4">
-            <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full border border-white/30">
-              <Shield className="h-4 w-4 text-green-400" />
-              <span className="text-sm font-semibold">100% Authentic & Blessed</span>
+          <div className="mb-3 sm:mb-4">
+            <div className="inline-flex items-center gap-1.5 sm:gap-2 bg-white/20 backdrop-blur-sm px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-white/30">
+              <Shield className="h-3 w-3 sm:h-4 sm:w-4 text-green-400" />
+              <span className="text-xs sm:text-sm font-semibold">100% Authentic & Blessed</span>
             </div>
           </div>
           
           {/* Title */}
-          <h1 className="text-3xl sm:text-4xl lg:text-6xl xl:text-7xl font-heading text-white drop-shadow-lg mb-3 leading-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-heading text-white drop-shadow-lg mb-2 sm:mb-3 leading-tight">
             {poojaDetails.name}
           </h1>
           
           {/* Description */}
-          <p className="text-lg sm:text-xl lg:text-2xl font-body max-w-3xl text-gray-200 drop-shadow-md mb-6 leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-body max-w-full sm:max-w-2xl lg:max-w-3xl text-gray-200 drop-shadow-md mb-4 sm:mb-6 leading-relaxed">
             {poojaDetails.description}
           </p>
           
           {/* Rating & Trust Indicators */}
-          <div className="flex flex-wrap items-center gap-6">
+          <div className="flex flex-col sm:flex-row sm:flex-wrap items-start sm:items-center gap-3 sm:gap-4 lg:gap-6">
             <div className="flex items-center gap-1">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                <Star key={i} className="h-4 w-4 sm:h-5 sm:w-5 text-yellow-400 fill-current" />
               ))}
-              <span className="text-sm text-gray-200 ml-2">Authentic & Blessed</span>
+              <span className="text-xs sm:text-sm text-gray-200 ml-1 sm:ml-2">Authentic & Blessed</span>
             </div>
-            <div className="flex items-center gap-2">
-              <Gift className="h-5 w-5 text-blue-400" />
-              <span className="text-sm text-gray-200">Complete Kit Available</span>
+            <div className="flex items-center gap-1.5 sm:gap-2">
+              <Gift className="h-4 w-4 sm:h-5 sm:w-5 text-blue-400" />
+              <span className="text-xs sm:text-sm text-gray-200">Complete Kit Available</span>
             </div>
           </div>
         </div>

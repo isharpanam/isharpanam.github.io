@@ -173,7 +173,7 @@ const HomePage: React.FC = () => {
               {
                 icon: Package,
                 title: "Fast Delivery",
-                description: "Same-day delivery available in most areas",
+                description: "Fast delivery available in most areas",
                 color: "text-blue-600"
               },
               {
@@ -227,7 +227,7 @@ const HomePage: React.FC = () => {
             </div>
             
             <div className="mt-8 text-sm text-gray-500">
-              🚚 Free delivery on orders above ₹500 • 📱 Easy WhatsApp ordering • ⚡ Same-day delivery available
+              🚚 Free delivery on orders above ₹500 • 📱 Easy WhatsApp ordering • ⚡ Fast delivery available
             </div>
           </div>
         </div>

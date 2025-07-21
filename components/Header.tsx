@@ -70,7 +70,11 @@ const Header: React.FC = () => {
             {/* Logo - Enhanced */}
             <Link to="/" className="flex items-center gap-2 sm:gap-3 group relative">
               <div className="relative">
-                <Leaf className="text-brand-accent h-7 w-7 sm:h-8 sm:w-8 lg:h-10 lg:w-10 animate-pulseSlow group-hover:text-white transition-all duration-300 transform group-hover:scale-110" />
+                <img 
+                  src="/images/logo.png" 
+                  alt="Isharpanam Logo" 
+                  className="h-7 w-7 sm:h-8 sm:w-8 lg:h-10 lg:w-10 animate-pulseSlow group-hover:scale-110 transition-all duration-300 object-contain"
+                />
                 <div className="absolute inset-0 bg-brand-accent/20 rounded-full animate-ping opacity-75 group-hover:opacity-100"></div>
               </div>
               <div className="flex flex-col">
@@ -181,19 +185,15 @@ const Header: React.FC = () => {
         {/* Enhanced Menu Panel */}
         <div className={`
           absolute right-0 top-0 h-full w-80 max-w-[85vw] 
-          bg-brand-secondary/90 from-brand-secondary to-brand-primary
+          bg-transparent backdrop-blur-md border-l border-white/20
           shadow-2xl transform transition-all duration-300 ease-out
           ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}
         `}>
           <div className="flex flex-col h-full">
             {/* Enhanced Menu Header */}
-            <div className="flex items-center justify-between p-6 border-b border-white/20 bg-white/5 backdrop-blur-sm">
+            <div className="flex items-center justify-between p-6 border-b border-white/20 bg-white/10 backdrop-blur-sm">
               <div className="flex items-center gap-3">
-                <Leaf className="text-brand-accent h-7 w-7 animate-pulseSlow" />
-                <div>
-                  <h2 className="text-xl font-heading text-brand-accent">Menu</h2>
-                  <p className="text-xs text-white/70">Divine Rituals</p>
-                </div>
+                <h2 className="text-xl font-heading text-brand-accent">Menu</h2>
               </div>
               <button
                 onClick={toggleMenu}
@@ -281,18 +281,6 @@ const Header: React.FC = () => {
               )}
             </nav>
 
-            {/* Enhanced Menu Footer */}
-            <div className="p-6 border-t border-white/20 bg-white/5 backdrop-blur-sm">
-              <div className="text-center text-sm">
-                <p className="text-white/70">© 2024 Isharpanam</p>
-                <p className="text-brand-accent mt-1 font-semibold">🙏 Divine Rituals Made Easy</p>
-                <div className="flex justify-center mt-2 space-x-1">
-                  {[...Array(5)].map((_, i) => (
-                    <div key={i} className="w-1 h-1 bg-brand-accent rounded-full animate-pulse" style={{ animationDelay: `${i * 200}ms` }}></div>
-                  ))}
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

@@ -14,10 +14,7 @@ const Footer: React.FC = () => {
         }}></div>
       </div>
 
-      {/* Decorative Top Wave */}
-      {/* <div className="absolute top-0 left-0 right-0 h-12 bg-brand-bg"></div>
-      <div className="absolute top-0 left-0 right-0 h-12 bg-gradient-to-r from-brand-primary to-brand-secondary clip-wave"></div> */}
-
+  
       <div className="relative">
         {/* Main Footer Content */}
         <div className="container mx-auto px-4 pt-12 pb-8">
