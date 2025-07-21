@@ -10,16 +10,27 @@ const HomePage: React.FC = () => {
       {/* Enhanced Hero Section */}
       <div className="text-center opacity-0 animate-fadeInUp" style={{ animationDelay: '100ms' }}>
         <div className="mb-6 lg:mb-8">
+          {/* Brand Name in Devanagari */}
+          
+          
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-primary/10 to-brand-secondary/10 px-4 py-2 rounded-full border border-brand-accent/20 mb-4">
             <Sparkles className="h-4 w-4 text-brand-primary" />
             <span className="text-sm font-semibold text-brand-secondary">Authentic • Blessed • Traditional</span>
             <Sparkles className="h-4 w-4 text-brand-primary" />
           </div>
+
+        
+            <div className="mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-brand-primary mb-2 tracking-wide">
+              ईशअर्पणम्
+            </h1>
+            <div className="w-20 h-1 bg-gradient-to-r from-brand-primary to-brand-secondary mx-auto rounded-full"></div>
+          </div>
           
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading text-brand-secondary mb-4 lg:mb-6 leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading text-brand-secondary mb-4 lg:mb-6 leading-tight">
             Complete Pooja Kits &<br />
             <span className="text-brand-primary">Sacred Essentials</span>
-          </h1>
+          </h2>
           
           <div className="max-w-4xl mx-auto space-y-4">
             <p className="text-lg sm:text-xl lg:text-2xl font-bold text-brand-dark">
