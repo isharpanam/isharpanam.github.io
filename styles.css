@@ -398,3 +398,37 @@ input:focus, textarea:focus, select:focus {
     opacity: 0;
   }
 }
+
+/* Reset scrollbar styles to default browser appearance */
+/* Remove any custom scrollbar styling */
+::-webkit-scrollbar {
+  width: auto;
+  height: auto;
+}
+
+::-webkit-scrollbar-track {
+  background: initial;
+  border-radius: initial;
+  box-shadow: initial;
+}
+
+::-webkit-scrollbar-thumb {
+  background: initial;
+  border-radius: initial;
+  box-shadow: initial;
+  border: initial;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: initial;
+}
+
+::-webkit-scrollbar-corner {
+  background: initial;
+}
+
+/* Reset scrollbar for Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: initial;
+}
