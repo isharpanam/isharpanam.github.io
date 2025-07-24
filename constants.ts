@@ -1721,14 +1721,14 @@ const VRAT_IMAGES = {
   panchami: '/images/download (21).png',
   saptami: '/images/download (33).png',
   ashtami: '/images/Kevda trij vrat.png',
-  dashami: 'https://images.pexels.com/photos/10959063/pexels-photo-10959063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  ekadashi: 'https://images.pexels.com/photos/4141679/pexels-photo-4141679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  chaudash: 'https://images.pexels.com/photos/8432274/pexels-photo-8432274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  purnima: 'https://images.pexels.com/photos/2048865/pexels-photo-2048865.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  amavasya: 'https://images.pexels.com/photos/987157/pexels-photo-987157.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  baras: 'https://images.pexels.com/photos/14886657/pexels-photo-14886657.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  generic: 'https://images.pexels.com/photos/10100494/pexels-photo-10100494.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-  special: 'https://images.pexels.com/photos/15707798/pexels-photo-15707798/free-photo-of-a-woman-in-a-red-sari-holding-a-plate-with-a-lit-candle.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+  dashami: '/images/download (6).png',
+  ekadashi: '/images/download (6).png',
+  chaudash: '/images/download (6).png',
+  purnima: '/images/download (6).png',
+  amavasya: '/images/download (6).png',
+  baras: '/images/download (6).png',
+  generic: '/images/download (6).png',
+  special: '/images/download (6).png'
 };
 
 // Vrat Types with Kit Prices

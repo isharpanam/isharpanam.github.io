@@ -25,7 +25,11 @@ const Footer: React.FC = () => {
               <div className="mb-6">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="relative">
-                    <Leaf className="h-10 w-10 text-brand-accent animate-pulseSlow" />
+                    <img 
+                      src="/images/logo.png" 
+                      alt="Isharpanam Logo" 
+                      className="h-10 w-10 animate-pulseSlow hover:scale-110 transition-all duration-300 object-contain"
+                    />
                     <div className="absolute inset-0 bg-brand-accent/20 rounded-full animate-ping opacity-75"></div>
                   </div>
                   <div>
