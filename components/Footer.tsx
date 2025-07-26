@@ -14,30 +14,30 @@ const Footer: React.FC = () => {
         }}></div>
       </div>
 
-  
+
       <div className="relative">
         {/* Main Footer Content */}
         <div className="container mx-auto px-4 pt-12 pb-8">
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-            
+
             {/* Brand Section */}
             <div className="col-span-2 lg:col-span-2">
               <div className="mb-6">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="relative">
-                    <img 
-                      src="/images/logo.png" 
-                      alt="Isharpanam Logo" 
-                      className="h-10 w-10 animate-pulseSlow hover:scale-110 transition-all duration-300 object-contain"
+                    <img
+                      src="/images/logo.png"
+                      alt="Isharpanam Logo"
+                      className="h-10 w-10 animate-pulse hover:scale-110 transition-all duration-300 object-contain"
                     />
-                    <div className="absolute inset-0 bg-brand-accent/20 rounded-full animate-ping opacity-75"></div>
+                    <div className="absolute inset-0 bg-orange-500/20 rounded-full animate-ping opacity-75"></div>
                   </div>
                   <div>
                     <h3 className="text-2xl lg:text-3xl font-heading text-brand-accent">Isharpanam</h3>
                     <p className="text-sm text-white/80">Divine Rituals Made Easy</p>
                   </div>
                 </div>
-                
+
                 <p className="text-white/90 leading-relaxed mb-6 max-w-md">
                   Your trusted source for authentic pooja kits and ritual essentials. We provide complete, traditional samagri sets for all your sacred ceremonies, blessed with devotion and prepared with care.
                 </p>
@@ -65,7 +65,6 @@ const Footer: React.FC = () => {
                 </div>
               </div>
             </div>
-
             {/* Quick Links */}
             <div>
               <h4 className="text-lg font-heading text-brand-accent mb-4 flex items-center gap-2">
@@ -80,8 +79,8 @@ const Footer: React.FC = () => {
                   { name: 'Return Policy', href: '#' },
                 ].map((link, index) => (
                   <li key={index}>
-                    <a 
-                      href={link.href} 
+                    <a
+                      href={link.href}
                       className="text-white/80 hover:text-brand-accent transition-colors duration-300 text-sm hover:translate-x-1 transform inline-block"
                     >
                       {link.name}
@@ -139,33 +138,33 @@ const Footer: React.FC = () => {
 
           {/* Bottom Section */}
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            
+
             {/* Social Media Links */}
             <div className="flex items-center gap-4">
               <span className="text-white/70 text-sm mr-2">Follow us:</span>
               {[
-                { 
-                  icon: Facebook, 
-                  href: "https://www.facebook.com/share/1Hrtht8hdx", 
+                {
+                  icon: Facebook,
+                  href: "https://www.facebook.com/share/1Hrtht8hdx",
                   label: "Facebook",
                   color: "hover:bg-blue-600"
                 },
-                { 
-                  icon: Instagram, 
-                  href: "https://www.instagram.com/isharpanam", 
+                {
+                  icon: Instagram,
+                  href: "https://www.instagram.com/isharpanam",
                   label: "Instagram",
                   color: "hover:bg-pink-600"
                 },
-                { 
-                  icon: Twitter, 
-                  href: "https://x.com/isharpanam", 
+                {
+                  icon: Twitter,
+                  href: "https://x.com/isharpanam",
                   label: "Twitter",
                   color: "hover:bg-blue-400"
                 },
               ].map((social, index) => (
-                <a 
+                <a
                   key={index}
-                  href={social.href} 
+                  href={social.href}
                   aria-label={social.label}
                   target="_blank"
                   rel="noopener noreferrer"
