@@ -1577,6 +1577,7 @@ const POOJA_IMAGES = {
   ganesh: '/images/Ganesh pooja.png',
   navratri: '/images/navratri.png',
   havan: '/images/Navchandi home.png',
+  randalna_lota :'/images/randalna_lota.jpeg',
   // New Images
   bolChauth: '/images/Bol chauth gaumata pooja.png',
   dashamaa: '/images/Dashamaa vrat .png',
@@ -1625,7 +1626,7 @@ export const POOJA_TYPES: PoojaType[] = [
     id: 'randal-na-lota',
     name: 'Randal na Lota',
     description: 'Traditional Gujarati ritual performed for cooking and preparing food with divine blessings.',
-    image: POOJA_IMAGES.havan,
+    image: POOJA_IMAGES.randalna_lota,
   },
   {
     id: 'navchandi-yagna',

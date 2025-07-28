@@ -445,14 +445,10 @@ const PoojaPage: React.FC = () => {
                 </h3>
                 
                 {/* Order Stats */}
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="text-center p-4 bg-gradient-to-br from-brand-bg to-yellow-50 rounded-xl border border-brand-accent/30">
-                    <div className="text-2xl lg:text-3xl font-bold text-brand-primary">{itemCount.toFixed(1)}</div>
-                    <div className="text-xs text-gray-600">Items</div>
-                  </div>
+                <div className="grid gap-4">
                   <div className="text-center p-4 bg-gradient-to-br from-blue-50 to-brand-bg rounded-xl border border-blue-200">
                     <div className="text-2xl lg:text-3xl font-bold text-blue-600">{items.filter(item => item.quantity > 0).length}</div>
-                    <div className="text-xs text-gray-600">Types</div>
+                    <div className="text-xs text-gray-600">Items</div>
                   </div>
                 </div>
 

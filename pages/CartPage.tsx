@@ -154,7 +154,7 @@ const CartPage: React.FC = () => {
                   Your Sacred Cart
                 </h1>
                 <p className="text-lg font-body text-gray-600">
-                  {state.totalItems.toFixed(1)} items from {Object.keys(groupedItems).length} pooja types • Total: ₹{state.totalAmount.toFixed(2)}
+                  {state.items.length} items from {Object.keys(groupedItems).length} pooja types • Total: ₹{state.totalAmount.toFixed(2)}
                 </p>
               </div>
               <Link
@@ -333,7 +333,7 @@ const CartPage: React.FC = () => {
                     {/* Enhanced Summary Stats */}
                     <div className="grid grid-cols-2 gap-4">
                       <div className="text-center p-4 bg-gradient-to-br from-brand-bg to-yellow-50 rounded-xl border border-brand-accent/20">
-                        <div className="text-2xl lg:text-3xl font-bold text-brand-primary">{state.totalItems.toFixed(1)}</div>
+                        <div className="text-2xl lg:text-3xl font-bold text-brand-primary">{state.items.length}</div>
                         <div className="text-xs text-gray-600">Total Items</div>
                       </div>
                       <div className="text-center p-4 bg-gradient-to-br from-blue-50 to-brand-bg rounded-xl border border-blue-200">
