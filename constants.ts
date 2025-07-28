@@ -1472,7 +1472,7 @@ export const POOJA_ITEMS_MASTER: Record<string, Omit<PoojaItem, 'quantity'>> = {
     price: 100,
     unit: UNITS.PIECE
   },
- 
+
   // Gujarati Items
   'coconut-naliyer': {
     id: 'coconut-naliyer',
@@ -1553,7 +1553,7 @@ export const POOJA_ITEMS_MASTER: Record<string, Omit<PoojaItem, 'quantity'>> = {
     price: 100,
     unit: UNITS.PIECE
   }
-  
+
 };
 
 // Helper function to create PoojaItem with quantity from master data
@@ -1728,7 +1728,64 @@ const VRAT_IMAGES = {
   amavasya: '/images/download (6).png',
   baras: '/images/download (6).png',
   generic: '/images/download (6).png',
-  special: '/images/download (6).png'
+  special: '/images/download (6).png',
+  aashapura_manu_vart: '/images/aashapura_manu_vart.jpeg',
+  aevrat_jivan_vart: '/images/aevrat_jivan_vart.jpeg',
+  amashnu_vart: '/images/amashnu_vart.jpeg',
+  annpurna_manu_vart: '/images/annpurna_manu_vart.jpeg',
+  Bol_chauth_gaumata_pooja: '/images/Bol chauth gaumata pooja.png',
+  boy_mag: '/images/boy_mag.jpg',
+  bramani_manu_vart: '/images/bramani_manu_vart.jpeg',
+  butbhavani_manu_vart: '/images/butbhavani_manu_vart.jpeg',
+  chamunda_manu_vart: '/images/chamunda_manu_vart.jpeg',
+  chehar_manu_vart: '/images/chehar_manu_vart.jpeg',
+  Dashamaa_vrat_: '/images/Dashamaa vrat .png',
+  dashamani_vart: '/images/dashamani_vart.jpeg',
+  Dhanlakshmi_pooja: '/images/Dhanlakshmi pooja.png',
+  diwali: '/images/diwali.png',
+  Evrat_Jivrat_vrat: '/images/Evrat-Jivrat vrat.png',
+  Ful_kajli_vrat: '/images/Ful-kajli vrat.png',
+  Ganesh_pooja: '/images/Ganesh pooja.png',
+  Gauri_vrat_t: '/images/Gauri vrat (2).png',
+  Gauri_vrat: '/images/Gauri vrat.png',
+  gayatri_vart: '/images/gayatri_vart.jpeg',
+  Grahshanti_Grah_pooja: '/images/Grahshanti_Grah pooja.png',
+  griha_pravesh_muhurat: '/images/griha-pravesh-muhurat.jpg',
+  Gruh_pravesh_pooja: '/images/Gruh-pravesh pooja.png',
+  hingda_manu_vart: '/images/hingda_manu_vart.jpeg',
+  Jaya_Parvati_vrat: '/images/Jaya-Parvati vrat.png',
+  jivan_vart: '/images/jivan_vart.jpeg',
+  Kalsarp_vidhhan: '/images/Kalsarp vidhhan.png',
+  Kevda_trij_vrat: '/images/Kevda trij vrat.png',
+  khodiyat_ma_vart: '/images/khodiyat_ma_vart.jpeg',
+  Krishna_pooja: '/images/Krishna pooja.png',
+  logo: '/images/logo.png',
+  mahakali_manu_vart: '/images/mahakali_manu_vart.jpeg',
+  mahalakshmi: '/images/mahalakshmi.jpeg',
+  ma_harsisdhi_vart: '/images/ma_harsisdhi_vart.jpeg',
+  Meldi_mata_vrat: '/images/Meldi mata vrat.png',
+  meldi_ma_nu_vart: '/images/meldi_ma_nu_vart.jpeg',
+  Nakshtra_vidhhan: '/images/Nakshtra vidhhan.png',
+  Navchandi_home: '/images/Navchandi home.png',
+  Navratri_vrat: '/images/Navratri vrat.png',
+  navratri: '/images/navratri.png',
+  pavitra_aekadsi: '/images/pavitra_aekadsi.jpeg',
+  Pind_karm_pooja: '/images/Pind karm pooja.png',
+  Pitru_shraddh_pooja: '/images/Pitru shraddh pooja.png',
+  randal_manu_vart: '/images/randal_manu_vart.jpeg',
+  Saibaba_vrat: '/images/Saibaba vrat.png',
+  Santoshi_mata_vrat: '/images/Santoshi mata vrat.png',
+  santoshi_manu_vart: '/images/santoshi_manu_vart.jpeg',
+  Satyanarayan_pooja: '/images/Satyanarayan_pooja.png',
+  shiradivada_vart: '/images/shiradivada_vart.jpeg',
+  Shiv_Pooja: '/images/Shiv Pooja.png',
+  Shrimad_Bhagvat_pooja: '/images/Shrimad Bhagvat pooja.png',
+  sol_somvarnu_vart: '/images/sol_somvarnu_vart.jpeg',
+  Vad_savitri_vrat: '/images/Vad-savitri vrat.png',
+  vaibhalashmi_vart: '/images/vaibhalashmi_vart.jpeg',
+  vatshathi_vart: '/images/vatshathi_vart.jpeg',
+  Vishesh_pooja: '/images/Vishesh pooja.png',
+  Vishnuyag_pooja: '/images/Vishnuyag pooja.png',
 };
 
 // Vrat Types with Kit Prices
@@ -1764,7 +1821,7 @@ export const VRAT_TYPES: VratType[] = [
     duration: '1 day',
     bestTime: 'After sunrise'
   },
-  
+
   // Trij (3rd day) Vrats
   {
     id: 'kevada-trij-vrat',
@@ -1796,7 +1853,7 @@ export const VRAT_TYPES: VratType[] = [
     duration: '1 day',
     bestTime: 'Sunrise to noon'
   },
-  
+
   // Chaturthi (4th day) Vrats
   {
     id: 'bahula-chaturthi',
@@ -2450,7 +2507,7 @@ export const VRAT_TYPES: VratType[] = [
     description: 'Special regional vrat sometimes on new moon',
     kitPrice: 250,
     category: 'Amavasya (New Moon)',
-    image: VRAT_IMAGES.amavasya,
+    image: VRAT_IMAGES.amashnu_vart,
     duration: '1 day',
     bestTime: 'Dark moon hours'
   },
@@ -2494,7 +2551,7 @@ export const VRAT_TYPES: VratType[] = [
     description: 'Sixteen Monday vrat tradition',
     kitPrice: 250,
     category: 'Other Vrats',
-    image: VRAT_IMAGES.special,
+    image: VRAT_IMAGES.sol_somvarnu_vart,
     duration: '16 Mondays',
     bestTime: 'Every Monday'
   },
@@ -2554,7 +2611,7 @@ export const VRAT_TYPES: VratType[] = [
     description: 'Cow and Tulsi combined worship vrat',
     kitPrice: 250,
     category: 'Other Vrats',
-    image: VRAT_IMAGES.special,
+    image: VRAT_IMAGES.gayatri_vart,
     duration: '1 day',
     bestTime: 'Morning hours'
   },
@@ -2574,7 +2631,7 @@ export const VRAT_TYPES: VratType[] = [
     description: 'Saint Rambapa devotional vrat',
     kitPrice: 250,
     category: 'Other Vrats',
-    image: VRAT_IMAGES.special,
+    image: VRAT_IMAGES.santoshi_manu_vart,
     duration: '1 day',
     bestTime: 'Evening hours'
   },
@@ -2604,7 +2661,7 @@ export const VRAT_TYPES: VratType[] = [
     description: 'Shirdi Sai Baba devotional vrat',
     kitPrice: 250,
     category: 'Other Vrats',
-    image: VRAT_IMAGES.special,
+    image: VRAT_IMAGES.shiradivada_vart,
     duration: '9 Thursdays',
     bestTime: 'Thursday worship'
   },
@@ -2674,7 +2731,7 @@ export const VRAT_TYPES: VratType[] = [
     description: 'Great night of Lord Shiva',
     kitPrice: 250,
     category: 'Other Vrats',
-    image: VRAT_IMAGES.special,
+    image: VRAT_IMAGES.mahakali_manu_vart,
     duration: '1 night',
     bestTime: 'Night long vigil'
   },
@@ -2693,7 +2750,7 @@ export const VRAT_TYPES: VratType[] = [
 
 export const POOJA_SAMAGRI_DATA: Record<string, PoojaItem[]> = {
   // Based on CSV data - Ganapati pooja
- 'ganapati-pooja': [
+  'ganapati-pooja': [
     createPoojaItem('coconut-watered', 2.0),
     createPoojaItem('kanku', 50.0),
     createPoojaItem('gulal', 50.0),
