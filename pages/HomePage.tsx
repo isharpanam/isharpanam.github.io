@@ -1,11 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { POOJA_TYPES } from '../constants';
 import PoojaCard from '../components/PoojaCard';
 import Carousel from '../components/Carousel';
+import { CAROUSEL_ITEMS, CarouselItem } from '../config/carouselConfig';
 import { Calendar, Package, Star, Sparkles, Heart, Shield } from 'lucide-react';
 
 const HomePage: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleCarouselItemClick = (item: CarouselItem) => {
+    navigate(item.redirectTo);
+  };
+
   return (
     <div className="space-y-12 lg:space-y-20">
       {/* Enhanced Hero Section */}
@@ -28,19 +35,7 @@ const HomePage: React.FC = () => {
             <div className="w-20 h-1 bg-gradient-to-r from-brand-primary to-brand-secondary mx-auto rounded-full"></div>
           </div>
 
-          {/* Carousel Section */}
-          <div className="mb-8 lg:mb-12 opacity-0 animate-fadeInUp" style={{ animationDelay: '200ms' }}>
-            <Carousel 
-              images={[
-                'images/pojaa1.jpeg',
-                'images/pojaa2.jpeg',
-                'images/pojaa3.jpeg',
-                'images/pojaa4.jpeg'
-              ]}
-              autoPlay={true}
-              interval={4000}
-            />
-          </div>
+        
           
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading text-brand-secondary mb-4 lg:mb-6 leading-tight">
             Complete Pooja Kits &<br />
@@ -51,14 +46,28 @@ const HomePage: React.FC = () => {
             <p className="text-lg sm:text-xl lg:text-2xl font-bold text-brand-dark">
               🌿 Collected from Nature, Blessed by the Divine 🙏
             </p>
+
+          </div>
+        </div>
+
+          {/* Carousel Section */}
+          <div className="mb-8 lg:mb-12 opacity-0 animate-fadeInUp" style={{ animationDelay: '200ms' }}>
+            <Carousel 
+              items={CAROUSEL_ITEMS}
+              autoPlay={true}
+              interval={4000}
+              onItemClick={handleCarouselItemClick}
+            />
+          </div>
+
+          <div className="max-w-4xl mx-auto space-y-4">
             <p className="text-base sm:text-lg lg:text-xl font-body text-gray-700 leading-relaxed px-4">
               Your trusted source for authentic pooja kits and ritual essentials. We offer complete, traditional samagri sets for all your sacred ceremonies. Each kit contains carefully selected, blessed items to ensure your spiritual practices are performed with devotion and authenticity.
             </p>
           </div>
-        </div>
 
         {/* Trust Indicators */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-3xl mx-auto mb-8 lg:mb-12 px-4">
+        {/* <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-3xl mx-auto mb-8 lg:mb-12 px-4">
           <div className="flex flex-col items-center p-4 bg-white rounded-xl shadow-lg border border-brand-accent/20 transform hover:scale-105 transition-transform duration-300">
             <Shield className="h-8 w-8 text-green-600 mb-2" />
             <span className="text-sm font-semibold text-gray-800">100% Authentic</span>
@@ -74,7 +83,7 @@ const HomePage: React.FC = () => {
             <span className="text-sm font-semibold text-gray-800">Complete Kits</span>
             <span className="text-xs text-gray-600">Everything Included</span>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Enhanced Pooja Cards Grid */}
