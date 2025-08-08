@@ -28,7 +28,7 @@ const GanapatiKitPage: React.FC = () => {
 
   const kitData = {
     id: 'ganapati-pooja-kit',
-    name: 'Ganapati Pooja Saman Kit',
+    name: 'Eco-Friendly Ganapati Pooja Kit',
     price: kitPrice,
     description: 'Complete traditional Ganapati worship kit with all essential items',
     image: 'images/pojaa1.jpeg'
@@ -181,11 +181,11 @@ const GanapatiKitPage: React.FC = () => {
             </h1>
             
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-heading mb-6 text-brand-accent leading-tight">
-              Ganapati Pooja Saman Kit
+              Eco-Friendly Ganapati Pooja Kit
             </h2>
             
             <p className="text-lg sm:text-xl mb-6 text-white/90 leading-relaxed">
-              Complete traditional Ganapati worship kit with all essential items for removing obstacles and ensuring success in all endeavors.
+              Ganesh Chaturthi 2025 – Celebrate with the ईशअर्पणम् Eco-Friendly Pooja Kit, complete with all essentials for Ganapati’s blessings of success and prosperity.
             </p>
             
             {/* Price & Quantity */}
