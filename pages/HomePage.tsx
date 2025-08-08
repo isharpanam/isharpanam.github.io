@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { POOJA_TYPES } from '../constants';
 import PoojaCard from '../components/PoojaCard';
+import Carousel from '../components/Carousel';
 import { Calendar, Package, Star, Sparkles, Heart, Shield } from 'lucide-react';
 
 const HomePage: React.FC = () => {
@@ -25,6 +26,20 @@ const HomePage: React.FC = () => {
               ईशअर्पणम्
             </h1>
             <div className="w-20 h-1 bg-gradient-to-r from-brand-primary to-brand-secondary mx-auto rounded-full"></div>
+          </div>
+
+          {/* Carousel Section */}
+          <div className="mb-8 lg:mb-12 opacity-0 animate-fadeInUp" style={{ animationDelay: '200ms' }}>
+            <Carousel 
+              images={[
+                'images/pojaa1.jpeg',
+                'images/pojaa2.jpeg',
+                'images/pojaa3.jpeg',
+                'images/pojaa4.jpeg'
+              ]}
+              autoPlay={true}
+              interval={4000}
+            />
           </div>
           
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading text-brand-secondary mb-4 lg:mb-6 leading-tight">

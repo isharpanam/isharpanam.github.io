@@ -76,7 +76,7 @@ const Footer: React.FC = () => {
                   { name: 'Pooja Kits', href: '/' },
                   { name: 'Vrat Kits', href: '#/vrats' },
                   { name: 'Shopping Cart', href: '#/cart' },
-                  { name: 'Return Policy', href: '#' },
+                  { name: 'Return Policy', href: '#/return-policy' },
                 ].map((link, index) => (
                   <li key={index}>
                     <a

@@ -6,6 +6,7 @@ import PoojaPage from './pages/PoojaPage';
 import CartPage from './pages/CartPage';
 import VratListPage from './pages/VratListPage';
 import VratPage from './pages/VratPage';
+import ReturnPolicyPage from './pages/ReturnPolicyPage';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -34,6 +35,7 @@ function App(): React.ReactNode {
               <Route path="/vrats" element={<VratListPage />} />
               <Route path="/vrat/:vratId" element={<VratPage />} />
               <Route path="/cart" element={<CartPage />} />
+              <Route path="/return-policy" element={<ReturnPolicyPage />} />
             </Routes>
           </main>
           <Footer />

@@ -4063,5 +4063,5 @@ export const POOJA_SAMAGRI_DATA: Record<string, PoojaItem[]> = {
 
 };
 
-export const WHATSAPP_BUSINESS_NUMBER = '9265053201'; // Replace with your actual business number
-export const UPI_ID = 'utampipaliya@oksbi'; // Replace with your actual UPI ID
+export const WHATSAPP_BUSINESS_NUMBER = '6355928232'; // Replace with your actual business number
+export const UPI_ID = 'isharpanam@boi'; // Replace with your actual UPI ID
