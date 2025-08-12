@@ -23,7 +23,7 @@ const GanapatiKitPage: React.FC = () => {
   const [isAddedToCart, setIsAddedToCart] = useState(false);
   const { addToCart } = useCart();
 
-  const kitPrice = 999;
+  const kitPrice = 1499;
   const totalPrice = kitPrice * quantity;
 
   const kitData = {

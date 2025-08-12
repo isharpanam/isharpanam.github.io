@@ -25,7 +25,7 @@ export const CAROUSEL_ITEMS: CarouselItem[] = [
     image: 'images/pojaa1.jpeg',
     title: 'Eco-Friendly Pooja Kit',
     description: 'Complete Ganpati worship kit with all traditional items for home and corporate offices',
-    price: 999,
+    price: 1499,
     redirectTo: '/ganapati-kit',
     poojaInfo: {
       name: 'Ganapati Pooja Saman List',
@@ -153,7 +153,7 @@ export const CAROUSEL_ITEMS: CarouselItem[] = [
     image: 'images/pojaa2.jpeg',
     title: 'Eco-Friendly Pooja Kit',
     description: 'Complete Ganpati worship kit with all traditional items for home and corporate offices',
-    price: 999,
+    price: 1499,
     redirectTo: '/ganapati-kit',
     poojaInfo: {
       name: 'Ganapati Pooja Saman List',
@@ -166,7 +166,7 @@ export const CAROUSEL_ITEMS: CarouselItem[] = [
     image: 'images/pojaa3.jpeg',
     title: 'Eco-Friendly Pooja Kit',
     description: 'Complete Ganpati worship kit with all traditional items for home and corporate offices',
-    price: 999,
+    price: 1499,
     redirectTo: '/ganapati-kit',
     poojaInfo: {
       name: 'Ganapati Pooja Saman List',
@@ -179,7 +179,7 @@ export const CAROUSEL_ITEMS: CarouselItem[] = [
     image: 'images/pojaa4.jpeg',
     title: 'Eco-Friendly Pooja Kit',
     description: 'Complete Ganpati worship kit with all traditional items for home and corporate offices',
-    price: 999,
+    price: 1499,
     redirectTo: '/ganapati-kit',
     poojaInfo: {
       name: 'Ganapati Pooja Saman List',
