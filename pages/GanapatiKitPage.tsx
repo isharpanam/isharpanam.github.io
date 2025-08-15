@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import { WHATSAPP_BUSINESS_NUMBER } from '../constants';
 import type { PoojaItem, PoojaType } from '../types';
+import Carousel from '../components/Carousel';
 import { 
   ShoppingCart, 
   Star, 
@@ -26,12 +27,20 @@ const GanapatiKitPage: React.FC = () => {
   const kitPrice = 1499;
   const totalPrice = kitPrice * quantity;
 
+  const kitImages = [
+    'images/pojaa1.jpeg',
+    'images/pojaa2.jpeg', 
+    'images/ganpti_murti.png',
+    'images/pojaa3.jpeg',
+    'images/pojaa4.jpeg',
+  ];
+
   const kitData = {
     id: 'ganapati-pooja-kit',
     name: 'Eco-Friendly Ganapati Pooja Kit',
     price: kitPrice,
     description: 'Complete traditional Ganapati worship kit with all essential items',
-    image: 'images/pojaa1.jpeg'
+    image: kitImages[0] // Keep first image as default for other uses
   };
 
   const poojaItems = [
@@ -154,14 +163,14 @@ const GanapatiKitPage: React.FC = () => {
         </div>
         
         <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-8 p-6 sm:p-8 lg:p-12">
-          {/* Image */}
+          {/* Carousel Images */}
           <div className="relative">
-            <img
-              src={kitData.image}
-              alt={kitData.name}
-              className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-2xl shadow-xl"
+            <Carousel 
+              images={kitImages}
+              autoPlay={true}
+              interval={3000}
             />
-            <div className="absolute top-4 left-4">
+            <div className="absolute top-4 left-4 z-10">
               <div className="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full flex items-center gap-2">
                 <Star className="h-4 w-4 text-yellow-500 fill-current" />
                 <span className="text-sm font-bold text-gray-800">Premium Kit</span>
