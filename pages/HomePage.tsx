@@ -50,11 +50,10 @@ const HomePage: React.FC = () => {
           </div>
         </div>
 
-          {/* Carousel Section (hidden on Home) */}
-          <div className="hidden mb-8 lg:mb-12 opacity-0 animate-fadeInUp" style={{ animationDelay: '200ms' }}>
+          {/* Carousel Section */}
+          <div className="mb-8 lg:mb-12 opacity-0 animate-fadeInUp" style={{ animationDelay: '200ms' }}>
             <Carousel 
-              // Hide Ganapati Kit slides on Home only
-              items={CAROUSEL_ITEMS.filter(item => item.redirectTo !== '/ganapati-kit')}
+              items={CAROUSEL_ITEMS}
               autoPlay={true}
               interval={4000}
               onItemClick={handleCarouselItemClick}
